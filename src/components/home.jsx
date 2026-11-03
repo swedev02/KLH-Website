@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from 'react'
 import { Link } from 'react-router-dom'
-import { Play, X, Phone, ChevronLeft, ChevronRight } from 'lucide-react'
+import { Play, X, Phone } from 'lucide-react'
 import { HOME_SLIDES, COUNTERS, ABOUT_KLH, WORKING_TOGETHER, NEWS, GALLERY, WHY_STUDY, COE, TESTIMONIALS, AWARDS, PARTNERS, RECRUITERS, SITE } from '../data'
 import { Img, SectionHead, Sec, Slider, ArrowLink, BannerCarousel } from './ui'
 import { Reveal, CountUp } from './motion'
@@ -127,63 +127,100 @@ export function Counters() {
   )
 }
 
-/* Center of Excellence — the same 15 klh.edu.in photographs as a compact, swipeable strip on navy.
-   Photos carry a light blue tint that clears on hover, where the caption slides in. */
+/* Small round pause/play toggle for auto-moving content */
+function MotionToggle({ playing, onToggle, dark, label }) {
+  return (
+    <button onClick={onToggle} aria-label={`${playing ? 'Pause' : 'Play'} ${label}`}
+      className={`grid h-8 w-8 place-items-center rounded-full border transition-colors duration-300 ${dark ? 'border-white/20 text-white/70 hover:bg-white hover:text-navy' : 'border-blue/20 bg-white text-navy hover:border-blue hover:bg-blue hover:text-white'}`}>
+      {playing ? <svg width="10" height="10" viewBox="0 0 12 12" fill="currentColor" aria-hidden><rect x="2" y="1" width="3" height="10" /><rect x="7" y="1" width="3" height="10" /></svg>
+        : <svg width="10" height="10" viewBox="0 0 12 12" fill="currentColor" aria-hidden><path d="M3 1l8 5-8 5z" /></svg>}
+    </button>
+  )
+}
+
+const prefersReduced = () => window.matchMedia?.('(prefers-reduced-motion: reduce)').matches
+
+/* Center of Excellence — the same 15 klh.edu.in photographs gliding past in a continuous strip on navy.
+   Hover (or focus) pauses it; the photos' light blue tint clears on hover, where the caption slides in. */
 export function CenterOfExcellence() {
+  const [playing, setPlaying] = useState(true)
+  const card = 'group relative aspect-[4/3] w-[240px] shrink-0 overflow-hidden rounded-[12px] border border-white/10 bg-navy-2 sm:w-[280px] lg:w-[300px]'
   return (
     <section id="coe" className="surface-navy relative overflow-hidden border-t border-white/10 py-14 text-white md:py-16">
       <div aria-hidden className="pointer-events-none absolute -right-32 top-0 h-80 w-80 rounded-full bg-blue/25 blur-3xl" />
       <div className="wrap relative">
         <SectionHead dark eyebrow="Campus" title={<>Center of <span className="hl">Excellence</span></>} sub="Labs, sport and campus life at KLH."
-          right={<ArrowLink to="/facilities" className="link-arrow !text-white hover:!text-sun">Facilities</ArrowLink>} className="!mb-8" />
-        <Slider label="photo" dark>
-          {COE.map(([p, alt], k) => (
-            <figure key={p} className="group relative aspect-[4/3] w-[72%] shrink-0 snap-start overflow-hidden rounded-[12px] border border-white/10 bg-navy-2 sm:w-[38%] lg:w-[calc((100%-80px)/5)]">
-              <Img p={p} alt={alt} zoom />
-              <div aria-hidden className="absolute inset-0 bg-gradient-to-t from-navy/85 via-blue/25 to-blue/15 transition-opacity duration-500 group-hover:opacity-50" />
-              <span className="meta absolute left-3 top-3 rounded-full border border-white/15 bg-navy/50 px-2 py-0.5 !text-[10px] text-white/85 backdrop-blur-md">{String(k + 1).padStart(2, '0')}</span>
-              <figcaption className="absolute inset-x-3 bottom-3 text-[12.5px] leading-snug text-white/90 transition duration-300 md:translate-y-1 md:opacity-0 md:group-hover:translate-y-0 md:group-hover:opacity-100">{alt}</figcaption>
-            </figure>
-          ))}
-        </Slider>
+          right={<><ArrowLink to="/facilities" className="link-arrow !text-white hover:!text-sun">Facilities</ArrowLink><MotionToggle dark playing={playing} onToggle={() => setPlaying(v => !v)} label="photo strip" /></>} className="!mb-8" />
+      </div>
+      <div className="marquee-wrap relative [mask-image:linear-gradient(90deg,transparent,#000_6%,#000_94%,transparent)]">
+        <div className={`marquee flex w-max gap-5 px-5 ${playing ? '' : 'is-paused'}`}>
+          {[...COE, ...COE].map(([p, alt], k) => {
+            const copy = k >= COE.length
+            return (
+              <figure key={k} aria-hidden={copy || undefined} className={card}>
+                <Img p={p} alt={copy ? '' : alt} zoom />
+                <div aria-hidden className="absolute inset-0 bg-gradient-to-t from-navy/85 via-blue/25 to-blue/15 transition-opacity duration-500 group-hover:opacity-50" />
+                <span className="meta absolute left-3 top-3 rounded-full border border-white/15 bg-navy/50 px-2 py-0.5 !text-[10px] text-white/85 backdrop-blur-md">{String((k % COE.length) + 1).padStart(2, '0')}</span>
+                <figcaption className="absolute inset-x-3 bottom-3 text-[12.5px] leading-snug text-white/90 transition duration-300 md:translate-y-1 md:opacity-0 md:group-hover:translate-y-0 md:group-hover:opacity-100">{alt}</figcaption>
+              </figure>
+            )
+          })}
+        </div>
       </div>
     </section>
   )
 }
 
-/* Testimonials: as on klh.edu.in, a row of student photos selects the quote. Compact glass card on a soft blue field. */
+/* Testimonials: rotates on its own every 7 seconds with a soft cross-fade; the segment line fills as it plays.
+   Hover pauses it, and the photos (as on klh.edu.in) still let you jump to a student. */
+const TESTIMONIAL_MS = 7000
 export function Testimonials() {
   const [i, setI] = useState(0)
-  const [p, n, q] = TESTIMONIALS[i]
+  const [playing, setPlaying] = useState(() => !prefersReduced())
+  const [hover, setHover] = useState(false)
+  const running = playing && !hover
   const N = TESTIMONIALS.length
-  const go = (d) => setI(k => (k + d + N) % N)
-  const nav = 'grid h-9 w-9 place-items-center rounded-full border border-blue/20 bg-white text-navy transition-colors duration-300 hover:border-blue hover:bg-blue hover:text-white'
+  const [p, n, q] = TESTIMONIALS[i]
+  useEffect(() => {
+    if (!running) return
+    const t = setTimeout(() => setI(k => (k + 1) % N), TESTIMONIAL_MS)
+    return () => clearTimeout(t)
+  }, [i, running, N])
   return (
-    <section id="testimonials" className="relative overflow-hidden bg-gradient-to-br from-blue-soft via-white to-[#eef3fa] py-14 md:py-16">
+    <section id="testimonials" className="relative overflow-hidden bg-gradient-to-br from-blue-soft via-white to-[#eef3fa] py-14 md:py-16"
+      onMouseEnter={() => setHover(true)} onMouseLeave={() => setHover(false)} onFocus={() => setHover(true)} onBlur={() => setHover(false)}>
       <div aria-hidden className="pointer-events-none absolute -left-24 bottom-0 h-64 w-64 rounded-full bg-blue/10 blur-3xl" />
       <div className="wrap relative grid gap-8 lg:grid-cols-[280px_1fr] lg:items-center lg:gap-12">
         <div>
           <SectionHead eyebrow="Students" title="Testimonials" sub="What KLH students say about placements, faculty and campus." className="!mb-6" />
           <div className="flex items-center gap-3">
-            <button onClick={() => go(-1)} aria-label="Previous testimonial" className={nav}><ChevronLeft size={16} /></button>
             <span className="meta tabular-nums text-navy">{String(i + 1).padStart(2, '0')} <span className="text-muted">/ {String(N).padStart(2, '0')}</span></span>
-            <button onClick={() => go(1)} aria-label="Next testimonial" className={nav}><ChevronRight size={16} /></button>
+            <MotionToggle playing={playing} onToggle={() => setPlaying(v => !v)} label="testimonials" />
           </div>
-          <div aria-hidden className="mt-4 flex gap-1">{TESTIMONIALS.map((_, k) => <span key={k} className={`h-0.5 flex-1 rounded-full transition-colors duration-300 ${k === i ? 'bg-blue' : 'bg-blue/15'}`} />)}</div>
+          <div className="mt-4 flex gap-1">
+            {TESTIMONIALS.map((t, k) => (
+              <button key={t[1]} onClick={() => setI(k)} aria-label={`Show testimonial ${k + 1}`} tabIndex={-1} className="group flex h-4 flex-1 items-center">
+                <span className="block h-0.5 w-full overflow-hidden rounded-full bg-blue/15 transition-[height] group-hover:h-1">
+                  <span key={`${i}-${running}`} className={`block h-full origin-left rounded-full bg-blue ${k < i ? 'scale-x-100' : k > i ? 'scale-x-0' : running ? '' : 'scale-x-100'}`}
+                    style={k === i && running ? { animation: `progress ${TESTIMONIAL_MS}ms linear forwards` } : undefined} />
+                </span>
+              </button>
+            ))}
+          </div>
         </div>
         <div className="relative max-w-3xl rounded-[18px] bg-white/80 p-5 shadow-[0_28px_60px_-40px_rgba(26,106,168,.6)] ring-1 ring-blue/15 backdrop-blur-md sm:p-6">
           <div aria-hidden className="absolute inset-x-8 top-0 h-px bg-gradient-to-r from-transparent via-blue to-transparent" />
           <div className="grid gap-5 sm:grid-cols-[112px_1fr]">
-            <div className="hidden aspect-[4/5] overflow-hidden rounded-[10px] bg-surface ring-1 ring-blue/15 sm:block"><Img key={p} p={p} alt={n} position="center 20%" className="animate-[fadeIn_.5s_ease]" /></div>
+            <div className="hidden aspect-[4/5] overflow-hidden rounded-[10px] bg-surface ring-1 ring-blue/15 sm:block"><Img key={p} p={p} alt={n} position="center 20%" className="fade-up" /></div>
             <div className="flex flex-col">
-              <blockquote key={n} aria-live="polite" className="animate-[fadeIn_.5s_ease] text-[15.5px] leading-relaxed text-navy md:text-[16.5px]">
+              <blockquote key={n} aria-live={running ? 'off' : 'polite'} className="fade-up text-[15.5px] leading-relaxed text-navy md:text-[16.5px]">
                 <span aria-hidden className="mr-1 font-display text-2xl leading-none text-sun">“</span>{q}
               </blockquote>
-              <p className="mt-3 flex items-center gap-2.5 text-[14.5px] font-semibold text-ink"><span className="h-9 w-9 shrink-0 overflow-hidden rounded-full ring-1 ring-blue/20 sm:hidden"><Img p={p} alt="" position="center 20%" /></span>{n} <span className="meta font-normal text-blue">KLH student</span></p>
+              <p key={`name-${n}`} className="fade-up mt-3 flex items-center gap-2.5 text-[14.5px] font-semibold text-ink [animation-delay:.08s]"><span className="h-9 w-9 shrink-0 overflow-hidden rounded-full ring-1 ring-blue/20 sm:hidden"><Img p={p} alt="" position="center 20%" /></span>{n} <span className="meta font-normal text-blue">KLH student</span></p>
               <div role="tablist" aria-label="Choose a testimonial" className="mt-4 flex flex-wrap gap-1.5">
                 {TESTIMONIALS.map(([tp, tn], k) => (
                   <button key={tn} role="tab" aria-selected={k === i} aria-label={tn} onClick={() => setI(k)}
-                    className={`h-7 w-7 overflow-hidden rounded-full ring-2 ring-offset-2 ring-offset-white transition sm:h-8 sm:w-8 ${k === i ? 'ring-blue' : 'ring-transparent opacity-55 grayscale hover:opacity-100 hover:grayscale-0'}`}>
+                    className={`h-7 w-7 overflow-hidden rounded-full ring-2 ring-offset-2 ring-offset-white transition duration-500 sm:h-8 sm:w-8 ${k === i ? 'ring-blue' : 'ring-transparent opacity-55 grayscale hover:opacity-100 hover:grayscale-0'}`}>
                     <Img p={tp} alt="" position="center 20%" />
                   </button>
                 ))}
@@ -214,18 +251,36 @@ export function AwardsRankings() {
   )
 }
 
-export function OurPartners() {
+/* One gliding row of logos. Each copy repeats the list `reps` times so it is wider than the screen,
+   then the copy is rendered twice and slides by exactly one copy for a seamless loop. */
+function LogoRow({ items, reps, reverse, playing, tile }) {
+  const copy = Array.from({ length: reps }, () => items).flat()
   return (
-    <Sec id="partners" tone="surface">
-      <SectionHead eyebrow="Industry" title="Our Partners" />
-      <ul className="grid grid-cols-2 gap-3 md:grid-cols-4">
-        {PARTNERS.map(([p, n]) => <li key={p} className="flex h-24 items-center justify-center rounded-[10px] border border-line bg-white px-6"><span className="block h-12 w-full"><Img p={p} alt={n} fit="contain" /></span></li>)}
+    <div className="marquee-wrap relative overflow-hidden [mask-image:linear-gradient(90deg,transparent,#000_8%,#000_92%,transparent)]">
+      <ul className={`marquee flex w-max gap-5 py-1 ${reverse ? '[animation-direction:reverse]' : ''} ${playing ? '' : 'is-paused'}`} style={{ animationDuration: reverse ? '55s' : '45s' }}>
+        {[...copy, ...copy].map(([p, n], k) => (
+          <li key={k} aria-hidden={k >= items.length || undefined} title={n} className={`flex shrink-0 items-center justify-center rounded-[12px] border border-line bg-white px-6 transition-[border-color,box-shadow] duration-300 hover:border-blue/30 hover:shadow-[0_12px_30px_-20px_rgba(26,106,168,.6)] ${tile}`}>
+            <span className="block h-full w-full"><Img p={p} alt={k >= items.length ? '' : n} fit="contain" /></span>
+          </li>
+        ))}
       </ul>
-      <p className="meta mb-5 mt-12 text-muted">Recruiters</p>
-      <ul className="grid grid-cols-3 border-l border-t border-line bg-white sm:grid-cols-4 lg:grid-cols-6">
-        {RECRUITERS.map(([p, n]) => <li key={p} className="flex h-20 items-center justify-center border-b border-r border-line p-4 md:h-24"><span className="block h-9 w-full"><Img p={p} alt={n} fit="contain" /></span></li>)}
-      </ul>
-    </Sec>
+    </div>
+  )
+}
+
+/* Our Partners — industry academies and recruiters from klh.edu.in, as two gliding logo rows. */
+export function OurPartners() {
+  const [playing, setPlaying] = useState(true)
+  return (
+    <section id="partners" className="bg-surface py-12 md:py-14">
+      <div className="wrap">
+        <SectionHead eyebrow="Industry" title="Our Partners" sub="Industry academies and recruiters." right={<MotionToggle playing={playing} onToggle={() => setPlaying(v => !v)} label="partner logos" />} className="!mb-7" />
+      </div>
+      <div className="space-y-4">
+        <LogoRow items={PARTNERS} reps={3} playing={playing} tile="h-16 w-[220px] py-3.5" />
+        <LogoRow items={RECRUITERS} reps={2} reverse playing={playing} tile="h-14 w-[140px] py-3" />
+      </div>
+    </section>
   )
 }
 

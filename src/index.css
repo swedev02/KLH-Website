@@ -125,3 +125,14 @@ section[id] { scroll-margin-top: 96px; }
 .surface-navy .hl { color: var(--color-sun); background-image: linear-gradient(var(--color-sun), var(--color-sun)); background-position: 0 94%; background-size: 100% 2px; }
 .surface-navy .reveal .hl { background-size: 0% 2px; }
 .surface-navy .reveal.is-in .hl { background-size: 100% 2px; }
+
+/* Continuous photo strip: the list is rendered twice and slides by exactly one copy, so the loop is seamless. */
+@keyframes marquee { to { transform: translateX(calc(-50% - 10px)); } }
+.marquee { animation: marquee 70s linear infinite; }
+.marquee-wrap:hover .marquee, .marquee-wrap:focus-within .marquee, .marquee.is-paused { animation-play-state: paused; }
+@media (prefers-reduced-motion: reduce) { .marquee { animation: none; } .marquee-wrap { overflow-x: auto; } }
+
+/* Soft cross-fade with a small lift, used when a testimonial changes */
+@keyframes fadeUp { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
+.fade-up { animation: fadeUp .7s var(--ease-out-soft) both; }
+@media (prefers-reduced-motion: reduce) { .fade-up { animation: none; } }
