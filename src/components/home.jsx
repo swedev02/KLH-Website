@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from 'react'
 import { Link } from 'react-router-dom'
-import { Play, X, Phone } from 'lucide-react'
+import { Play, X, Phone, ChevronLeft, ChevronRight } from 'lucide-react'
 import { HOME_SLIDES, COUNTERS, ABOUT_KLH, WORKING_TOGETHER, NEWS, GALLERY, WHY_STUDY, COE, TESTIMONIALS, AWARDS, PARTNERS, RECRUITERS, SITE } from '../data'
 import { Img, SectionHead, Sec, Slider, ArrowLink, BannerCarousel } from './ui'
 import { Reveal, CountUp } from './motion'
@@ -127,47 +127,72 @@ export function Counters() {
   )
 }
 
-/* Center of Excellence photo gallery — editorial bento grid of the same 15 klh.edu.in photographs. */
+/* Center of Excellence — the same 15 klh.edu.in photographs as a compact, swipeable strip on navy.
+   Photos carry a light blue tint that clears on hover, where the caption slides in. */
 export function CenterOfExcellence() {
-  const span = (k) => k === 0 ? 'col-span-2 row-span-2' : k === 5 || k === 10 ? 'col-span-2' : ''
   return (
-    <Sec id="coe">
-      <SectionHead eyebrow="Campus" title={<>Center of <span className="hl">Excellence</span></>} right={<ArrowLink to="/facilities">Facilities</ArrowLink>} />
-      <div className="grid auto-rows-[140px] grid-cols-2 gap-3 sm:auto-rows-[160px] md:grid-cols-4 lg:auto-rows-[190px]">
-        {COE.map(([p, alt], k) => (
-          <Reveal key={p} delay={(k % 4) * 60} className={`group overflow-hidden rounded-[10px] bg-surface ${span(k)}`}><Img p={p} alt={alt} zoom /></Reveal>
-        ))}
+    <section id="coe" className="surface-navy relative overflow-hidden border-t border-white/10 py-14 text-white md:py-16">
+      <div aria-hidden className="pointer-events-none absolute -right-32 top-0 h-80 w-80 rounded-full bg-blue/25 blur-3xl" />
+      <div className="wrap relative">
+        <SectionHead dark eyebrow="Campus" title={<>Center of <span className="hl">Excellence</span></>} sub="Labs, sport and campus life at KLH."
+          right={<ArrowLink to="/facilities" className="link-arrow !text-white hover:!text-sun">Facilities</ArrowLink>} className="!mb-8" />
+        <Slider label="photo" dark>
+          {COE.map(([p, alt], k) => (
+            <figure key={p} className="group relative aspect-[4/3] w-[72%] shrink-0 snap-start overflow-hidden rounded-[12px] border border-white/10 bg-navy-2 sm:w-[38%] lg:w-[calc((100%-80px)/5)]">
+              <Img p={p} alt={alt} zoom />
+              <div aria-hidden className="absolute inset-0 bg-gradient-to-t from-navy/85 via-blue/25 to-blue/15 transition-opacity duration-500 group-hover:opacity-50" />
+              <span className="meta absolute left-3 top-3 rounded-full border border-white/15 bg-navy/50 px-2 py-0.5 !text-[10px] text-white/85 backdrop-blur-md">{String(k + 1).padStart(2, '0')}</span>
+              <figcaption className="absolute inset-x-3 bottom-3 text-[12.5px] leading-snug text-white/90 transition duration-300 md:translate-y-1 md:opacity-0 md:group-hover:translate-y-0 md:group-hover:opacity-100">{alt}</figcaption>
+            </figure>
+          ))}
+        </Slider>
       </div>
-    </Sec>
+    </section>
   )
 }
 
-/* Testimonials: as on klh.edu.in, a row of student photos selects the quote. */
+/* Testimonials: as on klh.edu.in, a row of student photos selects the quote. Compact glass card on a soft blue field. */
 export function Testimonials() {
   const [i, setI] = useState(0)
   const [p, n, q] = TESTIMONIALS[i]
+  const N = TESTIMONIALS.length
+  const go = (d) => setI(k => (k + d + N) % N)
+  const nav = 'grid h-9 w-9 place-items-center rounded-full border border-blue/20 bg-white text-navy transition-colors duration-300 hover:border-blue hover:bg-blue hover:text-white'
   return (
-    <Sec id="testimonials" tone="surface">
-      <SectionHead eyebrow="Students" title="Testimonials" />
-      <div className="grid max-w-4xl gap-6 rounded-[18px] border border-line bg-white p-5 shadow-[0_24px_60px_-48px_rgba(10,26,51,.5)] sm:grid-cols-[180px_1fr] sm:gap-8 sm:p-7">
-        <div className="aspect-[4/5] w-32 overflow-hidden rounded-[12px] bg-surface sm:w-auto"><Img key={p} p={p} alt={n} position="center 20%" className="animate-[fadeIn_.5s_ease]" /></div>
-        <div className="flex flex-col">
-          <blockquote key={n} aria-live="polite" className="animate-[fadeIn_.5s_ease] font-display text-[17px] font-medium leading-relaxed text-navy md:text-[19px]">
-            <span aria-hidden className="mb-1 block text-4xl leading-none text-sun">“</span>{q}
-          </blockquote>
-          <p className="mt-4 text-[15px] font-semibold">{n}</p>
-          <p className="meta mt-0.5 text-muted">KLH student</p>
-          <div role="tablist" aria-label="Choose a testimonial" className="mt-auto flex flex-wrap gap-2 pt-6">
-            {TESTIMONIALS.map(([tp, tn], k) => (
-              <button key={tn} role="tab" aria-selected={k === i} aria-label={tn} onClick={() => setI(k)}
-                className={`h-10 w-10 overflow-hidden rounded-full ring-2 ring-offset-2 ring-offset-white transition ${k === i ? 'ring-sun' : 'ring-transparent opacity-60 grayscale hover:opacity-100 hover:grayscale-0'}`}>
-                <Img p={tp} alt="" position="center 20%" />
-              </button>
-            ))}
+    <section id="testimonials" className="relative overflow-hidden bg-gradient-to-br from-blue-soft via-white to-[#eef3fa] py-14 md:py-16">
+      <div aria-hidden className="pointer-events-none absolute -left-24 bottom-0 h-64 w-64 rounded-full bg-blue/10 blur-3xl" />
+      <div className="wrap relative grid gap-8 lg:grid-cols-[280px_1fr] lg:items-center lg:gap-12">
+        <div>
+          <SectionHead eyebrow="Students" title="Testimonials" sub="What KLH students say about placements, faculty and campus." className="!mb-6" />
+          <div className="flex items-center gap-3">
+            <button onClick={() => go(-1)} aria-label="Previous testimonial" className={nav}><ChevronLeft size={16} /></button>
+            <span className="meta tabular-nums text-navy">{String(i + 1).padStart(2, '0')} <span className="text-muted">/ {String(N).padStart(2, '0')}</span></span>
+            <button onClick={() => go(1)} aria-label="Next testimonial" className={nav}><ChevronRight size={16} /></button>
+          </div>
+          <div aria-hidden className="mt-4 flex gap-1">{TESTIMONIALS.map((_, k) => <span key={k} className={`h-0.5 flex-1 rounded-full transition-colors duration-300 ${k === i ? 'bg-blue' : 'bg-blue/15'}`} />)}</div>
+        </div>
+        <div className="relative max-w-3xl rounded-[18px] bg-white/80 p-5 shadow-[0_28px_60px_-40px_rgba(26,106,168,.6)] ring-1 ring-blue/15 backdrop-blur-md sm:p-6">
+          <div aria-hidden className="absolute inset-x-8 top-0 h-px bg-gradient-to-r from-transparent via-blue to-transparent" />
+          <div className="grid gap-5 sm:grid-cols-[112px_1fr]">
+            <div className="hidden aspect-[4/5] overflow-hidden rounded-[10px] bg-surface ring-1 ring-blue/15 sm:block"><Img key={p} p={p} alt={n} position="center 20%" className="animate-[fadeIn_.5s_ease]" /></div>
+            <div className="flex flex-col">
+              <blockquote key={n} aria-live="polite" className="animate-[fadeIn_.5s_ease] text-[15.5px] leading-relaxed text-navy md:text-[16.5px]">
+                <span aria-hidden className="mr-1 font-display text-2xl leading-none text-sun">“</span>{q}
+              </blockquote>
+              <p className="mt-3 flex items-center gap-2.5 text-[14.5px] font-semibold text-ink"><span className="h-9 w-9 shrink-0 overflow-hidden rounded-full ring-1 ring-blue/20 sm:hidden"><Img p={p} alt="" position="center 20%" /></span>{n} <span className="meta font-normal text-blue">KLH student</span></p>
+              <div role="tablist" aria-label="Choose a testimonial" className="mt-4 flex flex-wrap gap-1.5">
+                {TESTIMONIALS.map(([tp, tn], k) => (
+                  <button key={tn} role="tab" aria-selected={k === i} aria-label={tn} onClick={() => setI(k)}
+                    className={`h-7 w-7 overflow-hidden rounded-full ring-2 ring-offset-2 ring-offset-white transition sm:h-8 sm:w-8 ${k === i ? 'ring-blue' : 'ring-transparent opacity-55 grayscale hover:opacity-100 hover:grayscale-0'}`}>
+                    <Img p={tp} alt="" position="center 20%" />
+                  </button>
+                ))}
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </Sec>
+    </section>
   )
 }
 

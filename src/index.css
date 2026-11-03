@@ -120,3 +120,8 @@ section[id] { scroll-margin-top: 96px; }
 .reveal .hl { background-size: 0% 100%; transition: background-size .9s var(--ease-out-soft) .35s; }
 .reveal.is-in .hl { background-size: 100% 100%; }
 @media (prefers-reduced-motion: reduce) { .reveal .hl { background-size: 100% 100%; transition: none; } }
+
+/* On navy, the highlighted word turns yellow and a thin yellow line draws under it (a marker would turn muddy). */
+.surface-navy .hl { color: var(--color-sun); background-image: linear-gradient(var(--color-sun), var(--color-sun)); background-position: 0 94%; background-size: 100% 2px; }
+.surface-navy .reveal .hl { background-size: 0% 2px; }
+.surface-navy .reveal.is-in .hl { background-size: 100% 2px; }
