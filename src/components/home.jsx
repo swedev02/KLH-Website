@@ -127,108 +127,117 @@ export function Counters() {
   )
 }
 
-/* Small round pause/play toggle for auto-moving content */
+/* Pause/play control for auto-moving content. It sits on its own row under each strip, labelled, so it can't be mistaken for a link. */
 function MotionToggle({ playing, onToggle, dark, label }) {
   return (
-    <button onClick={onToggle} aria-label={`${playing ? 'Pause' : 'Play'} ${label}`}
-      className={`grid h-8 w-8 place-items-center rounded-full border transition-colors duration-300 ${dark ? 'border-white/20 text-white/70 hover:bg-white hover:text-navy' : 'border-blue/20 bg-white text-navy hover:border-blue hover:bg-blue hover:text-white'}`}>
-      {playing ? <svg width="10" height="10" viewBox="0 0 12 12" fill="currentColor" aria-hidden><rect x="2" y="1" width="3" height="10" /><rect x="7" y="1" width="3" height="10" /></svg>
-        : <svg width="10" height="10" viewBox="0 0 12 12" fill="currentColor" aria-hidden><path d="M3 1l8 5-8 5z" /></svg>}
-    </button>
+    <div className="wrap mt-5 flex justify-end">
+      <button onClick={onToggle} aria-label={`${playing ? 'Pause' : 'Play'} ${label}`}
+        className={`inline-flex h-8 items-center gap-2 rounded-full border px-3 text-[12px] font-medium transition-colors duration-300 ${dark ? 'border-white/20 text-white/70 hover:bg-white hover:text-navy' : 'border-blue/20 bg-white text-navy hover:border-blue hover:bg-blue hover:text-white'}`}>
+        {playing ? <svg width="9" height="9" viewBox="0 0 12 12" fill="currentColor" aria-hidden><rect x="2" y="1" width="3" height="10" /><rect x="7" y="1" width="3" height="10" /></svg>
+          : <svg width="9" height="9" viewBox="0 0 12 12" fill="currentColor" aria-hidden><path d="M3 1l8 5-8 5z" /></svg>}
+        <span aria-hidden>{playing ? 'Pause' : 'Play'}</span>
+      </button>
+    </div>
   )
 }
 
-const prefersReduced = () => window.matchMedia?.('(prefers-reduced-motion: reduce)').matches
-
-/* Center of Excellence — the same 15 klh.edu.in photographs gliding past in a continuous strip on navy.
-   Hover (or focus) pauses it; the photos' light blue tint clears on hover, where the caption slides in. */
+/* Center of Excellence — the same 15 klh.edu.in photographs as an expanding gallery on navy.
+   Desktop: slim panels side by side; one opens wide with its caption and the gallery moves on by itself
+   every few seconds. Hovering or focusing a panel opens it and holds. Phones: a swipeable row of photos. */
+const COE_MS = 3800
 export function CenterOfExcellence() {
+  const [active, setActive] = useState(0)
+  const [held, setHeld] = useState(false)
   const [playing, setPlaying] = useState(true)
-  const card = 'group relative aspect-[4/3] w-[240px] shrink-0 overflow-hidden rounded-[12px] border border-white/10 bg-navy-2 sm:w-[280px] lg:w-[300px]'
+  const running = playing && !held
+  useEffect(() => {
+    if (!running || window.matchMedia?.('(prefers-reduced-motion: reduce)').matches) return
+    const t = setTimeout(() => setActive(a => (a + 1) % COE.length), COE_MS)
+    return () => clearTimeout(t)
+  }, [active, running])
   return (
     <section id="coe" className="surface-navy relative overflow-hidden border-t border-white/10 py-14 text-white md:py-16">
       <div aria-hidden className="pointer-events-none absolute -right-32 top-0 h-80 w-80 rounded-full bg-blue/25 blur-3xl" />
       <div className="wrap relative">
         <SectionHead dark eyebrow="Campus" title={<>Center of <span className="hl">Excellence</span></>} sub="Labs, sport and campus life at KLH."
-          right={<><ArrowLink to="/facilities" className="link-arrow !text-white hover:!text-sun">Facilities</ArrowLink><MotionToggle dark playing={playing} onToggle={() => setPlaying(v => !v)} label="photo strip" /></>} className="!mb-8" />
-      </div>
-      <div className="marquee-wrap relative [mask-image:linear-gradient(90deg,transparent,#000_6%,#000_94%,transparent)]">
-        <div className={`marquee flex w-max gap-5 px-5 ${playing ? '' : 'is-paused'}`}>
-          {[...COE, ...COE].map(([p, alt], k) => {
-            const copy = k >= COE.length
+          right={<ArrowLink to="/facilities" className="link-arrow !text-white hover:!text-sun">Facilities</ArrowLink>} className="!mb-8" />
+
+        {/* Desktop: expanding panels */}
+        <div className="hidden h-[360px] gap-2 md:flex" onMouseLeave={() => setHeld(false)}>
+          {COE.map(([p, alt], k) => {
+            const on = k === active
             return (
-              <figure key={k} aria-hidden={copy || undefined} className={card}>
-                <Img p={p} alt={copy ? '' : alt} zoom />
-                <div aria-hidden className="absolute inset-0 bg-gradient-to-t from-navy/85 via-blue/25 to-blue/15 transition-opacity duration-500 group-hover:opacity-50" />
-                <span className="meta absolute left-3 top-3 rounded-full border border-white/15 bg-navy/50 px-2 py-0.5 !text-[10px] text-white/85 backdrop-blur-md">{String((k % COE.length) + 1).padStart(2, '0')}</span>
-                <figcaption className="absolute inset-x-3 bottom-3 text-[12.5px] leading-snug text-white/90 transition duration-300 md:translate-y-1 md:opacity-0 md:group-hover:translate-y-0 md:group-hover:opacity-100">{alt}</figcaption>
-              </figure>
+              <button key={p} onMouseEnter={() => { setActive(k); setHeld(true) }} onFocus={() => { setActive(k); setHeld(true) }} onBlur={() => setHeld(false)}
+                aria-label={alt} aria-pressed={on}
+                className={`group relative min-w-0 overflow-hidden rounded-[14px] border text-left transition-[flex-grow,border-color] duration-700 ease-out-soft ${on ? 'grow-[14] border-sun/50' : 'grow border-white/10 hover:border-white/30'}`}
+                style={{ flexBasis: 0 }}>
+                <Img p={p} alt="" className={`transition-[filter,transform] duration-700 ${on ? 'scale-100 saturate-100' : 'scale-110 saturate-[.6]'}`} />
+                <span aria-hidden className={`absolute inset-0 transition-opacity duration-700 ${on ? 'bg-gradient-to-t from-navy/90 via-navy/10 to-transparent' : 'bg-blue/35 group-hover:bg-blue/20'}`} />
+                <span className={`meta absolute left-3 top-3 rounded-full border border-white/15 bg-navy/60 px-2 py-0.5 !text-[10px] backdrop-blur-md transition-opacity duration-500 ${on ? 'text-sun opacity-100' : 'text-white/80 opacity-0'}`}>{String(k + 1).padStart(2, '0')} / {COE.length}</span>
+                <span className={`absolute inset-x-5 bottom-5 transition-[opacity,transform] duration-500 ${on ? 'translate-y-0 opacity-100 delay-300' : 'translate-y-2 opacity-0'}`}>
+                  <span className="block max-w-sm font-display text-[17px] font-semibold leading-snug">{alt}</span>
+                  {/* timer line for the open panel */}
+                  <span className="mt-3 block h-0.5 w-24 overflow-hidden rounded-full bg-white/20">
+                    {on && <span key={`${active}-${running}`} className={`block h-full origin-left bg-sun ${running ? '' : 'scale-x-100'}`} style={running ? { animation: `progress ${COE_MS}ms linear forwards` } : undefined} />}
+                  </span>
+                </span>
+              </button>
             )
           })}
         </div>
+        <div className="mt-4 hidden justify-end md:flex">
+          <button onClick={() => setPlaying(v => !v)} aria-label={playing ? 'Pause gallery' : 'Play gallery'} className="inline-flex h-8 items-center gap-2 rounded-full border border-white/20 px-3 text-[12px] font-medium text-white/70 transition-colors hover:bg-white hover:text-navy">
+            {playing ? <svg width="9" height="9" viewBox="0 0 12 12" fill="currentColor" aria-hidden><rect x="2" y="1" width="3" height="10" /><rect x="7" y="1" width="3" height="10" /></svg>
+              : <svg width="9" height="9" viewBox="0 0 12 12" fill="currentColor" aria-hidden><path d="M3 1l8 5-8 5z" /></svg>}
+            <span aria-hidden>{playing ? 'Pause' : 'Play'}</span>
+          </button>
+        </div>
+
+        {/* Phones: swipeable row */}
+        <ul className="no-scrollbar -mx-4 flex snap-x snap-mandatory gap-3 overflow-x-auto scroll-px-4 px-4 sm:-mx-6 sm:px-6 md:hidden">
+          {COE.map(([p, alt]) => (
+            <li key={p} className="relative aspect-[4/3] w-[78%] shrink-0 snap-start overflow-hidden rounded-[12px] border border-white/10">
+              <Img p={p} alt={alt} />
+              <span aria-hidden className="absolute inset-0 bg-gradient-to-t from-navy/85 to-transparent" />
+              <span className="absolute inset-x-3 bottom-3 text-[13px] font-medium leading-snug">{alt}</span>
+            </li>
+          ))}
+        </ul>
       </div>
     </section>
   )
 }
 
-/* Testimonials: rotates on its own every 7 seconds with a soft cross-fade; the segment line fills as it plays.
-   Hover pauses it, and the photos (as on klh.edu.in) still let you jump to a student. */
-const TESTIMONIAL_MS = 7000
+/* Testimonials — the nine klh.edu.in student testimonials as compact cards gliding in a continuous row.
+   Hover (or focus) pauses it; quotes are verbatim, clamped to four lines with the full text kept for screen readers. */
 export function Testimonials() {
-  const [i, setI] = useState(0)
-  const [playing, setPlaying] = useState(() => !prefersReduced())
-  const [hover, setHover] = useState(false)
-  const running = playing && !hover
-  const N = TESTIMONIALS.length
-  const [p, n, q] = TESTIMONIALS[i]
-  useEffect(() => {
-    if (!running) return
-    const t = setTimeout(() => setI(k => (k + 1) % N), TESTIMONIAL_MS)
-    return () => clearTimeout(t)
-  }, [i, running, N])
+  const [playing, setPlaying] = useState(true)
   return (
-    <section id="testimonials" className="relative overflow-hidden bg-gradient-to-br from-blue-soft via-white to-[#eef3fa] py-14 md:py-16"
-      onMouseEnter={() => setHover(true)} onMouseLeave={() => setHover(false)} onFocus={() => setHover(true)} onBlur={() => setHover(false)}>
+    <section id="testimonials" className="relative overflow-hidden bg-gradient-to-br from-blue-soft via-white to-[#eef3fa] py-12 md:py-14">
       <div aria-hidden className="pointer-events-none absolute -left-24 bottom-0 h-64 w-64 rounded-full bg-blue/10 blur-3xl" />
-      <div className="wrap relative grid gap-8 lg:grid-cols-[280px_1fr] lg:items-center lg:gap-12">
-        <div>
-          <SectionHead eyebrow="Students" title="Testimonials" sub="What KLH students say about placements, faculty and campus." className="!mb-6" />
-          <div className="flex items-center gap-3">
-            <span className="meta tabular-nums text-navy">{String(i + 1).padStart(2, '0')} <span className="text-muted">/ {String(N).padStart(2, '0')}</span></span>
-            <MotionToggle playing={playing} onToggle={() => setPlaying(v => !v)} label="testimonials" />
-          </div>
-          <div className="mt-4 flex gap-1">
-            {TESTIMONIALS.map((t, k) => (
-              <button key={t[1]} onClick={() => setI(k)} aria-label={`Show testimonial ${k + 1}`} tabIndex={-1} className="group flex h-4 flex-1 items-center">
-                <span className="block h-0.5 w-full overflow-hidden rounded-full bg-blue/15 transition-[height] group-hover:h-1">
-                  <span key={`${i}-${running}`} className={`block h-full origin-left rounded-full bg-blue ${k < i ? 'scale-x-100' : k > i ? 'scale-x-0' : running ? '' : 'scale-x-100'}`}
-                    style={k === i && running ? { animation: `progress ${TESTIMONIAL_MS}ms linear forwards` } : undefined} />
-                </span>
-              </button>
-            ))}
-          </div>
-        </div>
-        <div className="relative max-w-3xl rounded-[18px] bg-white/80 p-5 shadow-[0_28px_60px_-40px_rgba(26,106,168,.6)] ring-1 ring-blue/15 backdrop-blur-md sm:p-6">
-          <div aria-hidden className="absolute inset-x-8 top-0 h-px bg-gradient-to-r from-transparent via-blue to-transparent" />
-          <div className="grid gap-5 sm:grid-cols-[112px_1fr]">
-            <div className="hidden aspect-[4/5] overflow-hidden rounded-[10px] bg-surface ring-1 ring-blue/15 sm:block"><Img key={p} p={p} alt={n} position="center 20%" className="fade-up" /></div>
-            <div className="flex flex-col">
-              <blockquote key={n} aria-live={running ? 'off' : 'polite'} className="fade-up text-[15.5px] leading-relaxed text-navy md:text-[16.5px]">
-                <span aria-hidden className="mr-1 font-display text-2xl leading-none text-sun">“</span>{q}
-              </blockquote>
-              <p key={`name-${n}`} className="fade-up mt-3 flex items-center gap-2.5 text-[14.5px] font-semibold text-ink [animation-delay:.08s]"><span className="h-9 w-9 shrink-0 overflow-hidden rounded-full ring-1 ring-blue/20 sm:hidden"><Img p={p} alt="" position="center 20%" /></span>{n} <span className="meta font-normal text-blue">KLH student</span></p>
-              <div role="tablist" aria-label="Choose a testimonial" className="mt-4 flex flex-wrap gap-1.5">
-                {TESTIMONIALS.map(([tp, tn], k) => (
-                  <button key={tn} role="tab" aria-selected={k === i} aria-label={tn} onClick={() => setI(k)}
-                    className={`h-7 w-7 overflow-hidden rounded-full ring-2 ring-offset-2 ring-offset-white transition duration-500 sm:h-8 sm:w-8 ${k === i ? 'ring-blue' : 'ring-transparent opacity-55 grayscale hover:opacity-100 hover:grayscale-0'}`}>
-                    <Img p={tp} alt="" position="center 20%" />
-                  </button>
-                ))}
-              </div>
-            </div>
-          </div>
-        </div>
+      <div className="wrap relative">
+        <SectionHead eyebrow="Students" title="Testimonials" sub="What KLH students say about placements, faculty and campus." className="!mb-7" />
       </div>
+      <div className="marquee-wrap relative [mask-image:linear-gradient(90deg,transparent,#000_6%,#000_94%,transparent)]">
+        <ul className={`marquee flex w-max gap-5 px-5 py-2 ${playing ? '' : 'is-paused'}`} style={{ animationDuration: '80s' }}>
+          {[...TESTIMONIALS, ...TESTIMONIALS].map(([p, n, q], k) => {
+            const copy = k >= TESTIMONIALS.length
+            return (
+              <li key={k} aria-hidden={copy || undefined} className="relative w-[300px] shrink-0 rounded-[16px] bg-white/85 p-5 shadow-[0_20px_44px_-34px_rgba(26,106,168,.7)] ring-1 ring-blue/15 backdrop-blur-md transition-[box-shadow,transform] duration-300 hover:-translate-y-0.5 hover:ring-blue/35 sm:w-[340px]">
+                <div aria-hidden className="absolute inset-x-6 top-0 h-px bg-gradient-to-r from-transparent via-blue/70 to-transparent" />
+                <figure className="flex h-full flex-col">
+                  <blockquote className="line-clamp-4 text-[14.5px] leading-relaxed text-navy"><span aria-hidden className="mr-1 font-display text-xl leading-none text-sun">“</span>{q}</blockquote>
+                  <figcaption className="mt-auto flex items-center gap-3 pt-4">
+                    <span className="h-10 w-10 shrink-0 overflow-hidden rounded-full ring-2 ring-blue/20 ring-offset-2 ring-offset-white"><Img p={p} alt={copy ? '' : n} position="center 20%" /></span>
+                    <span><span className="block text-[14px] font-semibold text-ink">{n}</span><span className="meta text-blue">KLH student</span></span>
+                  </figcaption>
+                </figure>
+              </li>
+            )
+          })}
+        </ul>
+      </div>
+      <MotionToggle playing={playing} onToggle={() => setPlaying(v => !v)} label="testimonials" />
     </section>
   )
 }
@@ -237,12 +246,24 @@ export function AwardsRankings() {
   return (
     <Sec id="awards">
       <SectionHead eyebrow="Recognition" title={<>Recent <span className="hl">Awards</span> & Rankings</>} right={<><ArrowLink to="/achievements-awards">Achievements & Awards</ArrowLink><ArrowLink to="/ranking">Ranking</ArrowLink></>} />
-      <div className="grid gap-10 lg:grid-cols-[1.1fr_1fr] lg:gap-14">
-        <Reveal className="self-start overflow-hidden rounded-[12px] border border-line"><Img p="2025/10/n-scaled.jpg" fit="natural" alt="NIRF 2025: 26th among all universities in India, 35th among engineering colleges, 46th overall, 70th among management institutes; NIRF Innovation rank band 11–50." /></Reveal>
+      <div className="grid gap-8 lg:grid-cols-[1.1fr_1fr] lg:gap-12">
+        <div className="self-start">
+          <Reveal className="overflow-hidden rounded-[12px] border border-line"><Img p="2025/10/n-scaled.jpg" fit="natural" alt="NIRF 2025: 26th among all universities in India, 35th among engineering colleges, 46th overall, 70th among management institutes; NIRF Innovation rank band 11–50." /></Reveal>
+          {/* NIRF 2025 ranks, as stated on the banner above */}
+          <dl className="mt-4 grid grid-cols-2 gap-2 sm:grid-cols-4">
+            {[[26, 'Universities'], [35, 'Engineering'], [46, 'Overall'], [70, 'Management']].map(([v, l]) => (
+              <Reveal key={l} className="surface-navy rounded-[12px] px-4 py-3.5 text-white">
+                <dd className="font-display text-[26px] font-semibold leading-none"><span className="text-sun">#</span><CountUp v={v} /></dd>
+                <dt className="meta mt-2 text-white/60">{l}</dt>
+              </Reveal>
+            ))}
+          </dl>
+          <p className="mt-3 text-[13px] text-muted">NIRF 2025 · Innovation rank band 11–50</p>
+        </div>
         <ol className="border-t border-line">
           {AWARDS.map((a, k) => (
-            <Reveal as="li" key={a} delay={k * 60} className="grid grid-cols-[40px_1fr] gap-3 border-b border-line py-4">
-              <span className="meta pt-1 text-blue">{String(k + 1).padStart(2, '0')}</span><span className="text-[15px] leading-relaxed text-ink">{a}</span>
+            <Reveal as="li" key={a} delay={k * 60} className="grid grid-cols-[36px_1fr] gap-3 border-b border-line py-3">
+              <span className="meta pt-0.5 text-blue">{String(k + 1).padStart(2, '0')}</span><span className="text-[14.5px] leading-relaxed text-ink">{a}</span>
             </Reveal>
           ))}
         </ol>
@@ -274,12 +295,13 @@ export function OurPartners() {
   return (
     <section id="partners" className="bg-surface py-12 md:py-14">
       <div className="wrap">
-        <SectionHead eyebrow="Industry" title="Our Partners" sub="Industry academies and recruiters." right={<MotionToggle playing={playing} onToggle={() => setPlaying(v => !v)} label="partner logos" />} className="!mb-7" />
+        <SectionHead eyebrow="Industry" title="Our Partners" sub="Industry academies and recruiters." className="!mb-7" />
       </div>
       <div className="space-y-4">
         <LogoRow items={PARTNERS} reps={3} playing={playing} tile="h-16 w-[220px] py-3.5" />
         <LogoRow items={RECRUITERS} reps={2} reverse playing={playing} tile="h-14 w-[140px] py-3" />
       </div>
+      <MotionToggle playing={playing} onToggle={() => setPlaying(v => !v)} label="partner logos" />
     </section>
   )
 }
