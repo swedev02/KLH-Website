@@ -3,33 +3,49 @@ import { Link } from 'react-router-dom'
 import { Play, X, Phone } from 'lucide-react'
 import { HOME_SLIDES, COUNTERS, ABOUT_KLH, WORKING_TOGETHER, NEWS, GALLERY, WHY_STUDY, COE, TESTIMONIALS, AWARDS, PARTNERS, RECRUITERS, SITE } from '../data'
 import { Img, SectionHead, Sec, Slider, ArrowLink, BannerCarousel } from './ui'
-import { Reveal, CountUp } from './motion'
+import { Reveal, CountUp, useInView } from './motion'
 import { CourseEnquiryForm } from './forms'
 
 const tel = (p) => `tel:${p.replace(/[^\d+]/g, '')}`
 
 export const HomeSlider = () => <BannerCarousel slides={HOME_SLIDES} label="KLH highlights" />
 
-/* "Working Together" — poster image that opens the KLH YouTube video in a dialog (loaded only on demand). */
+/* "Working Together" — KLH's YouTube film (as linked on klh.edu.in) plays muted and looping inside the card,
+   starting only once the card scrolls into view. "Watch with sound" opens it full size. */
 function VideoCard() {
   const d = useRef(null)
   const [open, setOpen] = useState(false)
+  const [ref, inView] = useInView()
+  const [ready, setReady] = useState(false)
+  const autoplay = inView && !window.matchMedia?.('(prefers-reduced-motion: reduce)').matches
+  const id = WORKING_TOGETHER.youtube
   useEffect(() => { if (open) d.current?.showModal(); else d.current?.close() }, [open])
   return (
     <>
-      <button onClick={() => setOpen(true)} className="group relative block aspect-[16/10] w-full overflow-hidden rounded-[12px] bg-navy text-left" aria-label={`Play video: ${WORKING_TOGETHER.title}`}>
-        <Img p={WORKING_TOGETHER.poster} alt="" zoom />
-        <div className="absolute inset-0 bg-gradient-to-t from-navy/90 via-navy/30 to-transparent" />
-        <span className="absolute left-6 top-6 grid h-16 w-16 place-items-center rounded-full bg-white/95 text-brand shadow-xl transition-transform duration-300 group-hover:scale-110"><Play size={22} fill="currentColor" /></span>
-        <span className="absolute inset-x-6 bottom-6 text-white">
-          <span className="meta text-white/60">Video</span>
-          <span className="mt-2 block font-display text-2xl font-semibold">{WORKING_TOGETHER.title}</span>
-          <span className="mt-2 block max-w-md text-[15px] text-white/80">{WORKING_TOGETHER.text}</span>
-        </span>
-      </button>
+      <div ref={ref} className="relative aspect-[16/10] w-full overflow-hidden rounded-[14px] bg-navy shadow-[0_30px_60px_-40px_rgba(10,26,51,.6)]">
+        {/* poster until the video is playing */}
+        <div className={`absolute inset-0 transition-opacity duration-1000 ${ready ? 'opacity-0' : 'opacity-100'}`}><Img p={WORKING_TOGETHER.poster} alt="" /></div>
+        {autoplay && (
+          <iframe onLoad={() => setTimeout(() => setReady(true), 900)} tabIndex={-1} aria-hidden title={`${WORKING_TOGETHER.title} (muted preview)`}
+            src={`https://www.youtube-nocookie.com/embed/${id}?autoplay=1&mute=1&loop=1&playlist=${id}&controls=0&playsinline=1&rel=0&disablekb=1&iv_load_policy=3`}
+            allow="autoplay; encrypted-media; picture-in-picture"
+            className="pointer-events-none absolute left-1/2 top-1/2 h-[125%] w-[125%] -translate-x-1/2 -translate-y-1/2" />
+        )}
+        <div aria-hidden className="absolute inset-0 bg-gradient-to-t from-navy/90 via-navy/20 to-transparent" />
+        <div className="absolute inset-x-6 bottom-6 flex flex-wrap items-end justify-between gap-4 text-white">
+          <div>
+            <p className="meta flex items-center gap-2 text-white/70"><span className="h-1.5 w-1.5 rounded-full bg-brand" />Video</p>
+            <p className="mt-2 font-display text-2xl font-semibold">{WORKING_TOGETHER.title}</p>
+            <p className="mt-1.5 max-w-md text-[14.5px] text-white/80">{WORKING_TOGETHER.text}</p>
+          </div>
+          <button onClick={() => setOpen(true)} className="inline-flex h-10 items-center gap-2 rounded-full bg-white/95 px-4 text-[13px] font-semibold text-navy transition-colors hover:bg-white">
+            <Play size={14} fill="currentColor" className="text-brand" />Watch with sound
+          </button>
+        </div>
+      </div>
       <dialog ref={d} onClose={() => setOpen(false)} onClick={e => e.target === d.current && setOpen(false)} className="m-auto w-[min(960px,calc(100vw-24px))] overflow-visible bg-transparent p-0 backdrop:bg-navy/85">
         <button onClick={() => setOpen(false)} aria-label="Close video" className="absolute -top-12 right-0 grid h-10 w-10 place-items-center rounded-full bg-white text-navy"><X size={18} /></button>
-        {open && <iframe className="aspect-video w-full rounded-[10px] bg-black" src={`https://www.youtube-nocookie.com/embed/${WORKING_TOGETHER.youtube}?autoplay=1&rel=0`} title={WORKING_TOGETHER.title} allow="autoplay; encrypted-media; picture-in-picture" allowFullScreen />}
+        {open && <iframe className="aspect-video w-full rounded-[10px] bg-black" src={`https://www.youtube-nocookie.com/embed/${id}?autoplay=1&rel=0`} title={WORKING_TOGETHER.title} allow="autoplay; encrypted-media; picture-in-picture" allowFullScreen />}
       </dialog>
     </>
   )
@@ -48,17 +64,7 @@ export function AboutKlh() {
             <Link to="/vision-mission" className="btn-outline">Vision & Mission</Link>
           </div>
         </Reveal>
-        <Reveal delay={120} className="relative">
-          <VideoCard />
-          {/* Floating fact labels — both facts are stated on klh.edu.in (ranking banner; inception page) */}
-          <Link to="/ranking" className="float-y absolute -right-2 -top-5 hidden items-center gap-3 rounded-full border border-line bg-white/90 py-2 pl-2 pr-4 shadow-[0_18px_40px_-20px_rgba(10,26,51,.45)] backdrop-blur-md transition-transform hover:scale-[1.03] sm:flex md:-right-5">
-            <span className="grid h-9 w-9 place-items-center rounded-full bg-navy font-display text-[13px] font-semibold text-sun">#26</span>
-            <span className="text-[13px] leading-tight"><span className="block font-semibold text-ink">NIRF 2025</span><span className="text-muted">among universities</span></span>
-          </Link>
-          <span className="float-y absolute -bottom-5 left-6 hidden items-center gap-2 rounded-full border border-line bg-white/90 px-4 py-2 text-[13px] font-semibold text-ink shadow-[0_18px_40px_-20px_rgba(10,26,51,.45)] backdrop-blur-md [animation-delay:1.5s] sm:inline-flex">
-            <span className="h-2 w-2 rounded-full bg-brand" />UGC Category I University
-          </span>
-        </Reveal>
+        <Reveal delay={120}><VideoCard /></Reveal>
       </div>
     </Sec>
   )
@@ -142,7 +148,7 @@ function MotionToggle({ playing, onToggle, dark, label }) {
 }
 
 /* Center of Excellence — the same 15 klh.edu.in photographs as an expanding gallery on navy.
-   Desktop: slim panels side by side; one opens wide with its caption and the gallery moves on by itself
+   Desktop: slim KLH-red panels side by side; one opens wide with its caption and the gallery moves on by itself
    every few seconds. Hovering or focusing a panel opens it and holds. Phones: a swipeable row of photos. */
 const COE_MS = 3800
 export function CenterOfExcellence() {
@@ -169,10 +175,10 @@ export function CenterOfExcellence() {
             return (
               <button key={p} onMouseEnter={() => { setActive(k); setHeld(true) }} onFocus={() => { setActive(k); setHeld(true) }} onBlur={() => setHeld(false)}
                 aria-label={alt} aria-pressed={on}
-                className={`group relative min-w-0 overflow-hidden rounded-[14px] border text-left transition-[flex-grow,border-color] duration-700 ease-out-soft ${on ? 'grow-[14] border-sun/50' : 'grow border-white/10 hover:border-white/30'}`}
+                className={`group relative min-w-0 overflow-hidden rounded-[14px] border text-left transition-[flex-grow,border-color] duration-700 ease-out-soft ${on ? 'grow-[14] border-sun/50' : 'grow border-brand/40 hover:border-brand/70'}`}
                 style={{ flexBasis: 0 }}>
-                <Img p={p} alt="" className={`transition-[filter,transform] duration-700 ${on ? 'scale-100 saturate-100' : 'scale-110 saturate-[.6]'}`} />
-                <span aria-hidden className={`absolute inset-0 transition-opacity duration-700 ${on ? 'bg-gradient-to-t from-navy/90 via-navy/10 to-transparent' : 'bg-blue/35 group-hover:bg-blue/20'}`} />
+                <Img p={p} alt="" className={`transition-[filter,transform] duration-700 ${on ? 'scale-100 saturate-100' : 'scale-110 grayscale'}`} />
+                <span aria-hidden className={`absolute inset-0 transition-colors duration-700 ${on ? 'bg-gradient-to-t from-navy/90 via-navy/10 to-transparent' : 'bg-brand mix-blend-multiply group-hover:bg-brand/80'}`} />
                 <span className={`meta absolute left-3 top-3 rounded-full border border-white/15 bg-navy/60 px-2 py-0.5 !text-[10px] backdrop-blur-md transition-opacity duration-500 ${on ? 'text-sun opacity-100' : 'text-white/80 opacity-0'}`}>{String(k + 1).padStart(2, '0')} / {COE.length}</span>
                 <span className={`absolute inset-x-5 bottom-5 transition-[opacity,transform] duration-500 ${on ? 'translate-y-0 opacity-100 delay-300' : 'translate-y-2 opacity-0'}`}>
                   <span className="block max-w-sm font-display text-[17px] font-semibold leading-snug">{alt}</span>

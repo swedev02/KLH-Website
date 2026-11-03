@@ -92,10 +92,6 @@ section[id] { scroll-margin-top: 96px; }
 .u-link { background-image: linear-gradient(currentColor, currentColor); background-size: 0% 1px; background-position: 0 100%; background-repeat: no-repeat; transition: background-size .35s var(--ease-out-soft), color .2s; }
 .u-link:hover, .u-link:focus-visible { background-size: 100% 1px; }
 
-/* Floating fact label */
-@keyframes float-y { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-6px); } }
-.float-y { animation: float-y 5s ease-in-out infinite; }
-@media (prefers-reduced-motion: reduce) { .float-y { animation: none; } }
 
 /* Section-heading rule draws in when its heading is revealed */
 .rule { width: 2rem; }
