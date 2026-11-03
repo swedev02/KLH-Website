@@ -1,0 +1,102 @@
+@import "tailwindcss";
+@import "@fontsource-variable/inter";
+@import "@fontsource/poppins/500.css";
+@import "@fontsource/poppins/600.css";
+@import "@fontsource-variable/jetbrains-mono";
+
+/* KLH design system.
+   Brand red and blue are sampled from the official logo (#A80000 "KL", #186CA8 "H");
+   deep navy carries the institutional, technology-forward surfaces. */
+@theme {
+  --font-sans: "Inter Variable", system-ui, sans-serif;
+  --font-display: "Poppins", "Inter Variable", system-ui, sans-serif;
+  --font-mono: "JetBrains Mono Variable", ui-monospace, monospace;
+
+  --color-navy: #0a1a33;
+  --color-navy-2: #12284a;
+  --color-navy-3: #1d3a63;
+  --color-brand: #a8101a;
+  --color-brand-dark: #870b13;
+  --color-blue: #1a6aa8;
+  --color-blue-soft: #e8f1f9;
+  --color-ink: #0e1726;
+  --color-ink-2: #3a4556;
+  --color-muted: #667085;
+  --color-line: #e3e8ef;
+  --color-line-dark: rgb(255 255 255 / 0.12);
+  --color-surface: #f5f7fa;
+  --container-site: 1280px;
+
+  --ease-out-soft: cubic-bezier(.2, .7, .2, 1);
+}
+
+html { scroll-behavior: smooth; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+body { @apply bg-white font-sans text-ink antialiased; }
+section[id] { scroll-margin-top: 96px; }
+:focus-visible { outline: 2px solid var(--color-blue); outline-offset: 2px; }
+::selection { background: var(--color-blue); color: #fff; }
+.no-scrollbar::-webkit-scrollbar { display: none; }
+.no-scrollbar { scrollbar-width: none; }
+
+/* Reveal on scroll (see components/motion.jsx). Content stays visible without JS or with reduced motion. */
+.reveal { opacity: 0; transform: translateY(18px); transition: opacity .7s var(--ease-out-soft), transform .7s var(--ease-out-soft); }
+.reveal.is-in { opacity: 1; transform: none; }
+@media (prefers-reduced-motion: reduce) { .reveal { opacity: 1; transform: none; transition: none; } }
+
+/* Hero photograph: a slow push-in while a slide is active */
+@keyframes push-in { from { transform: scale(1.0); } to { transform: scale(1.06); } }
+.push-in { animation: push-in 9s linear forwards; }
+@keyframes progress { from { transform: scaleX(0); } to { transform: scaleX(1); } }
+@media (prefers-reduced-motion: reduce) { .push-in { animation: none; } }
+
+
+@utility wrap { @apply mx-auto w-full max-w-site px-4 sm:px-6 lg:px-10; }
+
+/* Type scale */
+@utility display-1 { @apply font-display text-[34px] leading-[1.08] font-semibold tracking-[-0.02em] sm:text-[44px] lg:text-[58px]; }
+@utility display-2 { @apply font-display text-[28px] leading-[1.15] font-semibold tracking-[-0.015em] md:text-[36px] lg:text-[42px]; }
+@utility display-3 { @apply font-display text-[20px] leading-snug font-semibold tracking-[-0.01em] md:text-[22px]; }
+@utility lead { @apply text-[17px] leading-relaxed text-ink-2 md:text-lg; }
+/* Metadata / labels: monospace, uppercase, letter-spaced */
+@utility meta { @apply font-mono text-[11.5px] font-medium uppercase tracking-[.14em]; }
+
+/* Buttons */
+@utility btn { @apply inline-flex h-12 items-center justify-center gap-2 rounded-[6px] px-5 text-[14px] font-semibold whitespace-nowrap transition-[background-color,color,border-color,box-shadow] duration-300 cursor-pointer disabled:cursor-wait disabled:opacity-70; }
+@utility btn-primary { @apply btn bg-brand text-white hover:bg-brand-dark; }
+@utility btn-navy { @apply btn bg-navy text-white hover:bg-navy-2; }
+@utility btn-outline { @apply btn border border-ink/15 bg-white text-ink hover:border-navy hover:text-navy; }
+@utility btn-ghost { @apply btn border border-white/25 text-white hover:border-white hover:bg-white/10; }
+@utility btn-sm { @apply h-10 px-4 text-[13px]; }
+
+@utility link-arrow { @apply inline-flex items-center gap-1.5 text-[14px] font-semibold text-blue hover:text-navy; }
+@utility field { @apply h-12 w-full rounded-[6px] border border-line bg-white px-3.5 text-[15px] text-ink outline-none transition-colors placeholder:text-muted/70 focus:border-blue focus:ring-4 focus:ring-blue/10; }
+@utility field-dark { @apply h-12 w-full rounded-[6px] border border-white/15 bg-white/5 px-3.5 text-[15px] text-white outline-none transition-colors placeholder:text-white/40 focus:border-white/60; }
+@utility card { @apply rounded-[10px] border border-line bg-white; }
+@utility tag { @apply inline-flex h-6 items-center rounded-full border border-line px-2.5 font-mono text-[11px] font-medium text-ink-2; }
+
+@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+
+/* Light premium surfaces: soft off-white with a faint wash of the logo's blue and red. */
+.surface-glow {
+  background:
+    radial-gradient(900px 480px at 0% 0%, rgb(26 106 168 / .09), transparent 65%),
+    radial-gradient(700px 420px at 100% 0%, rgb(168 16 26 / .05), transparent 60%),
+    linear-gradient(180deg, #fbfcfe 0%, #f1f4f8 100%);
+}
+.surface-soft { background: linear-gradient(180deg, #ffffff 0%, #f5f7fa 100%); }
+
+/* Animated underline for text links */
+.u-link { background-image: linear-gradient(currentColor, currentColor); background-size: 0% 1px; background-position: 0 100%; background-repeat: no-repeat; transition: background-size .35s var(--ease-out-soft), color .2s; }
+.u-link:hover, .u-link:focus-visible { background-size: 100% 1px; }
+
+/* Floating fact label */
+@keyframes float-y { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-6px); } }
+.float-y { animation: float-y 5s ease-in-out infinite; }
+@media (prefers-reduced-motion: reduce) { .float-y { animation: none; } }
+
+/* Section-heading rule draws in when its heading is revealed */
+.rule { width: 2rem; }
+.reveal .rule { width: 0; transition: width .8s var(--ease-out-soft) .2s; }
+.reveal.is-in .rule { width: 2rem; }
+@media (prefers-reduced-motion: reduce) { .reveal .rule { width: 2rem; transition: none; } }

@@ -1,0 +1,86 @@
+{
+ "aziznagar": {
+  "intro": "KLH campus creates a stunning backdrop for all that happens within the University.",
+  "introImg": "2020/05/maxresdefault-1-600x635-1.jpg",
+  "schools": [
+   {
+    "title": "Engineering",
+    "img": "2015/06/data-e1589371669556.png",
+    "programs": [
+     {
+      "name": "B.Tech in Computer Science & Engineering",
+      "icon": "2020/05/CSEI.png",
+      "d": "encompasses a variety of topics that relates to computation, like analysis of algorithms,, program design, software & hardware.",
+      "href": "https://klh.edu.in/klh-wp/cse/"
+     },
+     {
+      "name": "B.Tech in Electronics & Communication Engineering",
+      "icon": "2020/05/ECEI.png",
+      "d": "ECE is a broad engineering field with sub fields - Analog/Digital electronics, VLSI, 4G/5G, Embedded systems",
+      "href": "https://klh.edu.in/klh-wp/ece_home/"
+     }
+    ]
+   },
+   {
+    "title": "Business Administration",
+    "img": null,
+    "programs": [
+     {
+      "name": "Master of Business Administration",
+      "icon": "2020/05/MBA.png",
+      "d": "MBA focusing on data analytics, building practical and technical skills.",
+      "href": "https://klh.edu.in/mba_home/"
+     }
+    ]
+   }
+  ]
+ },
+ "bachupally": {
+  "intro": "Bachupally campus creates a stunning backdrop for all that happens within the University.",
+  "introImg": "2023/05/ert.jpg",
+  "schools": [
+   {
+    "title": "School of Engineering",
+    "img": "2023/05/OIP.jpeg",
+    "programs": [
+     {
+      "name": "B.Tech in Computer Science & Engineering",
+      "icon": "2020/05/CSEI.png",
+      "d": "encompasses a variety of topics that relates to computation, like analysis of algorithms,, program design, software & hardware.",
+      "href": "https://klh.edu.in/bhp-cse/"
+     },
+     {
+      "name": "B.Tech in Computer Science & Information Technology",
+      "icon": "2020/05/CSEI.png",
+      "d": "It aims to provide students with intricate knowledge of computer technologies and functional operations along with programming, coding",
+      "href": "https://klh.edu.in/bhp-csit/"
+     },
+     {
+      "name": "B.Tech in Electronics & Communication Engineering",
+      "icon": "2020/05/ECEI.png",
+      "d": "ECE is a broad engineering field with sub fields - Analog/Digital electronics, VLSI, 4G/5G, Embedded systems",
+      "href": "https://klh.edu.in/bhp-ece/"
+     },
+     {
+      "name": "B.Tech in Electronics Engineering",
+      "icon": "2020/05/ECEI.png",
+      "d": "EC design and develop electronic equipment, including broadcast and communications systems",
+      "href": "https://klh.edu.in/bhp-ee/"
+     }
+    ]
+   },
+   {
+    "title": "School of Business",
+    "img": null,
+    "programs": [
+     {
+      "name": "Master of Business Administration",
+      "icon": "2020/05/MBA.png",
+      "d": "MBA focusing on data analytics, building practical and technical skills.",
+      "href": "https://klh.edu.in/bhp-mba/"
+     }
+    ]
+   }
+  ]
+ }
+}
