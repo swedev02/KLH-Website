@@ -95,7 +95,7 @@ export const COUNTERS = [
 
 // About KLH + Working Together — klh.edu.in home page
 export const ABOUT_KLH = 'K L Deemed to be University, officially the Koneru Lakshmaiah Education Foundation, is a deemed university located in the Vaddeswaram Guntur district of Andhra Pradesh, offering academic programs at UG, PG, Doctoral, Post-Doctoral industry focused courses. Now K L Deemed to be University is operational in Hyderabad.'
-export const WORKING_TOGETHER = { title: 'Working Together', text: 'Working together, a professor two students do worldclass research in the lab, in the field, and even over breakfast.', poster: '2016/11/poster-video.jpg', youtube: 'SVmu2mOxXWk' }
+export const WORKING_TOGETHER = { title: 'Working Together', text: 'Working together, a professor two students do worldclass research in the lab, in the field, and even over breakfast.', poster: '2016/11/poster-video.jpg' } // the film plays from src/assets CAMPUS_VIDEO
 
 // Latest News — klh.edu.in home page (dates as published)
 export const NEWS = [

@@ -5,47 +5,41 @@ import { HOME_SLIDES, COUNTERS, ABOUT_KLH, WORKING_TOGETHER, NEWS, GALLERY, WHY_
 import { Img, SectionHead, Sec, Slider, ArrowLink, BannerCarousel } from './ui'
 import { Reveal, CountUp, useInView } from './motion'
 import { CourseEnquiryForm } from './forms'
+import { klh, CAMPUS_VIDEO } from '../assets'
 
 const tel = (p) => `tel:${p.replace(/[^\d+]/g, '')}`
 
 export const HomeSlider = () => <BannerCarousel slides={HOME_SLIDES} label="KLH highlights" />
 
-/* "Working Together" — KLH's YouTube film (as linked on klh.edu.in) plays muted and looping inside the card,
-   starting only once the card scrolls into view. "Watch with sound" opens it full size. */
+/* "Working Together" — KLH's campus film (public/media/klh-campus.mp4, from klh.edu.in) plays muted and looping
+   at its own 16:9 shape, uncropped, with no player chrome. It loads only once scrolled into view.
+   The caption sits below the video so nothing covers the footage; "Watch with sound" opens it with controls. */
 function VideoCard() {
   const d = useRef(null)
   const [open, setOpen] = useState(false)
   const [ref, inView] = useInView()
-  const [ready, setReady] = useState(false)
-  const autoplay = inView && !window.matchMedia?.('(prefers-reduced-motion: reduce)').matches
-  const id = WORKING_TOGETHER.youtube
+  const reduce = window.matchMedia?.('(prefers-reduced-motion: reduce)').matches
+  const poster = klh(WORKING_TOGETHER.poster).src
   useEffect(() => { if (open) d.current?.showModal(); else d.current?.close() }, [open])
   return (
     <>
-      <div ref={ref} className="relative aspect-[16/10] w-full overflow-hidden rounded-[14px] bg-navy shadow-[0_30px_60px_-40px_rgba(10,26,51,.6)]">
-        {/* poster until the video is playing */}
-        <div className={`absolute inset-0 transition-opacity duration-1000 ${ready ? 'opacity-0' : 'opacity-100'}`}><Img p={WORKING_TOGETHER.poster} alt="" /></div>
-        {autoplay && (
-          <iframe onLoad={() => setTimeout(() => setReady(true), 900)} tabIndex={-1} aria-hidden title={`${WORKING_TOGETHER.title} (muted preview)`}
-            src={`https://www.youtube-nocookie.com/embed/${id}?autoplay=1&mute=1&loop=1&playlist=${id}&controls=0&playsinline=1&rel=0&disablekb=1&iv_load_policy=3`}
-            allow="autoplay; encrypted-media; picture-in-picture"
-            className="pointer-events-none absolute left-1/2 top-1/2 h-[125%] w-[125%] -translate-x-1/2 -translate-y-1/2" />
-        )}
-        <div aria-hidden className="absolute inset-0 bg-gradient-to-t from-navy/90 via-navy/20 to-transparent" />
-        <div className="absolute inset-x-6 bottom-6 flex flex-wrap items-end justify-between gap-4 text-white">
-          <div>
-            <p className="meta flex items-center gap-2 text-white/70"><span className="h-1.5 w-1.5 rounded-full bg-brand" />Video</p>
-            <p className="mt-2 font-display text-2xl font-semibold">{WORKING_TOGETHER.title}</p>
-            <p className="mt-1.5 max-w-md text-[14.5px] text-white/80">{WORKING_TOGETHER.text}</p>
-          </div>
-          <button onClick={() => setOpen(true)} className="inline-flex h-10 items-center gap-2 rounded-full bg-white/95 px-4 text-[13px] font-semibold text-navy transition-colors hover:bg-white">
-            <Play size={14} fill="currentColor" className="text-brand" />Watch with sound
-          </button>
+      <figure ref={ref} className="overflow-hidden rounded-[16px] border border-line bg-white shadow-[0_30px_60px_-44px_rgba(10,26,51,.6)]">
+        <div className="relative aspect-video bg-navy">
+          <video src={inView ? CAMPUS_VIDEO : undefined} poster={poster} autoPlay={!reduce} muted loop playsInline preload="none"
+            aria-label="KL University Hyderabad campus film (muted)" className="h-full w-full object-cover" />
         </div>
-      </div>
+        <figcaption className="flex flex-wrap items-center justify-between gap-4 p-5">
+          <div className="min-w-0">
+            <p className="meta flex items-center gap-2 text-muted"><span className="h-1.5 w-1.5 rounded-full bg-brand" />Video</p>
+            <p className="mt-1.5 font-display text-xl font-semibold text-ink">{WORKING_TOGETHER.title}</p>
+            <p className="mt-1 max-w-md text-[14px] leading-relaxed text-ink-2">{WORKING_TOGETHER.text}</p>
+          </div>
+          <button onClick={() => setOpen(true)} className="btn-navy btn-sm shrink-0"><Play size={14} fill="currentColor" className="text-sun" />Watch with sound</button>
+        </figcaption>
+      </figure>
       <dialog ref={d} onClose={() => setOpen(false)} onClick={e => e.target === d.current && setOpen(false)} className="m-auto w-[min(960px,calc(100vw-24px))] overflow-visible bg-transparent p-0 backdrop:bg-navy/85">
         <button onClick={() => setOpen(false)} aria-label="Close video" className="absolute -top-12 right-0 grid h-10 w-10 place-items-center rounded-full bg-white text-navy"><X size={18} /></button>
-        {open && <iframe className="aspect-video w-full rounded-[10px] bg-black" src={`https://www.youtube-nocookie.com/embed/${id}?autoplay=1&rel=0`} title={WORKING_TOGETHER.title} allow="autoplay; encrypted-media; picture-in-picture" allowFullScreen />}
+        {open && <video src={CAMPUS_VIDEO} poster={poster} controls autoPlay playsInline className="aspect-video w-full rounded-[10px] bg-black" aria-label={WORKING_TOGETHER.title} />}
       </dialog>
     </>
   )

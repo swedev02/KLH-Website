@@ -37,7 +37,7 @@ The header buttons are **Admissions Apply** (the same KL admissions portal link 
 
 All of these are in [src/components/home.jsx](../src/components/home.jsx):
 1. **Slider:** the same 16 banners, opening with Admissions Open 2026. Images are never cropped. It has dots, hover arrows, pause and swipe.
-2. **About KLH:** with the Working Together video (KLH's YouTube film), plus two floating fact labels.
+2. **About KLH:** with the Working Together card. KLH's campus film (`public/media/klh-campus.mp4`) plays muted and uncropped, and "Watch with sound" opens it with controls.
 3. **Latest News:** KLH's four latest items, linking to the original posts.
 4. **Gallery:** "NSS Blood Donation Camp-2026", the same 36 images.
 5. **Why Study at KL University:** KLH's graphic.

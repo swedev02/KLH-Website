@@ -21,7 +21,7 @@ const VIEWPORTS = [[1440, 900], [1280, 800], [768, 1024], [390, 844]]
     const errs = []; p.on('pageerror', e => errs.push(e.message)); p.on('console', m => m.type() === 'error' && errs.push(m.text()))
     const bad = []; p.on('response', r => { if (r.status() >= 400 && /\.(png|jpe?g|webp|gif|svg|woff2?|mp4)/.test(r.url())) bad.push(r.status() + ' ' + r.url()) })
     for (const r of ROUTES) {
-      await p.goto(BASE + r, { waitUntil: 'networkidle' })
+      await p.goto(BASE + r, { waitUntil: 'load' }); await p.waitForTimeout(600)
       // Scroll through so lazy images load and reveals/counters trigger; step through every slider.
       await p.evaluate(async () => {
         for (let y = 0; y < document.body.scrollHeight; y += 300) { window.scrollTo(0, y); await new Promise(r => setTimeout(r, 120)) }
@@ -69,7 +69,7 @@ const VIEWPORTS = [[1440, 900], [1280, 800], [768, 1024], [390, 844]]
 
   // ── Interactions (desktop)
   const p = await b.newPage({ viewport: { width: 1440, height: 900 } })
-  await p.goto(BASE + '/', { waitUntil: 'networkidle' })
+  await p.goto(BASE + '/', { waitUntil: 'load' }); await p.waitForTimeout(600)
   const labels = (await p.locator('header nav[aria-label=Main] > *').allInnerTexts()).map(t => t.trim())
   const want = ['About Klh', 'Campuses', 'Admissions', 'Placements', 'Campus Life', 'R&D']
   if (JSON.stringify(labels) === JSON.stringify(want)) ok('nav labels identical to klh.edu.in'); else fail('nav labels', labels)
@@ -79,7 +79,7 @@ const VIEWPORTS = [[1440, 900], [1280, 800], [768, 1024], [390, 844]]
   await p.locator('header a:has-text("Vision & Mission")').first().click(); await p.waitForURL('**/vision-mission'); ok('mega menu link navigates')
   await p.hover('header nav[aria-label=Main] button:has-text("Admissions")'); await p.waitForTimeout(300)
   await p.locator('header a:has-text("Fee Structure")').first().click(); await p.waitForURL('**/fee-structure'); ok('admissions dropdown navigates')
-  await p.goto(BASE + '/', { waitUntil: 'networkidle' })
+  await p.goto(BASE + '/', { waitUntil: 'load' }); await p.waitForTimeout(600)
   const cur = () => p.locator('section[aria-roledescription=carousel] [role=tab][aria-selected=true]').first().getAttribute('aria-label')
   const a = await cur(); await p.click('[aria-label="Next slide"]'); await p.waitForTimeout(300)
   if ((await cur()) !== a) ok('home slider next'); else fail('home slider')
@@ -91,18 +91,18 @@ const VIEWPORTS = [[1440, 900], [1280, 800], [768, 1024], [390, 844]]
   const g = p.locator('#gallery .snap-x'); const x0 = await g.evaluate(e => e.scrollLeft); await p.click('[aria-label="Next gallery image"]'); await p.waitForTimeout(700)
   if ((await g.evaluate(e => e.scrollLeft)) > x0) ok('gallery slider'); else fail('gallery slider')
   await p.locator('#about').scrollIntoViewIfNeeded(); await p.waitForTimeout(800)
-  if (await p.locator('#about iframe[src*="mute=1"][src*="SVmu2mOxXWk"]').count()) ok('Working Together plays muted in the card'); else fail('inline video')
+  if (await p.locator('#about video[src$="klh-campus.mp4"]').evaluate(v => v.muted && v.loop)) ok('Working Together plays muted in the card'); else fail('inline video')
   await p.click('#about button:has-text("Watch with sound")'); await p.waitForTimeout(400)
-  if (await p.locator('dialog[open] iframe[src*="youtube-nocookie.com/embed/SVmu2mOxXWk"]').count()) ok('Working Together video opens'); else fail('video dialog')
+  if (await p.locator('dialog[open] video[controls]').count()) ok('Working Together opens with sound'); else fail('video dialog')
   await p.keyboard.press('Escape')
-  await p.goto(BASE + '/students-placed', { waitUntil: 'networkidle' })
+  await p.goto(BASE + '/students-placed', { waitUntil: 'load' }); await p.waitForTimeout(600)
   const rows = async () => p.locator('table tbody tr').count(); const r0 = await rows()
   await p.fill('input[placeholder^="Search"]', 'Barclays'); await p.waitForTimeout(200); const r1 = await rows()
   if (r0 === 25 && r1 > 0 && r1 < 25) ok(`students-placed table: paged (${r0}) and searchable (${r1})`); else fail('table search', r0, r1)
 
   // ── Forms
   const submitted = async (scope) => { await scope.locator('[role=status]:has-text("Reference")').waitFor({ timeout: 8000 }) }
-  await p.goto(BASE + '/', { waitUntil: 'networkidle' })
+  await p.goto(BASE + '/', { waitUntil: 'load' }); await p.waitForTimeout(600)
   await p.click('header button:has-text("Enquire")'); const d = p.locator('dialog[open]')
   await d.locator('button:has-text("Request call back")').click()
   if (await d.locator('[aria-invalid=true]').count() >= 3) ok('callback validates'); else fail('callback validation')
@@ -116,7 +116,7 @@ const VIEWPORTS = [[1440, 900], [1280, 800], [768, 1024], [390, 844]]
   const nl = async () => { const f = p.locator('footer form'); await f.locator('[name=email]').fill('newsletter-check@example.com'); await f.locator('button:has-text("Subscribe")').click(); await submitted(p.locator('footer')) }
   await nl(); ok('newsletter subscribes'); await p.click('footer button:has-text("Submit another")'); await nl()
   if (await p.locator('footer:has-text("already subscribed")').count()) ok('newsletter de-duplicates'); else fail('newsletter duplicate message')
-  await p.goto(BASE + '/contact-us', { waitUntil: 'networkidle' })
+  await p.goto(BASE + '/contact-us', { waitUntil: 'load' }); await p.waitForTimeout(600)
   const c = p.locator('article form').first()
   await c.locator('button:has-text("Send message")').click()
   if ((await c.locator('[aria-invalid=true]').count()) >= 4) ok('contact validates'); else fail('contact validation')
@@ -129,7 +129,7 @@ const VIEWPORTS = [[1440, 900], [1280, 800], [768, 1024], [390, 844]]
 
   // ── Mobile drawer
   const m = await b.newPage({ viewport: { width: 390, height: 844 } })
-  await m.goto(BASE + '/', { waitUntil: 'networkidle' }); await m.click('[aria-label="Open menu"]'); await m.waitForTimeout(400)
+  await m.goto(BASE + '/', { waitUntil: 'load' }); await m.waitForTimeout(600); await m.click('[aria-label="Open menu"]'); await m.waitForTimeout(400)
   await m.click('aside[aria-label=Menu] button:has-text("About Klh")'); await m.waitForTimeout(350)
   await m.click('aside[aria-label=Menu] a:has-text("Leadership")'); await m.waitForURL('**/leadership'); await m.waitForTimeout(500)
   if (await m.locator('aside[aria-label=Menu]').evaluate(e => e.getBoundingClientRect().left >= innerWidth - 1)) ok('mobile drawer navigates and closes'); else fail('mobile drawer')

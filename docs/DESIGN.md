@@ -39,7 +39,6 @@ Cards use thin `line` borders, generous radius (10–20px) and long, soft shadow
 | Image zoom on hover | Photo cards (`Img zoom`) |
 | Parallax | Inner-page header banners (`Parallax`) |
 | Reading progress line | Inner pages (`ReadingProgress`) |
-| Floating labels | Two verified facts beside the About KLH video |
 | Animated underline | Footer and utility links (`.u-link`) |
 | Dropdown fade and slide; mega menu | Header |
 | Slider | Home and campus banners: crossfade, dots, hover arrows, pause, swipe |
