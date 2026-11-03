@@ -16,7 +16,7 @@ function ScrollManager() {
   return null
 }
 
-const NotFound = () => <PageHeader title="Page not found"><p className="mt-5 max-w-xl text-lg text-white/75">The page you’re looking for doesn’t exist or has moved.</p><Link to="/" className="btn-primary mt-8">Go to the home page</Link></PageHeader>
+const NotFound = () => <PageHeader title="Page not found"><p className="mt-5 max-w-xl text-lg text-ink-2">The page you’re looking for doesn’t exist or has moved.</p><Link to="/" className="btn-primary mt-8">Go to the home page</Link></PageHeader>
 
 // URLs from the earlier version of this site, mapped to their klh.edu.in equivalents
 const MOVED = { about: 'inception-brief-history', programmes: 'programs-at-klh', admissions: 'admission-help-desk', placements: 'about-placement', 'campus-life': 'facilities', people: 'leadership', achievements: 'achievements-awards', rankings: 'ranking', campuses: 'campuses-locations', contact: 'contact-us', news: '' }

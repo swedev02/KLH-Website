@@ -123,7 +123,7 @@ export function BannerCarousel({ slides, interval = 6000, label = 'Highlights', 
           <div role="tablist" aria-label="Choose a slide" className="flex items-center gap-1 rounded-full bg-black/25 px-2 py-1.5 backdrop-blur-md">
             {slides.map(([p], k) => (
               <button key={p} role="tab" aria-selected={k === i} aria-label={`Slide ${k + 1} of ${slides.length}`} onClick={() => setI(k)} className="grid h-4 place-items-center px-0.5">
-                <span className={`block h-1.5 rounded-full transition-all duration-300 ${k === i ? 'w-5 bg-white' : 'w-1.5 bg-white/55 hover:bg-white/80'}`} />
+                <span className={`block h-1.5 rounded-full transition-all duration-300 ${k === i ? 'w-5 bg-sun' : 'w-1.5 bg-white/60 hover:bg-white/85'}`} />
               </button>
             ))}
           </div>

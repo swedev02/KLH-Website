@@ -41,7 +41,7 @@ export function AboutKlh() {
       <div className="grid gap-12 lg:grid-cols-[1fr_1.15fr] lg:items-center lg:gap-16">
         <Reveal>
           <p className="meta flex items-center gap-3 text-muted"><span className="h-px w-8 bg-brand" />Koneru Lakshmaiah Education Foundation</p>
-          <h2 className="display-2 mt-4">About KLH</h2>
+          <h2 className="display-2 mt-4">About <span className="hl">KLH</span></h2>
           <p className="lead mt-5">{ABOUT_KLH}</p>
           <div className="mt-8 flex flex-wrap gap-3">
             <Link to="/inception-brief-history" className="btn-navy">Explore More</Link>
@@ -52,7 +52,7 @@ export function AboutKlh() {
           <VideoCard />
           {/* Floating fact labels — both facts are stated on klh.edu.in (ranking banner; inception page) */}
           <Link to="/ranking" className="float-y absolute -right-2 -top-5 hidden items-center gap-3 rounded-full border border-line bg-white/90 py-2 pl-2 pr-4 shadow-[0_18px_40px_-20px_rgba(10,26,51,.45)] backdrop-blur-md transition-transform hover:scale-[1.03] sm:flex md:-right-5">
-            <span className="grid h-9 w-9 place-items-center rounded-full bg-navy font-display text-[13px] font-semibold text-white">#26</span>
+            <span className="grid h-9 w-9 place-items-center rounded-full bg-navy font-display text-[13px] font-semibold text-sun">#26</span>
             <span className="text-[13px] leading-tight"><span className="block font-semibold text-ink">NIRF 2025</span><span className="text-muted">among universities</span></span>
           </Link>
           <span className="float-y absolute -bottom-5 left-6 hidden items-center gap-2 rounded-full border border-line bg-white/90 px-4 py-2 text-[13px] font-semibold text-ink shadow-[0_18px_40px_-20px_rgba(10,26,51,.45)] backdrop-blur-md [animation-delay:1.5s] sm:inline-flex">
@@ -104,7 +104,7 @@ export function Gallery() {
 export function WhyStudy() {
   return (
     <Sec id="why" tone="surface">
-      <SectionHead eyebrow="Placements" title="Why Study at KL University" />
+      <SectionHead eyebrow="Placements" title={<>Why Study at <span className="hl">KL University</span></>} />
       <Reveal className="overflow-hidden rounded-[12px] border border-line bg-white">
         <Img p={WHY_STUDY.img} fit="natural" alt={`Why study at KL University: ${WHY_STUDY.items.join(', ')}.`} />
       </Reveal>
@@ -114,12 +114,12 @@ export function WhyStudy() {
 
 export function Counters() {
   return (
-    <section aria-label="Placements at a glance" className="surface-glow border-y border-line py-14 md:py-20">
+    <section aria-label="Placements at a glance" className="surface-navy py-14 text-white md:py-20">
       <dl className="wrap grid gap-4 sm:grid-cols-3 md:gap-6">
         {COUNTERS.map((c, k) => (
-          <Reveal key={c.l} delay={k * 90} className="group rounded-[18px] border border-white bg-white/70 p-7 shadow-[0_24px_60px_-40px_rgba(10,26,51,.45)] backdrop-blur-md transition-transform duration-500 ease-out-soft hover:-translate-y-1 md:p-9">
-            <dd className="bg-gradient-to-br from-navy to-blue bg-clip-text font-display text-[52px] font-semibold leading-none text-transparent md:text-[64px]"><CountUp v={c.v} /></dd>
-            <dt className="meta mt-4 flex items-center gap-2 text-muted"><span className="h-px w-5 bg-brand transition-[width] duration-500 group-hover:w-8" />{c.l}</dt>
+          <Reveal key={c.l} delay={k * 90} className="group rounded-[18px] border border-white/10 bg-white/[.04] p-7 transition-[transform,background-color] duration-500 ease-out-soft hover:-translate-y-1 hover:bg-white/[.07] md:p-9">
+            <dd className="font-display text-[52px] font-semibold leading-none text-white md:text-[64px]"><CountUp v={c.v} /></dd>
+            <dt className="meta mt-4 flex items-center gap-2 text-white/65"><span className="h-0.5 w-5 rounded-full bg-sun transition-[width] duration-500 group-hover:w-8" />{c.l}</dt>
           </Reveal>
         ))}
       </dl>
@@ -132,7 +132,7 @@ export function CenterOfExcellence() {
   const span = (k) => k === 0 ? 'col-span-2 row-span-2' : k === 5 || k === 10 ? 'col-span-2' : ''
   return (
     <Sec id="coe">
-      <SectionHead eyebrow="Campus" title="Center of Excellence" right={<ArrowLink to="/facilities">Facilities</ArrowLink>} />
+      <SectionHead eyebrow="Campus" title={<>Center of <span className="hl">Excellence</span></>} right={<ArrowLink to="/facilities">Facilities</ArrowLink>} />
       <div className="grid auto-rows-[140px] grid-cols-2 gap-3 sm:auto-rows-[160px] md:grid-cols-4 lg:auto-rows-[190px]">
         {COE.map(([p, alt], k) => (
           <Reveal key={p} delay={(k % 4) * 60} className={`group overflow-hidden rounded-[10px] bg-surface ${span(k)}`}><Img p={p} alt={alt} zoom /></Reveal>
@@ -149,18 +149,18 @@ export function Testimonials() {
   return (
     <Sec id="testimonials" tone="surface">
       <SectionHead eyebrow="Students" title="Testimonials" />
-      <div className="grid gap-10 lg:grid-cols-[320px_1fr] lg:gap-16">
-        <div className="aspect-[4/5] overflow-hidden rounded-[12px] bg-white lg:aspect-auto lg:h-[400px]"><Img key={p} p={p} alt={n} position="center 20%" className="animate-[fadeIn_.5s_ease]" /></div>
+      <div className="grid max-w-4xl gap-6 rounded-[18px] border border-line bg-white p-5 shadow-[0_24px_60px_-48px_rgba(10,26,51,.5)] sm:grid-cols-[180px_1fr] sm:gap-8 sm:p-7">
+        <div className="aspect-[4/5] w-32 overflow-hidden rounded-[12px] bg-surface sm:w-auto"><Img key={p} p={p} alt={n} position="center 20%" className="animate-[fadeIn_.5s_ease]" /></div>
         <div className="flex flex-col">
-          <blockquote key={n} aria-live="polite" className="animate-[fadeIn_.5s_ease] font-display text-[22px] font-medium leading-snug text-navy md:text-[28px]">
-            <span aria-hidden className="block text-5xl leading-none text-brand">“</span>{q}
+          <blockquote key={n} aria-live="polite" className="animate-[fadeIn_.5s_ease] font-display text-[17px] font-medium leading-relaxed text-navy md:text-[19px]">
+            <span aria-hidden className="mb-1 block text-4xl leading-none text-sun">“</span>{q}
           </blockquote>
-          <p className="mt-6 font-semibold">{n}</p>
-          <p className="meta mt-1 text-muted">KLH student</p>
-          <div role="tablist" aria-label="Choose a testimonial" className="mt-auto flex flex-wrap gap-2.5 pt-10">
+          <p className="mt-4 text-[15px] font-semibold">{n}</p>
+          <p className="meta mt-0.5 text-muted">KLH student</p>
+          <div role="tablist" aria-label="Choose a testimonial" className="mt-auto flex flex-wrap gap-2 pt-6">
             {TESTIMONIALS.map(([tp, tn], k) => (
               <button key={tn} role="tab" aria-selected={k === i} aria-label={tn} onClick={() => setI(k)}
-                className={`h-14 w-14 overflow-hidden rounded-full ring-2 ring-offset-2 ring-offset-surface transition ${k === i ? 'ring-brand' : 'ring-transparent opacity-60 grayscale hover:opacity-100 hover:grayscale-0'}`}>
+                className={`h-10 w-10 overflow-hidden rounded-full ring-2 ring-offset-2 ring-offset-white transition ${k === i ? 'ring-sun' : 'ring-transparent opacity-60 grayscale hover:opacity-100 hover:grayscale-0'}`}>
                 <Img p={tp} alt="" position="center 20%" />
               </button>
             ))}
@@ -174,7 +174,7 @@ export function Testimonials() {
 export function AwardsRankings() {
   return (
     <Sec id="awards">
-      <SectionHead eyebrow="Recognition" title="Recent Awards & Rankings" right={<><ArrowLink to="/achievements-awards">Achievements & Awards</ArrowLink><ArrowLink to="/ranking">Ranking</ArrowLink></>} />
+      <SectionHead eyebrow="Recognition" title={<>Recent <span className="hl">Awards</span> & Rankings</>} right={<><ArrowLink to="/achievements-awards">Achievements & Awards</ArrowLink><ArrowLink to="/ranking">Ranking</ArrowLink></>} />
       <div className="grid gap-10 lg:grid-cols-[1.1fr_1fr] lg:gap-14">
         <Reveal className="self-start overflow-hidden rounded-[12px] border border-line"><Img p="2025/10/n-scaled.jpg" fit="natural" alt="NIRF 2025: 26th among all universities in India, 35th among engineering colleges, 46th overall, 70th among management institutes; NIRF Innovation rank band 11–50." /></Reveal>
         <ol className="border-t border-line">
@@ -211,7 +211,7 @@ export function EnquiryBand() {
       <div className="wrap grid gap-12 lg:grid-cols-[1fr_minmax(0,520px)] lg:gap-16">
         <Reveal>
           <p className="meta flex items-center gap-3 text-muted"><span className="h-px w-8 bg-brand" />Admissions</p>
-          <h2 className="display-2 mt-4 text-ink">Admissions Open 2026</h2>
+          <h2 className="display-2 mt-4 text-ink">Admissions Open <span className="hl">2026</span></h2>
           <p className="mt-4 max-w-lg text-[17px] leading-relaxed text-ink-2">Tell us what you’d like to study and an admissions counsellor will contact you, or apply on the admissions portal.</p>
           <div className="mt-8 flex flex-wrap gap-3">
             <a href={SITE.applyUrl} target="_blank" rel="noreferrer" className="btn-primary">Admissions Apply</a>

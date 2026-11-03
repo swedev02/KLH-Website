@@ -219,19 +219,21 @@ export function CallbackForm({ programme = '' }) {
   )
 }
 
-/* Newsletter sign-up for the footer. */
-export function NewsletterForm() {
+/* Newsletter sign-up for the footer (dark variant on navy). */
+export function NewsletterForm({ dark }) {
   const f = useForm('newsletter', { email: '', website: '' }, { email: check.email })
   return (
-    <Status f={f} done="Subscribed." next="You’ll get the latest KLH news by email.">
-      <form noValidate onSubmit={f.submit} className="relative">
-        <Honeypot f={f} />
-        <div className="flex gap-2">
-          <div className="flex-1"><Text f={f} name="email" type="email" label="Email address" autoComplete="email" placeholder="you@example.com" /></div>
-          <div className="self-end"><Submit f={f} className="h-12 px-4" variant="btn-primary">Subscribe</Submit></div>
-        </div>
-      </form>
-    </Status>
+    <Dark.Provider value={!!dark}>
+      <Status f={f} done="Subscribed." next="You’ll get the latest KLH news by email.">
+        <form noValidate onSubmit={f.submit} className="relative">
+          <Honeypot f={f} />
+          <div className="flex gap-2">
+            <div className="flex-1"><Text f={f} name="email" type="email" label="Email address" autoComplete="email" placeholder="you@example.com" /></div>
+            <div className="self-end"><Submit f={f} className="h-12 px-4" variant="btn-primary">Subscribe</Submit></div>
+          </div>
+        </form>
+      </Status>
+    </Dark.Provider>
   )
 }
 

@@ -5,8 +5,8 @@
 @import "@fontsource-variable/jetbrains-mono";
 
 /* KLH design system.
-   Brand red and blue are sampled from the official logo (#A80000 "KL", #186CA8 "H");
-   deep navy carries the institutional, technology-forward surfaces. */
+   Brand red, blue and yellow are sampled from the official logo (#A80000 "KL", #186CA8 and #F0A824 in the "H").
+   Navy carries a few strong surfaces; red marks primary actions; yellow is reserved for highlights. */
 @theme {
   --font-sans: "Inter Variable", system-ui, sans-serif;
   --font-display: "Poppins", "Inter Variable", system-ui, sans-serif;
@@ -19,6 +19,8 @@
   --color-brand-dark: #870b13;
   --color-blue: #1a6aa8;
   --color-blue-soft: #e8f1f9;
+  --color-sun: #f0a824;       /* KLH yellow, sampled from the logo’s “H” — highlights only, never body text on white */
+  --color-sun-soft: #fdf1d6;
   --color-ink: #0e1726;
   --color-ink-2: #3a4556;
   --color-muted: #667085;
@@ -100,3 +102,21 @@ section[id] { scroll-margin-top: 96px; }
 .reveal .rule { width: 0; transition: width .8s var(--ease-out-soft) .2s; }
 .reveal.is-in .rule { width: 2rem; }
 @media (prefers-reduced-motion: reduce) { .reveal .rule { width: 2rem; transition: none; } }
+
+/* Clean navy surface: solid navy with one faint blue glow (no pattern). */
+.surface-navy {
+  background:
+    radial-gradient(900px 520px at 8% -10%, rgb(26 106 168 / .32), transparent 62%),
+    radial-gradient(600px 360px at 100% 110%, rgb(240 168 36 / .07), transparent 60%),
+    var(--color-navy);
+}
+
+/* Yellow highlighter under a key word in a heading; it sweeps in when the heading is revealed. */
+.hl {
+  background-image: linear-gradient(transparent 60%, rgb(240 168 36 / .5) 60%, rgb(240 168 36 / .5) 90%, transparent 90%);
+  background-repeat: no-repeat; background-size: 100% 100%; padding: 0 .06em; margin: 0 -.06em;
+  -webkit-box-decoration-break: clone; box-decoration-break: clone;
+}
+.reveal .hl { background-size: 0% 100%; transition: background-size .9s var(--ease-out-soft) .35s; }
+.reveal.is-in .hl { background-size: 100% 100%; }
+@media (prefers-reduced-motion: reduce) { .reveal .hl { background-size: 100% 100%; transition: none; } }

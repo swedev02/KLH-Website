@@ -149,7 +149,7 @@ export function PageHeader({ title, banner, section, children }) {
     <section className="surface-glow border-b border-line">
       <div className="wrap pb-10 pt-10 md:pb-14 md:pt-16">
         <nav aria-label="Breadcrumb" className="meta text-muted"><Link to="/" className="u-link hover:text-navy">Home</Link>{section && <><span className="mx-2 text-line">/</span><span className="text-ink-2">{section}</span></>}</nav>
-        <h1 className="display-1 mt-5 max-w-3xl animate-[fadeIn_.6s_ease] text-ink">{title}</h1>
+        <h1 className="display-1 mt-5 max-w-3xl animate-[fadeIn_.6s_ease] text-navy">{title}</h1>
         {children}
         {banner && (
           <Parallax className="mt-10 overflow-hidden rounded-[18px] bg-white shadow-[0_40px_80px_-50px_rgba(10,26,51,.55)] ring-1 ring-black/5">
@@ -195,11 +195,11 @@ export default function KlhPage() {
             </ul>
           </nav>
         )}
-        <div className="surface-glow rounded-[14px] border border-line p-6">
-          <p className="meta flex items-center gap-2 text-brand"><span className="relative flex h-2 w-2"><span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-brand/60 motion-reduce:animate-none" /><span className="relative inline-flex h-2 w-2 rounded-full bg-brand" /></span>Admissions 2026 open</p>
-          <p className="mt-3 font-display text-lg font-semibold leading-snug text-ink">Talk to an admissions counsellor</p>
+        <div className="surface-navy rounded-[14px] p-6 text-white">
+          <p className="meta flex items-center gap-2 text-sun"><span className="relative flex h-2 w-2"><span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-sun/60 motion-reduce:animate-none" /><span className="relative inline-flex h-2 w-2 rounded-full bg-sun" /></span>Admissions 2026 open</p>
+          <p className="mt-3 font-display text-lg font-semibold leading-snug">Talk to an admissions counsellor</p>
           <button onClick={() => callback()} className="btn-primary btn-sm mt-5 w-full">Request a call back</button>
-          <a href={tel(SITE.phone)} className="mt-4 flex items-center justify-center gap-2 text-[14px] text-ink-2 hover:text-navy"><Phone size={14} />{SITE.phone}</a>
+          <a href={tel(SITE.phone)} className="mt-4 flex items-center justify-center gap-2 text-[14px] text-white/75 hover:text-white"><Phone size={14} />{SITE.phone}</a>
         </div>
       </aside>
     </div>

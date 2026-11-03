@@ -52,11 +52,11 @@ export default function Navbar() {
   return (
     <>
       {/* Utility bar and foundation line, as on klh.edu.in */}
-      <div className="hidden border-b border-line bg-[#f5f6f8] lg:block">
+      <div className="hidden bg-navy text-white lg:block">
         <div className="wrap flex h-10 items-center justify-between gap-6">
-          <p className="truncate text-[12.5px] font-medium tracking-[.06em] text-navy">KONERU LAKSHMAIAH EDUCATION FOUNDATION <span className="font-normal text-muted">(Deemed to be University)</span></p>
+          <p className="flex items-center gap-2.5 truncate text-[12.5px] font-medium tracking-[.06em]"><span className="h-1.5 w-1.5 shrink-0 rounded-full bg-sun" />KONERU LAKSHMAIAH EDUCATION FOUNDATION <span className="font-normal text-white/55">(Deemed to be University)</span></p>
           <nav aria-label="Quick links" className="flex shrink-0 items-center gap-4 text-[12.5px] xl:gap-5">
-            {UTILITY_LINKS.map(([l, u]) => <a key={l} href={u} target="_blank" rel="noreferrer" className="u-link text-ink-2 transition-colors hover:text-navy">{l}</a>)}
+            {UTILITY_LINKS.map(([l, u]) => <a key={l} href={u} target="_blank" rel="noreferrer" className="u-link text-white/75 transition-colors hover:text-sun">{l}</a>)}
           </nav>
         </div>
       </div>
