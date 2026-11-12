@@ -1,0 +1,4977 @@
+{
+ "inception-brief-history": {
+  "title": "About Us",
+  "banner": "2023/06/About-Us_1.jpg",
+  "blocks": [
+   {
+    "type": "img",
+    "src": "2020/04/leaf.png",
+    "alt": ""
+   },
+   {
+    "type": "h",
+    "level": 3,
+    "text": "THE BEGINNING"
+   },
+   {
+    "type": "p",
+    "text": "Originally established in 1980 as Koneru Lakshmaiah Charities (trust), Koneru Lakshmaiah Education Foundation (KLEF) went on to be registered as a society and thus started one of the first private engineering colleges in Andhra Pradesh"
+   },
+   {
+    "type": "img",
+    "src": "2020/04/sappling.jpg",
+    "alt": ""
+   },
+   {
+    "type": "h",
+    "level": 3,
+    "text": "FORMATIVE YEARS"
+   },
+   {
+    "type": "p",
+    "text": "Koneru Lakshmaiah was an industrialist, educationalist and visionary, who was among the first few in Andhra Pradesh to have set up a private engineering college. His foresight and pioneering effort resulted in the Koneru Lakshmaiah Education Foundation (KLEF)."
+   },
+   {
+    "type": "img",
+    "src": "2020/04/branch-out.jpg",
+    "alt": ""
+   },
+   {
+    "type": "h",
+    "level": 3,
+    "text": "THE LEAP"
+   },
+   {
+    "type": "p",
+    "text": "KLEF began as KL College of Engineering in 1980-81, in Vijayawada. Having attained autonomous status in 2006 and subsequently in 2009, KLEF was recognized as Deemed to be University, now known as KL(deemed to be) University."
+   },
+   {
+    "type": "h",
+    "level": 1,
+    "text": "THE JOURNEY"
+   },
+   {
+    "type": "img",
+    "src": "2020/04/utree.png",
+    "alt": ""
+   },
+   {
+    "type": "h",
+    "level": 3,
+    "text": "THE FOUNDER'S VISION"
+   },
+   {
+    "type": "p",
+    "text": "The founder's vision is to make this institution an abode for engineering & management education, and subsequently to carve a niche place for KLEF among the elite institutes of the nation."
+   },
+   {
+    "type": "h",
+    "level": 2,
+    "text": "KL( Deemed to be University)"
+   },
+   {
+    "type": "p",
+    "text": "Established as KL College of Engineering in 1980 by the visionaries Sri Koneru Lakshmaih & Sri Koneru Satyanarayana, the institute has emerged as one of the leading premier educational institutions in India. KL College of Engineering has grown from strength to strength in its 42 years of glorious history. In 2006, the college was accorded autonomous status by the University Grants Commission (UGC), MHRD, Govt. of India and later it was accorded the status of Deemed to be University in 2009, now known as KL (Deemed to be University). KL University was awarded Category-I Institution status in 2019 by the UGC for excellence in technical education."
+   },
+   {
+    "type": "p",
+    "text": "KL (Deemed to be University), one of the country’s top ranking educational institutions promotes international standards in education, research, innovation and entrepreneurship. The University has been closely working with partners from the top-notch industries, companies and academia both at national and international levels, to promote global industry-oriented research projects and provide placement opportunities to students worldwide. The University has world-class the state-of-the art campus facilities with unique libraries, laboratories, innovation centres and sports facilities. The institute provides a vibrant educational learning experience for its students by maintaining a perfect balance between academics and extra-curricular activities, with focus on experiential learning and interdisciplinary approach."
+   },
+   {
+    "type": "p",
+    "text": "KL (Deemed to be University) offers outstanding undergraduate, postgraduate and doctoral programmes in engineering and management streams from two campuses Vijayawada and Hyderabad. The curriculum is designed to match the international standards with a student-faculty ratio of 1:15. The institute has become a dream destination for students and teachers for its longstanding commitment to creating highly skilled professionals and leaders with human values, so that they can solve problems at a global level. The university organizes international guest lecture series, conferences, seminars and workshops in collaboration with world renowned academicians, professors, and industry leaders to provide a global perspective to students and make them future ready. The KL (Deemed to be University) has a strong network of alumni all over the world who have distinguished themselves in their careers and made the institute proud."
+   },
+   {
+    "type": "h",
+    "level": 3,
+    "text": "Meet Our Team"
+   },
+   {
+    "type": "img",
+    "src": "2015/11/m1-e1595001864876.jpg",
+    "alt": "Koneru Satyanarayana"
+   },
+   {
+    "type": "h",
+    "level": 3,
+    "text": "Koneru Satyanarayana"
+   },
+   {
+    "type": "p",
+    "text": "President"
+   },
+   {
+    "type": "img",
+    "src": "2015/11/m99-1-e1590422973658.png",
+    "alt": "Smt Kanchana Latha"
+   },
+   {
+    "type": "h",
+    "level": 3,
+    "text": "Smt Kanchana Latha"
+   },
+   {
+    "type": "p",
+    "text": "Secretary"
+   },
+   {
+    "type": "img",
+    "src": "2015/11/m2-e1595002314609.jpg",
+    "alt": "Havish Laksman"
+   },
+   {
+    "type": "h",
+    "level": 3,
+    "text": "Havish Laksman"
+   },
+   {
+    "type": "p",
+    "text": "Vice President"
+   },
+   {
+    "type": "img",
+    "src": "2015/11/m22-e1595004368100.jpg",
+    "alt": "Raja Harin"
+   },
+   {
+    "type": "h",
+    "level": 3,
+    "text": "Raja Harin"
+   },
+   {
+    "type": "p",
+    "text": "Vice President"
+   },
+   {
+    "type": "img",
+    "src": "2022/01/Rao-e1650861030308.jpg",
+    "alt": "Dr K.S.Jagannatha Rao"
+   },
+   {
+    "type": "h",
+    "level": 3,
+    "text": "Dr K.S.Jagannatha Rao"
+   },
+   {
+    "type": "p",
+    "text": "Pro Chancellor"
+   },
+   {
+    "type": "img",
+    "src": "2021/09/KL-In-Charge-Vice-Chancellor-e1649660136214.jpg",
+    "alt": "Dr.G.P. Saradhi Varma"
+   },
+   {
+    "type": "h",
+    "level": 3,
+    "text": "Dr.G.P. Saradhi Varma"
+   },
+   {
+    "type": "p",
+    "text": "Vice Chancellor"
+   },
+   {
+    "type": "img",
+    "src": "2024/08/avs-e1724145426837.jpg",
+    "alt": "Dr. A.V.S.Prasad"
+   },
+   {
+    "type": "h",
+    "level": 3,
+    "text": "Dr. A.V.S.Prasad"
+   },
+   {
+    "type": "p",
+    "text": "Pro-Vice Chancellor"
+   },
+   {
+    "type": "img",
+    "src": "2021/06/N-Venkatram-e1622525757701.jpg",
+    "alt": "Dr N Venkatram"
+   },
+   {
+    "type": "h",
+    "level": 3,
+    "text": "Dr N Venkatram"
+   },
+   {
+    "type": "p",
+    "text": "Pro Vice-Chancellor"
+   },
+   {
+    "type": "img",
+    "src": "2024/08/krr-e1724145474524.jpg",
+    "alt": "Dr. K. Rajasekhara Rao"
+   },
+   {
+    "type": "h",
+    "level": 3,
+    "text": "Dr. K. Rajasekhara Rao"
+   },
+   {
+    "type": "p",
+    "text": "Pro-Vice Chancellor"
+   },
+   {
+    "type": "img",
+    "src": "2023/03/78831-e1679991608334.jpg",
+    "alt": "Dr K.SUBBARAO"
+   },
+   {
+    "type": "h",
+    "level": 3,
+    "text": "Dr K.SUBBARAO"
+   },
+   {
+    "type": "p",
+    "text": "Registrar"
+   }
+  ]
+ },
+ "vision-mission": {
+  "title": "VISION-MISSION",
+  "banner": "2021/07/page-header-bg25.jpg",
+  "blocks": [
+   {
+    "type": "h",
+    "level": 3,
+    "text": "Vision"
+   },
+   {
+    "type": "p",
+    "text": "To be a globally renowned university."
+   },
+   {
+    "type": "h",
+    "level": 3,
+    "text": "Mission"
+   },
+   {
+    "type": "p",
+    "text": "To impart quality higher education and to undertake research and extension with emphasis on application and innovation that cater to the emerging societal needs through all-round development of students of all sections enabling them to be globally competitive and socially responsible citizens with intrinsic values."
+   },
+   {
+    "type": "h",
+    "level": 5,
+    "text": "Objectives"
+   },
+   {
+    "type": "table",
+    "rows": [
+     [
+      "Focus",
+      "Objective"
+     ],
+     [
+      "Academics",
+      "To offer academic flexibility by means of Choice based credit systems and the like. To identify and introduce new specializations and offer programs in emerging areas therein To incorporate into the curriculum the Application orientation and use high standards of competence for academic delivery To design and implement educational system adhering to outcome based International models. To introduce and implement innovation in teaching and learning process to strengthen academic delivery To offer academic programs at UG, PG, doctoral, Post-Doctoral which are industry focused, and incorporates Trans-discipline, inter-discipline aspects of the education system To deliver higher education that includes technologies and meeting the global requirements"
+     ],
+     [
+      "Research",
+      "To promote inter-disciplinary studies and create needful facilities that enhance inter-disciplinary research and innovation To create an ambience that is conducive for undertaking sponsored research, internal funded research and offering consultancy services to wide spectrum of originations To establish centers of excellence in frontier areas of research, and design innovation centers with industry collaboration To create environment to innovate and incubate the products and services that addresses the societal requirements To integrate research into all academic programs To maintain high standards in achieving research outcomes To promote International conferences / Seminars / Workshops / in collaboration with professional bodies for creation of avenues for research exchange"
+     ],
+     [
+      "Extramural and extension",
+      "To generate means and avenues for carrying out extramural research for Industry and Academia To organize extension activities covering literacy promotion, health awareness and improve the living standards of community To make the research outcomes useful and applicable for the societal needs"
+     ],
+     [
+      "Infrastructure",
+      "To promote and maintain state of the art facilities for academic delivery, research and co & extra-curricular facilities and develop congenial and eco-friendly fully residential campus To create and strengthen focused and modern infrastructure that address the national needs through generation of dedicated funds from Industry, Government and research organizations,"
+     ],
+     [
+      "Equity / Access",
+      "To provide and promote the opportunities to higher education to socially deprived communities and remove disparities by promoting women, differently abled and socially deprived To provide equal access to meritorious both in terms of admissions and financial support"
+     ],
+     [
+      "ICT",
+      "To lay emphasis on effective usage of ICT, WEB –resources and train the faculty on the latest advancements thereof and develop effective e-content To develop and maintain world class ICT infrastructure and lay emphasis on its effective usage, extend regular training to both faculty and students on its latest advancements there by ensure interactive academic delivery"
+     ],
+     [
+      "Examinations and evaluations",
+      "To introduce reforms in the examination and evaluation system that brings out knowledge application skills and competencies of the students and ensure transparency"
+     ],
+     [
+      "Ecology and Environment",
+      "To Build into curriculum, issues related to social awareness about ecology and environment towards achieving greener society"
+     ],
+     [
+      "Linkages",
+      "To promote collaborations with international and national organizations for advancements of academics, research, Technology transfer and Intellectual property rights. To Indigenize the global technological solutions and develop the products, and services that transforms the standard of living of rural India Design new products and services that address commercially attractive needs and opportunities while leveraging the available resources in the form of un-employed and under-employed Individuals"
+     ],
+     [
+      "Employability",
+      "To provide skills through curriculum and training that are essential in fostering entrepreneurial thoughts, employability prospects and at the same time provides necessary support for incubating the innovations and assisting them for prospective commercialization. To provide necessary business infrastructure that allows attracting and sustaining the industry to commence their business establishments within the University Campus and aid in life long sustenance of employment. To develop industrial cluster that helps the students to start their industry after incubating the products at the incubating centers which will create Jobs To develop National depositories for meeting the goals of National skill development council Train people to profile neighborhood and communities for the needs and commercial opportunities that will support financially sustainable new businesses"
+     ],
+     [
+      "Governance",
+      "To institute measures for transparent administration that aid in improving efficiency, accountability and reliance To comply with regulations of all the statutory bodies. To install professional managers who are global visionaries, thought leaders, and thinkers into the management of the University so as to contribute to the ideals of the University system"
+     ],
+     [
+      "Quality",
+      "To continuously upgrade the faculty in curriculum design, teaching pedagogy, usage of ICT and various processes pertaining to academics, research and University administration To develop mechanism that attracts talented, qualified and experienced faculty from across the globe for pursuing their academic and research careers at the University. To consider and implement norms, metrics, standards, procedures and benchmarks for assessing and improving the quality in every aspect of University system and achieve quality certifications by National and International bodies. To establish Internal quality Assurance cell (IQAC) and install a quality systems that is integral part of all the University processes To continuously upkeep overall quality of the University based on aspects of regular feedback from the stake holders To improve the quality of faculty through faculty incentives, awards and recognitions"
+     ],
+     [
+      "Value orientation",
+      "To mold the students to possess professional ethics, moral values and intrapersonal skills that shape them into effective leaders and who are having the thoughts of equality and unanimity towards all walks and sects of life. To inculcate the self-consistency, self-reliance and self-learning qualities for shaping the students to lead their life on their own. To sharpen the critical thinking and reasoning skills by making students tackle problems and ideas that are yet to be tackled through application of their intellectual discovery. Developing the students towards human intellectual achievement and make them rich in cultural experience Students to be encouraged and provided with necessary support enabling them to choose and pursue careers of their choice & interest that make them professionally satisfied."
+     ],
+     [
+      "National development",
+      "To expand the University in all its modes of delivery so as to contribute to the Nation’s increase in Gross Enrolment Ratio To align the academic programs and courses to match the requirements of the National goals To develop technology that helps sustainable socio economic development"
+     ]
+    ]
+   }
+  ]
+ },
+ "achievements-awards": {
+  "title": "Achievements & Awards",
+  "banner": "2021/07/page-header-bg2.jpg",
+  "blocks": [
+   {
+    "type": "h",
+    "level": 1,
+    "text": "ACHIEVEMENTS & AWARDS"
+   },
+   {
+    "type": "list",
+    "items": [
+     {
+      "text": "KLEF is the winner of international award by Greentech international for OUTSTANDING ACHIEVEMENT IN EHS(Environment, Health and Safety) BEST PRACTICES, January-2023"
+     },
+     {
+      "text": "KL Deemed to be University got Andhra Pradesh State Energy Conservation Award – 2022. It is a prestigious award instituted in 2022 to commemorate the efforts of various organizations in the state of Andhra Pradesh. In this year, APSECM was announced the State Energy Conservation Awards, December 2022"
+     },
+     {
+      "text": "Koneru Lakshmaiah Education Foundation (Deemed to be University) was Awarded second Prize for application of “Excellence in Water Water Management” by CII South Region in 2022."
+     },
+     {
+      "text": "Koneru Lakshmaiah Education Foundation (Deemed to be University) was Awarded Third Prize for application of “Excellence in Waste Management” by CII South Region in 2022."
+     },
+     {
+      "text": "Koneru Lakshmaiah Education Foundation (Deemed to be University) was Awarded “Excellence in Energy Management” by CII South Region in 2022."
+     },
+     {
+      "text": "KL Deemed to be University got Andhra Pradesh State Energy Conservation Award – 2021. It is a prestigious award instituted in 2020 to commemorate the efforts of various organizations in the state of Andhra Pradesh. In this year, APSECM was announced the State Energy Conservation Awards 2021 on December 14, 2021."
+     },
+     {
+      "text": "The Project “Koneru Lakshmaiah Education Foundation, Central Research Block, Vijayawada, Andhra Pradesh” has been awarded “Five Star” GRIHA (Provisional) V3.1 rating."
+     },
+     {
+      "text": "Koneru Lakshmaiah Education Foundation (Deemed to be University) was Awarded second Prize for application of “Indian Knowledge Systems” in maintaining their campus as a clean & Smart by AICTE(All India Council for Technical Education), New Delhi-2020."
+     },
+     {
+      "text": "QS I Gauge having reviewed the proposal of KL Deemed to be University; which involved rigorous data collection, evaluation, and assessment of performance metrics as set out in the methodology , has awarded the Advanced e-Lead Certificate to KL Deemed to be University to validate our institution’s effective implementation of advanced digital technology for teaching & learning, student centered digital services and best online academic practices."
+     },
+     {
+      "text": "K L Deemed to be University had stood 6th in the All – India rankings conducted by DATA QUEST – 2021"
+     },
+     {
+      "text": "K L Deemed to be University got Mahatma Gandhi National Council of Rural Education Announces the Recipients of “One District One Green Champion” Awards! Swachhta Action Plan 2020-2021(One District One Green Champion Award for Guntur District from Department of Higher Education)"
+     },
+     {
+      "text": "K L Deemed to be University has achieved Times Higher Education 2021 World ranking University 1001+ rank, subject in Engineering 601–800 rank, Impact ranking-2021 –801-1000–Overall-801-1000. (We participated in 7/17 SDGs :-SDG 3:- 601-800, SDG 4:- 401-600, SDG6:- 201-300, SDG-7:- 201-300, SDG-9:- 301-400, SDG-13:- 201-300, SDG-17:- 1001+)"
+     },
+     {
+      "text": "K L Deemed to be University has achieved Times Higher Education – Emerging Economies University Rankings -2021- 401-500."
+     },
+     {
+      "text": "K L Deemed to be University has achieved Times Higher Education Asia University Rankings 2021: 400+"
+     },
+     {
+      "text": "K L Deemed to be University got Top Deemed Universities in India for Engineering 2021-2nd rank, Top Private Engineering Colleges in India 2021-15th rank, Top MBA colleges in South in India 2021-16th rank, Top Engineering Colleges in South India 2021-20th rank, Top Engineering Colleges in India 2021-58th rank, Top MBA Colleges in India 2021- 70th rank by Eduvidya"
+     },
+     {
+      "text": "K L Deemed to be University got Overall Diamond Rating in QS – I.GAUGE Rating 2020"
+     },
+     {
+      "text": "K L Deemed to be University placed # 81-85 Rank in QS India University Rankings 2020"
+     },
+     {
+      "text": "K L Deemed to be University placed # 501-550 Rank in QS – Asia University Ranking 2020"
+     },
+     {
+      "text": "K L Deemed to be University got (E-Learning Excellence for Academic Digitization) certification score card 150/150"
+     },
+     {
+      "text": "K L Deemed to be University stands 5th in Top Private T- Schools, 5th in Top South Zone T-Schools & 12th Rank in Top T- Schools in India by Data Quest 2020"
+     },
+     {
+      "text": "K L Deemed to be University got 2nd rank in top Deemed Universities in India for Engineering by Edu Vidya 2020"
+     },
+     {
+      "text": "K L Deemed to be University got 2nd rank in Times Engineering 2020"
+     },
+     {
+      "text": "K L Deemed to be University stands Brand – A rank between # 6-25 under Private – Self Finance Institutions category by Atal Ranking of Institutions on Innovation Achievements (ARIIA)"
+     },
+     {
+      "text": "K L Deemed to be University got 12th rank in Top – 50 Deemed to be Universities, 32nd rank in Top -75 Universities in India by Outlook – ICARE India University Ranking 2020"
+     },
+     {
+      "text": "K L Deemed to be University SURABHI 2020(Online) event received special recognition and commendations from Indian Book of World Records as India’s largest online cultural festival with the greatest number of participants – 21,116 participated, from 20 States, 4 Union Territories of India and 9 countries."
+     },
+     {
+      "text": "K L Deemed to be University is having ISO 9001-2015 Certification."
+     },
+     {
+      "text": "QS I∙GAUGE given DIAMOND overall rating 7th February 2020 to K L Deemed to be University"
+     },
+     {
+      "text": "K L Deemed to be University awarded 41st and 50th Rank to the University for 2020 and 2019 years respectively by NIRF"
+     },
+     {
+      "text": "K L Deemed to be University has achieved All India 1st Rank under Swachhta Institute Rankings-2019 for Deemed Institutions."
+     },
+     {
+      "text": "KL (Deemed to be University) placed #71-75 Rank in QS India University Rankings 2019"
+     },
+     {
+      "text": "KL Ranked #1 among Young Universities by Outlook-ICARE India University Rankings 2019."
+     },
+     {
+      "text": "KLEF Ranked 12th in Top 140 Engineering Institutes in India by Times Engineering Survey 2019."
+     },
+     {
+      "text": "“Indian Education Network has awarded K L as “Best Higher Education Institute for Skill Development “at 6th Skill Development Summit 2018."
+     },
+     {
+      "text": "OUTLOOK & Drshti Engineering College Survey 2018 has awarded K L College of Engineering as No.1 Private Engineering College in Andhra Pradesh State."
+     },
+     {
+      "text": "Higher Education Review Survey 2018 has awarded K L as No.1 Deemed University in Andhra Pradesh State."
+     },
+     {
+      "text": "K L Campus got 1St Rank under Universities (Private) Category at AP Green Awards announced by Govt. of Andhra Pradesh."
+     },
+     {
+      "text": "India Today Magazine Survey 2018 has ranked K L as 9th Best Private University in India."
+     },
+     {
+      "text": "Times Engineering Institute Ranking 2018 has awarded K L College of Engineering as No.1 Engineering Institute in Andhra Pradesh State & Telangana."
+     },
+     {
+      "text": "Carrers 360 had endorseD K L with AAAA+ rating for the year 2018."
+     },
+     {
+      "text": "1st Rank in Andhra Pradesh (AP) by Australia based organization – uniRank “2018 Indian University Ranking”."
+     },
+     {
+      "text": "“Most Clean Campus in South Central Region” by All India Council for Technical Education (AICTE) – Clean Campus Awards 2017."
+     },
+     {
+      "text": "All India 2nd Rank among Technical Institutions by Ministry of Human resource Development (MHRD)-Swacctha Institute Rankings -2017."
+     },
+     {
+      "text": "1st Rank among Top Private Engineering Institutes in Andhra Pradesh (AP) and Telangana (TS) states ,4th Rank In South India and 8th Rank at All India level-i3RC Times Top 100 Private Engineering Institute Rankings 2017."
+     },
+     {
+      "text": "5 Star rating in 2017 by “The Pioneer” for being the best private university of India"
+     },
+     {
+      "text": "6th Rank amongst the top private universities of India by Higher Education Review in 2017."
+     },
+     {
+      "text": "5th Rank for providing High Quality Placements amongst the top private universities of India by Higher Education Review in 2017."
+     },
+     {
+      "text": "1st Rank among all private sector engineering colleges in Andhra Pradesh and Telangana states as per National Institutional Ranking Framework (NIRF) 2016 & 2017."
+     },
+     {
+      "text": "K L E F’s Center for Innovation, Incubation, and Entrepreneurship (CIIE) bagged the National Business and Service Excellence Award 2016."
+     },
+     {
+      "text": "“Global Best Practices in Education” Award at the sixth edition of the World Education Summit 2016 (WES 2016) held in Dubai."
+     },
+     {
+      "text": "Rated No.7 among India’s non-governmental universities according to Top 20 Private Universities Rankings 2016 by Silicon India."
+     },
+     {
+      "text": "The Best Private Technical University in Asia at the Asian Education Excellence Awards 2015, organized by CMO Asia at Singapore – Aug 2015."
+     },
+     {
+      "text": "Top 10 in India and Top 5 in South India among all private technical universities in the country by India’s popular news magazine the Week, 2015."
+     },
+     {
+      "text": "The Best Private University in South India by Brands Academy for Excellence in Education, 2015."
+     },
+     {
+      "text": "K L E F’s engineering college KLCE’s Outcomes Based Education (OBE) methodology, has been named the Best Innovation in Higher Education in India at the World Education Summit 2015."
+     },
+     {
+      "text": "Ranked No.1 private engineering college in both Telangana State (TS) and Andhra Pradesh by the Times of India, 2015."
+     },
+     {
+      "text": "K L E F’s engineering college KLCE was ranked Top 18 private engineering college in India by i3RC Times Survey, 2015."
+     },
+     {
+      "text": "KL Business School (KLUBS) was ranked top 10 among premier, non-IIM B-Schools in India by the Dainik Bhaskar, the largest Hindi daily in India, 2014."
+     },
+     {
+      "text": "“Best Private University” in South India at “The Global Education Excellence Awards 2013” for demonstrating Exemplary Excellence, Innovation and Creativity in the sector."
+     },
+     {
+      "text": "WCRC Leaders Asia Excellence Award for the year 2012-2013 by world consulting and research corporation (WCRC)."
+     },
+     {
+      "text": "Best Educational Institute in Engineering under Asian Education Leadership Awards -2012 held at Dubai on 25th September, 2012."
+     },
+     {
+      "text": "Best Software Center of Excellence (COE) Award from IBM Company for the year 2011 at TGMC held in Bangalore on 25th July 2012 for “Imparting Quality Technical Education “"
+     }
+    ]
+   },
+   {
+    "type": "h",
+    "level": 3,
+    "text": "Quick Links"
+   },
+   {
+    "type": "list",
+    "items": [
+     {
+      "text": "Advertisements",
+      "href": "/kl-jobs"
+     },
+     {
+      "text": "Center for Distance and Online Education",
+      "href": "/kluonline"
+     },
+     {
+      "text": "K L Mail",
+      "href": "http://mail.office365.com/"
+     },
+     {
+      "text": "K L EDC",
+      "href": "/kl-edcnew"
+     },
+     {
+      "text": "Our Faculty-Our Strength",
+      "href": "/kl-flist"
+     },
+     {
+      "text": "Photo Galleries",
+      "href": "/kl-pgalleries"
+     },
+     {
+      "text": "Student Grievances",
+      "href": "/kl-stugri"
+     },
+     {
+      "text": "Staff Grievances",
+      "href": "/kl-staff-grievances"
+     },
+     {
+      "text": "Value Education Cell",
+      "href": "/kl-vec"
+     }
+    ]
+   },
+   {
+    "type": "list",
+    "items": [
+     {
+      "text": "Current Openings",
+      "href": "/kl-jobs"
+     },
+     {
+      "text": "ARIIA -2021 Application",
+      "href": "/files/kluniversity.in/IQAC/pdfs/ARIIA-2020-Application.pdf"
+     },
+     {
+      "text": "NIRF Data",
+      "href": "/kl-nirf-data"
+     },
+     {
+      "text": "UGC",
+      "href": "/kl-ugc"
+     },
+     {
+      "text": "KLEF AICTE DPR",
+      "href": "/files/kluniversity.in/pdfs/KLEF-AICTE-DPR.pdf"
+     },
+     {
+      "text": "AICTE Mandatory Disclosure",
+      "href": "/files/kluniversity.in/pdfs/AICTE-Mandatory-Disclosure.pdf"
+     },
+     {
+      "text": "National Academic Depository(NAD)",
+      "href": "http://nad.gov.in/"
+     },
+     {
+      "text": "AICTE Feedback",
+      "href": "https://www.aicte-india.org/feedback/index.php"
+     },
+     {
+      "text": "RTI",
+      "href": "/kl-rti"
+     }
+    ]
+   }
+  ]
+ },
+ "ranking": {
+  "title": "Ranking",
+  "banner": "2020/08/rules-min.jpg",
+  "blocks": [
+   {
+    "type": "img",
+    "src": "2025/07/n24-1536x62456-1.jpg",
+    "alt": ""
+   }
+  ]
+ },
+ "world-class-education": {
+  "title": "World Class Education",
+  "banner": "2021/07/WORLDCL.jpg",
+  "blocks": [
+   {
+    "type": "h",
+    "level": 3,
+    "text": "WORLD CLASS EDUCATION"
+   },
+   {
+    "type": "p",
+    "text": "KL Deemed to be University, one of the country’s top ranking educational institutions promotes international standards in education, research, innovation and entrepreneurship. The University has been closely working with partners from the top-notch industries, companies and academia both at national and international levels, to promote global industry-oriented research projects and provide placement opportunities to students worldwide. The University has world-class the state-of-the-art campus facilities with unique libraries, laboratories, innovation centres and sports facilities. In its pursuit for attaining the world-class university standards, KL Deemed to be University has signed the Memorandum of Understanding (MoUs) with more than 170 international institutions across the globe. KL University has been building strong partnerships and collaborating with the top-notch leading global universities and institutes in Europe, USA, Asia, Australia, Canada, Asia-Pacific, Middle East, Africa, and South America for joint educational initiatives, research collaboration, internship programs, study tours, international conferences and guest lecture series to bring the best global academic practices to students. In line with our mission of creating international opportunities for students, KL University launched Semester Abroad Programme which aims to encourage students from all streams to pursue their final semester in one of the international partner universities abroad. KL University also offers an International Transfer Programme (ITP) for engineering streams where the students can opt for studying at a partner university after completing their 2 years of bachelor’s degree in KLH."
+   },
+   {
+    "type": "h",
+    "level": 3,
+    "text": "FULLY FLEXIBLE CHOICE BASED CREDIT SYSTEM (FFCBCS)"
+   },
+   {
+    "type": "p",
+    "text": "K L University offers choice for the student to schedule his own timetable by selecting courses and their level along with teachers as per their interest."
+   },
+   {
+    "type": "h",
+    "level": 3,
+    "text": "DEGREE WITH SPECIALIZATION"
+   },
+   {
+    "type": "p",
+    "text": "A student can choose to pursue a specialization along with regular program, by carefully selecting a set of courses from a particular stream within the discipline. Ex: B.Tech Mechanical Engineering with specialization in Mechatronics and Robotics or MBA with Marketing & HRM or Finance or Technology Management."
+   },
+   {
+    "type": "h",
+    "level": 3,
+    "text": "B.TECH WITH HONOURS"
+   },
+   {
+    "type": "p",
+    "text": "A student maintaining good CGPA can acquire B.Tech Degree with Honours by pursuing 5 additional depth level courses, along with regular B.Tech programme."
+   },
+   {
+    "type": "h",
+    "level": 3,
+    "text": "MINOR DEGREE"
+   },
+   {
+    "type": "p",
+    "text": "A student can pursue a minor degree in a discipline other than his regular discipline by pursuing 5 additional courses from another discipline along with regular programme."
+   },
+   {
+    "type": "h",
+    "level": 3,
+    "text": "ACCELERATION"
+   },
+   {
+    "type": "p",
+    "text": "A student maintaining good CGPA can register for more number of courses than normally prescribed by the university during the regular semester by overloading themselves to earn a Minor degree or Honours, degree."
+   },
+   {
+    "type": "h",
+    "level": 3,
+    "text": "BRANCH CHANGE"
+   },
+   {
+    "type": "p",
+    "text": "On completion of first year, a student can avail the option of branch (discipline) change to choose a branch of choice. This option will be offered strictly on the basis of merit and availability of seats"
+   },
+   {
+    "type": "h",
+    "level": 3,
+    "text": "CREDIT TRANSFER"
+   },
+   {
+    "type": "p",
+    "text": "Credit Transfer from another university is permitted for undergraduate programs; however a student has to spend at least 50% of the minimum course duration period at K L University"
+   },
+   {
+    "type": "h",
+    "level": 3,
+    "text": "MOOCs"
+   },
+   {
+    "type": "p",
+    "text": "A student maintaining good CGPA can opt to pursue certain courses through Online based MOOCs platforms by self-learning mode. This enables the students to gain extra credits or to utilize time to pursue projects or other co-curricular activities of interest."
+   },
+   {
+    "type": "h",
+    "level": 3,
+    "text": "OUTCOME BASED EDUCATION (OBE)"
+   },
+   {
+    "type": "p",
+    "text": "K L university implements Outcome based education (OBE) - a student-centered instruction model that focuses on measuring student performance through outcomes. Outcomes include knowledge, skills and attitudes. In the OBE model, the required knowledge and skill sets for a particular programme are predetermined and the students are evaluated for all the required parameters (Outcomes) during the progression of the programme."
+   }
+  ]
+ },
+ "academic-collaborations": {
+  "title": "Academic Collaborations",
+  "banner": "2021/07/page-header-bg5.jpg",
+  "blocks": [
+   {
+    "type": "h",
+    "level": 3,
+    "text": "ACADEMIC COLLABORATIONS"
+   },
+   {
+    "type": "h",
+    "level": 3,
+    "text": "FLEXIBLE ADD-ONS LIKE INTERNATIONAL YOUTH LEADERSHIP AWARD"
+   },
+   {
+    "type": "p",
+    "text": "International relations promote student skills to build their career globally thus help themselves develop specialized knowledge, skills and hands-on experience abroad. This program is envisaged in association with IUCEE. M. Tech Program leading to Ph.D.: A special MOU signed with Asian Institute of Technology (AIT), Bangkok, Thailand enable K L Students at Masters Level to enrol themselves with AIT for their Ph. D degrees."
+   },
+   {
+    "type": "h",
+    "level": 3,
+    "text": "JOINT RESEARCH AND GUIDANCE UNDER FOREIGN SUPERVISORS"
+   },
+   {
+    "type": "img",
+    "src": "2020/05/globe-earth-animation-20.gif",
+    "alt": ""
+   },
+   {
+    "type": "p",
+    "text": "Meritorious students and research scholars at K L can seek research assistance from professors at partner universities and leading research centers and jointly work with them towards their degrees at either place."
+   },
+   {
+    "type": "h",
+    "level": 3,
+    "text": "SPACE RESEARCH"
+   },
+   {
+    "type": "p",
+    "text": "In association with ISRO and NSU Singapore, K L University has taken up space research program under Mission 2021 to launch a satellite involving students and faculty."
+   },
+   {
+    "type": "h",
+    "level": 3,
+    "text": "FOREIGN LANGUAGES OFFERED"
+   },
+   {
+    "type": "p",
+    "text": "French, Chinese, Japanese, German."
+   },
+   {
+    "type": "h",
+    "level": 3,
+    "text": "COURSE DELIVERY BY FOREIGN FACULTY"
+   },
+   {
+    "type": "p",
+    "text": "K L has the support of over 300 expert faculty, both nationally and internationally, from various academic disciplines to bring in the best practices of academic learning systems."
+   }
+  ]
+ },
+ "leadership": {
+  "title": "Leadership",
+  "banner": "2023/06/Leadership_2.jpg",
+  "blocks": [
+   {
+    "type": "img",
+    "src": "2015/11/m1-e1595001864876.jpg",
+    "alt": "Er.K Satyanarayana"
+   },
+   {
+    "type": "h",
+    "level": 3,
+    "text": "Er.K Satyanarayana"
+   },
+   {
+    "type": "p",
+    "text": "Hon’ble President"
+   },
+   {
+    "type": "img",
+    "src": "2015/11/m2-e1595002314609.jpg",
+    "alt": "Er.K Lakshman Havish"
+   },
+   {
+    "type": "h",
+    "level": 3,
+    "text": "Er.K Lakshman Havish"
+   },
+   {
+    "type": "p",
+    "text": "Vice President"
+   },
+   {
+    "type": "img",
+    "src": "2015/11/m22-e1595004368100.jpg",
+    "alt": "Er.K Raja Hareen"
+   },
+   {
+    "type": "h",
+    "level": 3,
+    "text": "Er.K Raja Hareen"
+   },
+   {
+    "type": "p",
+    "text": "Vice President"
+   },
+   {
+    "type": "img",
+    "src": "2022/01/Rao-e1650861030308.jpg",
+    "alt": "Dr K.S.Jagannatha Rao"
+   },
+   {
+    "type": "h",
+    "level": 3,
+    "text": "Dr K.S.Jagannatha Rao"
+   },
+   {
+    "type": "p",
+    "text": "Pro Chancellor"
+   },
+   {
+    "type": "img",
+    "src": "2021/09/KL-In-Charge-Vice-Chancellor-e1649660136214.jpg",
+    "alt": "Dr.G.P. Saradhi Varma"
+   },
+   {
+    "type": "h",
+    "level": 3,
+    "text": "Dr.G.P. Saradhi Varma"
+   },
+   {
+    "type": "p",
+    "text": "Vice Chancellor"
+   },
+   {
+    "type": "img",
+    "src": "2023/09/avs-e1696064653286.jpg",
+    "alt": "Dr. A.V.S.Prasad"
+   },
+   {
+    "type": "h",
+    "level": 3,
+    "text": "Dr. A.V.S.Prasad"
+   },
+   {
+    "type": "p",
+    "text": "Pro-Vice Chancellor"
+   },
+   {
+    "type": "img",
+    "src": "2021/06/N-Venkatram-e1622525757701.jpg",
+    "alt": "Dr N Venkatram"
+   },
+   {
+    "type": "h",
+    "level": 3,
+    "text": "Dr N Venkatram"
+   },
+   {
+    "type": "p",
+    "text": "Pro Vice-Chancellor"
+   },
+   {
+    "type": "img",
+    "src": "2024/08/krr-e1724145474524.jpg",
+    "alt": "Dr. K. Rajasekhara Rao"
+   },
+   {
+    "type": "h",
+    "level": 3,
+    "text": "Dr. K. Rajasekhara Rao"
+   },
+   {
+    "type": "p",
+    "text": "Pro-Vice Chancellor"
+   },
+   {
+    "type": "img",
+    "src": "2023/03/78831-e1679991608334.jpg",
+    "alt": "Dr K.SUBBARAO"
+   },
+   {
+    "type": "h",
+    "level": 3,
+    "text": "Dr K.SUBBARAO"
+   },
+   {
+    "type": "p",
+    "text": "Registrar"
+   }
+  ]
+ },
+ "formerl": {
+  "title": "Former Leadership",
+  "banner": "2020/08/rules-min.jpg",
+  "blocks": [
+   {
+    "type": "img",
+    "src": "2020/07/datta.jpg",
+    "alt": "Dr G.L Datta"
+   },
+   {
+    "type": "h",
+    "level": 3,
+    "text": "Dr G.L Datta"
+   },
+   {
+    "type": "p",
+    "text": "Former Vice-Chancellor"
+   },
+   {
+    "type": "p",
+    "text": "2009-2012"
+   },
+   {
+    "type": "img",
+    "src": "2020/07/drsreeharirao.jpg",
+    "alt": "Dr. R. Sreehari Rao"
+   },
+   {
+    "type": "h",
+    "level": 3,
+    "text": "Dr. R. Sreehari Rao"
+   },
+   {
+    "type": "p",
+    "text": "Former Vice-Chancellor"
+   },
+   {
+    "type": "p",
+    "text": "2012-2014"
+   },
+   {
+    "type": "h",
+    "level": 3,
+    "text": "Dr. L.S.S. Reddy"
+   },
+   {
+    "type": "p",
+    "text": "Former Vice-Chancellor"
+   },
+   {
+    "type": "p",
+    "text": "2014-2021"
+   }
+  ]
+ },
+ "campuses-locations": {
+  "title": "Campuses & Locations",
+  "banner": "2023/06/Campuses-Locations_1.jpg",
+  "blocks": [
+   {
+    "type": "h",
+    "level": 3,
+    "text": "CAMPUSES & LOCATIONS"
+   },
+   {
+    "type": "h",
+    "level": 3,
+    "text": "VIJAYAWADA CAMPUS"
+   },
+   {
+    "type": "p",
+    "text": "Set in a sprawling 100 acre campus on the banks of Buckingham Canal of Krishna River, KL(deemed to be)University in Vaddeswaram is about 8 kms from Vijayawada - The Sunrise Capital City of Andhra Pradesh, India. Aptly named ‘Green Fields’ with nearly 2.5Mn sq.ft built up area setup in lush green and serene backdrop."
+   },
+   {
+    "type": "h",
+    "level": 3,
+    "text": "CONNECTIVITY"
+   },
+   {
+    "type": "p",
+    "text": "Vijayawada is well connected by air, road and rail, and is a central junction for trains running from North to South India. The international airport is well connected to/from all major cities in India."
+   },
+   {
+    "type": "h",
+    "level": 3,
+    "text": "HYDERABAD CAMPUS"
+   },
+   {
+    "type": "p",
+    "text": "The Hyderabad campus is currently setup at Aziz Nagar, the education hub of Hyderabad, capital city of the start-up state, Telangana. Designed by Woods Bagot, the campus aims to be a benchmark in global educational institution standards."
+   },
+   {
+    "type": "h",
+    "level": 3,
+    "text": "CONNECTIVITY"
+   },
+   {
+    "type": "p",
+    "text": "The current KLH campus is near TSPA Junction on Chilkur Road, Hyderabad, very close to Exit 18 on ORR, Gachibowli Junction and Rajiv Gandhi International Airport (Shamshabad) via ORR. Hyderabad, being one of India’s metropolis, is well connected to all major cities by road, rail and air. Rajiv Gandhi International Airport makes Hyderabad one of the best connected cities in the world by air."
+   },
+   {
+    "type": "list",
+    "items": [
+     {
+      "text": "contact",
+      "href": "/campuses"
+     }
+    ]
+   },
+   {
+    "type": "list",
+    "items": [
+     {
+      "text": "Hyderabad Campus contact View More"
+     },
+     {
+      "text": "Hyderabad Office contact View More"
+     },
+     {
+      "text": "Administrative Office contact View More"
+     }
+    ]
+   },
+   {
+    "type": "img",
+    "src": "2020/04/loca3.jpg",
+    "alt": "Hyderabad Campus"
+   },
+   {
+    "type": "img",
+    "src": "2020/04/loca2.jpg",
+    "alt": "Hyderabad Office"
+   },
+   {
+    "type": "img",
+    "src": "2020/04/loca1.jpg",
+    "alt": "Administrative Office"
+   }
+  ]
+ },
+ "maps-directions": {
+  "title": "MAPS & DIRECTIONS",
+  "banner": "2020/08/google-maps.jpg",
+  "blocks": [
+   {
+    "type": "img",
+    "src": "2020/04/LOGO3.png",
+    "alt": "LOGO3"
+   },
+   {
+    "type": "h",
+    "level": 3,
+    "text": "Visiting KLH Deemed to be University"
+   },
+   {
+    "type": "p",
+    "text": "Hyderabad is well connected by Rail, Road and Air from all major cities of India. The route map from Hyderabad and the landmarks to reach K L H is given here under:"
+   }
+  ]
+ },
+ "learner-centric-approach": {
+  "title": "Learner Centric Approach",
+  "banner": "2020/05/university3.jpg",
+  "blocks": [
+   {
+    "type": "h",
+    "level": 3,
+    "text": "HIGHER ORDER TEACHING PEDAGOGIC"
+   },
+   {
+    "type": "h",
+    "level": 3,
+    "text": "SELF-LEARNING"
+   },
+   {
+    "type": "p",
+    "text": "Enables student to learn what s/he wants, when s/he wants, and how s/he wants. K L University motivates a student, maintaining good CGPA, to pursue certain courses through Online based MOOCs platforms by self-learning mode."
+   },
+   {
+    "type": "h",
+    "level": 3,
+    "text": "BLENDED LEARNING"
+   },
+   {
+    "type": "p",
+    "text": "A style of education in which students learn through MOOCs (self-learning mode) as well as traditional class based learning."
+   },
+   {
+    "type": "h",
+    "level": 3,
+    "text": "PROJECT BASED LEARNING"
+   },
+   {
+    "type": "p",
+    "text": "Project based learning takes the dynamic approach of educating students through real world challenges and problems. Projects in such learning, could involve solving an existing problem present in real life, outside the confines of a textbook, or answer questions. This approach truly grooms students for life outside the classroom, and for a world beyond textbooks."
+   },
+   {
+    "type": "h",
+    "level": 3,
+    "text": "FLIPPED CLASSROOMS"
+   },
+   {
+    "type": "p",
+    "text": "Flipped classrooms, as part of blended learning, flip the traditional learning environment. The primary source of knowledge on a topic, is received from online content or digital sources provided by the teacher, to be looked at outside class hours. The actual learning on the subject happens later in the classroom, when students get together in the class, to discuss, analyse, understand and explore the topic. Flipped classrooms don’t just grab students’ attention and interest in learning, but also empower them by handing over, a guided responsibility of their own learning."
+   },
+   {
+    "type": "h",
+    "level": 3,
+    "text": "PEER LEARNING"
+   },
+   {
+    "type": "p",
+    "text": "Peer learning makes students to learn with and from each other as fellow learners. This enable Students to learn a great deal by explaining their ideas to others and by participating in activities in which they can learn from their peers. This helps slow learners to learn from fast learners."
+   },
+   {
+    "type": "h",
+    "level": 3,
+    "text": "LAB TAKEN TO CLASS"
+   },
+   {
+    "type": "p",
+    "text": "Lab taken to class makes the student to practice hands on every theoretical and fundamental concept soon after the coverage of the same through different tools used in the industry, leading to experiential learning."
+   },
+   {
+    "type": "img",
+    "src": "2020/09/blended-min.png",
+    "alt": ""
+   },
+   {
+    "type": "img",
+    "src": "2020/09/PBL-300x281.jpg",
+    "alt": ""
+   },
+   {
+    "type": "img",
+    "src": "2020/09/i4-compressed.jpeg",
+    "alt": ""
+   }
+  ]
+ },
+ "education-environment": {
+  "title": "Education Environment",
+  "banner": "2020/08/kll9-com.jpg",
+  "blocks": [
+   {
+    "type": "h",
+    "level": 3,
+    "text": "EDUCATION ENVIRONMENT"
+   },
+   {
+    "type": "h",
+    "level": 3,
+    "text": "CAMPUS LIFE ACCOMMODATION"
+   },
+   {
+    "type": "list",
+    "items": [
+     {
+      "text": "K L houses 2 girls’ hostels and 7 boys’ hostels with well furnished rooms, Wi-Fi and other modern amenities. The overall atmosphere is very conducive for the students to concentrate on studies."
+     },
+     {
+      "text": "A state-of-the-art kitchen, spacious dining area and generators for power backup have been provided for, at both hostels."
+     },
+     {
+      "text": "Emphasis is laid on hygiene and cleanliness for healthy living. A customized menu catering to student needs and is regularly updated to cater to the students’ tastes, including north Indian and international menus."
+     },
+     {
+      "text": "All round support for students via teaching staff to address academic and personal problems at hostels."
+     },
+     {
+      "text": "Round-the-clock security, communication, dispensary facilities are also available."
+     }
+    ]
+   },
+   {
+    "type": "h",
+    "level": 3,
+    "text": "OTHER FACILITIES"
+   },
+   {
+    "type": "list",
+    "items": [
+     {
+      "text": "‘Cybex International’ exercise equipment in gyms"
+     },
+     {
+      "text": "Dispensary and a vehicle for emergency"
+     },
+     {
+      "text": "Post Office"
+     },
+     {
+      "text": "Well maintained canteen and cafeterias at various places in campus"
+     },
+     {
+      "text": "In campus banking facility (SBI) with ATM facility and post office."
+     },
+     {
+      "text": "Ambulance Service is available 24 hrs in case of any emergency in the institute / hostels"
+     }
+    ]
+   },
+   {
+    "type": "h",
+    "level": 3,
+    "text": "PROFESSIONAL SOCIETIES"
+   },
+   {
+    "type": "p",
+    "text": "K L encourages students to be a part of professional societies, as per their choice and their study disciplines, like IEEE, CSI, ISTE, ASME, ACM, ASCE, IETE, IE etc. Being a part of these societies enables students to understand latest developments in research, thus providing opportunities for students to present papers in national and international conferences, interact with professors, industry personnel and improve their subject knowledge"
+   },
+   {
+    "type": "h",
+    "level": 3,
+    "text": "K L STUDENT ORDINATE (KLUSO)"
+   },
+   {
+    "type": "p",
+    "text": "K L Student Ordinate (KLUSO) is an official student body, used as a platform by students to showcase their talent by joining any of the 17 clubs in KLUSO as per their choice. Alongside participating in events of national repute, KLUSO also organizes inter-university and inter-college events and competitions like Nrithya, Kalakaar, Kavishekara, Ethnic Day, Rangoli and Kites Festival."
+   },
+   {
+    "type": "h",
+    "level": 3,
+    "text": "HOBBY CLUBS"
+   },
+   {
+    "type": "p",
+    "text": "Hobby clubs are for students to pursue their interests in various extracurricular activities like singing, dancing, acting, speaking, painting, fashion designing etc. as part of their academic lives here at K L. Hobby clubs have exclusive trainers along with latest and advanced instruments and facilities and are wholly managed by students."
+   },
+   {
+    "type": "p",
+    "text": "These clubs organize events like a National level Techno management fest - SAMYAK, intra-college Cultural fest - SURABHI, Women’s Day Celebrations - FEM FLARE, Republic Day, Independence Day, Department Fests, Awareness Drives, and many more."
+   },
+   {
+    "type": "p",
+    "text": "• Music Club (Swara) • Service Club (Aastha) • Literary Club (Vachas) • Cultural Club (Samskruthi) • Trekking Club (Aarohana) • Dance Club (Narthana) • Painting Club (Varna) • Technical Club (Yantrana) • Embroidery Club (Vyna) • Drama Club (Abhinaya) • Photography Club (Chaya) • Ladies Club (Vanitha) • Movie-Making Club (Chalanachitra) • Environmental Club (Prakrithi)"
+   },
+   {
+    "type": "h",
+    "level": 3,
+    "text": "TECHNICAL FESTIVAL"
+   },
+   {
+    "type": "p",
+    "text": "The technical festival and project exhibition is organized in the odd semester (October) every year to prompt innovative ideas and technical skills of students."
+   },
+   {
+    "type": "h",
+    "level": 3,
+    "text": "CULTURAL FESTIVAL"
+   },
+   {
+    "type": "p",
+    "text": "The cultural festival in the even semester (February) of every year is the best platform for the students for exhibiting their talent and creativity. Through these festivals K L imparts organizational skills, leadership skills, competitive spirit, and team behaviour to our students."
+   },
+   {
+    "type": "h",
+    "level": 3,
+    "text": "SPORTS"
+   },
+   {
+    "type": "p",
+    "text": "K L Deemed to be University encourages students to explore their talent by providing good sports and games facilities like • Archery • Power Lifting/Weight Lifting • Chess • Soft Ball • Taekwondo/Wushu • Table Tennis The institute is equipped with the following facilities: • Coaches with International Standards, for all major sports and games • Gymnasium for Girls • Gymnasium for Boys • Multipurpose room with Chess, Carrom etc. • Multipurpose room with Taekwondo/Wushu • Hobby Center • Athletic Track • Cricket Field with Net Practice • Synthetic Badminton Courts • Tennis Courts • Throw ball Court • Volleyball Courts • Indoor Stadium • Synthetic Badminton Courts • Yoga and Meditation Center • Football Field • Handball Court • Hockey Field • Kabaddi Courts • Kho Kho Court • Basketball Courts"
+   }
+  ]
+ },
+ "research-facilities": {
+  "title": "Research Facilities",
+  "banner": null,
+  "blocks": [
+   {
+    "type": "h",
+    "level": 3,
+    "text": "RESEARCH FACILITIES"
+   },
+   {
+    "type": "list",
+    "items": [
+     {
+      "text": "At K L, great emphasis is laid on Research and Development (R&D) that is focused on development of product/process oriented technologies for sustainable development."
+     },
+     {
+      "text": "There are 35 faculty research groups, each headed by an eminent professor, actively involved in setting up research centers and mobilizing research grants from funding agencies and consultancy projects from industries."
+     },
+     {
+      "text": "These projects are executed and disseminated to UG, PG & Doctoral students in the form of mini & major projects"
+     }
+    ]
+   },
+   {
+    "type": "h",
+    "level": 3,
+    "text": "AWARDS AND HONORS"
+   },
+   {
+    "type": "list",
+    "items": [
+     {
+      "text": "7 UGC research Awards (Out of 100 given by UGC, Countrywide)"
+     },
+     {
+      "text": "26 SERB Young Scientist Projects."
+     },
+     {
+      "text": "19 DST Women Scientists."
+     },
+     {
+      "text": "37 Ongoing Sponsored Research Projects and 87 Projects completed successfully worth several crores"
+     }
+    ]
+   },
+   {
+    "type": "h",
+    "level": 3,
+    "text": "CENTERS OF EXCELLENCE AND RESEARCH LABS"
+   },
+   {
+    "type": "list",
+    "items": [
+     {
+      "text": "Four Centers of Excellence are established to promote research"
+     },
+     {
+      "text": "Advanced Center for Energy Studies"
+     },
+     {
+      "text": "Advanced Studies in Atmospheric Sciences"
+     },
+     {
+      "text": "Center for Bio-Process Technology"
+     },
+     {
+      "text": "Center for Robotics and Mechatronics"
+     },
+     {
+      "text": "Our Atmospheric Sciences, Computer Science Engineering (CSE) Electronics and Communication Engineering (ECE), Mechanical Engineering (ME), Biotechnology (BT), Electronics and Computer Science Engineering (ECSE) and Physics departments are recognized and funded by the Department of Science and Technology (DST) under ‘Fund for Improvement of S&T Infrastructure’ (FIST)."
+     }
+    ]
+   },
+   {
+    "type": "h",
+    "level": 3,
+    "text": "MAJOR R&D HIGHLIGHTS"
+   },
+   {
+    "type": "list",
+    "items": [
+     {
+      "text": "KLU allows an internal funding of INR 5L per faculty and INR 25,000 per student for every approved project."
+     },
+     {
+      "text": "KLU is a Department of Scientific & Industrial Research (DSIR) recognized institute."
+     },
+     {
+      "text": "5000+ research publications in last 4 years defaulted in reputed databases like Scopus and WoS, among others."
+     },
+     {
+      "text": "55 patents filed and published."
+     },
+     {
+      "text": "Faculty collaborating with international universities like NTU, NSU-Singapore, AIT-Thailand, Nagoya University-Japan, Monash University, Victoria University-Australia, Tomsk polytechnic University - Russia."
+     },
+     {
+      "text": "Both full time and part time scholars enrolled in research programs for Ph.D. degree are allotted with research guides."
+     }
+    ]
+   },
+   {
+    "type": "p",
+    "text": "To our credit, we have 124 research projects acquired in different areas of Science and Engineering worth INR 46.5Cr, sponsored by various funding agencies which include:"
+   },
+   {
+    "type": "list",
+    "items": [
+     {
+      "text": "Department of Science and Technology (DST)"
+     },
+     {
+      "text": "Department of Biotechnology (DBT)"
+     },
+     {
+      "text": "All India Council for Technical Education (AICTE)"
+     },
+     {
+      "text": "University Grants Commission (UGC)"
+     },
+     {
+      "text": "Indian Council of Medical Research (ICMR)"
+     },
+     {
+      "text": "Defence Research Development Organization (DRDO)"
+     },
+     {
+      "text": "Ministry of New and Renewable Energy (MNRE)"
+     },
+     {
+      "text": "Indian Space Research Organization (ISRO)"
+     },
+     {
+      "text": "Indian Council of Social Science Research (ICSSR)"
+     },
+     {
+      "text": "Ministry of Environment, Forestry & Climate Change (MOEF)"
+     },
+     {
+      "text": "Science & Engineering Research Board (SERB)"
+     }
+    ]
+   }
+  ]
+ },
+ "working-at-klh": {
+  "title": "WORKING AT KLH",
+  "banner": "2020/08/programs-min.jpg",
+  "blocks": [
+   {
+    "type": "h",
+    "level": 3,
+    "text": "WORKING AT KLH"
+   },
+   {
+    "type": "h",
+    "level": 3,
+    "text": "KL is a special place filled with diverse, talented and enthusiastic people from across the country. The focus always remains on inspiration, innovation and collaboration."
+   },
+   {
+    "type": "p",
+    "text": "KL offers a wide range of exciting and challenging career opportunities to all deserving aspirants in a competitive and thriving academic environment. Meet amazing people, advance your career, learn from the talented and enjoy the serenic campus."
+   },
+   {
+    "type": "cta",
+    "title": "Current opportunities",
+    "text": "See open positions for academicians and researchers across KL’s colleges and departments, and how to apply.",
+    "to": "/kl-jobs",
+    "label": "View current openings",
+    "alt": {
+     "to": "mailto:careers@kluniversity.in",
+     "label": "careers@kluniversity.in"
+    }
+   }
+  ]
+ },
+ "iqac": {
+  "title": "IQAC",
+  "banner": "2020/08/calander-bg.jpg",
+  "blocks": [
+   {
+    "type": "img",
+    "src": "2020/08/slider2.jpg",
+    "alt": ""
+   },
+   {
+    "type": "h",
+    "level": 3,
+    "text": "Quality Assurance"
+   },
+   {
+    "type": "p",
+    "text": "\"When learning and teaching continually improves, everything improves.\" “Quality is never an accident; it is always the result of intelligent effort.”"
+   },
+   {
+    "type": "p",
+    "text": "“Quality is always the result of high intention, sincere effort, intelligent direction and skilful execution; it represents the wise choice of many alternatives.”"
+   },
+   {
+    "type": "p",
+    "text": "Quality is not what happens when what you do matches your intentions. It is what happens when what you do matches your stakeholders' expectations."
+   },
+   {
+    "type": "p",
+    "text": "The establishment of Internal Quality Assurance Cell (IQAC) by Koneru Lakshmaiah Education Foundation (KLEF) deemed to be University is a major step in pushing long-term quality standards. IQAC in KLEF is a significant administrative body that is responsible for all quality matters. The prime responsibility of KLEF – IQAC is to initiate, plan and supervise various activities that are necessary to increase the quality of the education in the University. The IQAC of KLEF takes a major role in maintaining quality standards in teaching, learning, evaluation and the research with a defined and achievable outcome."
+   },
+   {
+    "type": "p",
+    "text": "The IQAC at KLEF can promote and determine quality related activities and issues through various programmes and activities such as seminars, workshops, symposia, conferences, panel discussions, role playing exercises, (model) demonstrations, case studies, academic meetings and any such kind of event or programme for all the stakeholders of the University."
+   },
+   {
+    "type": "p",
+    "text": "The prime task of the IQAC here is develop a system for conscious, consistent and catalytic improvement in the overall performance of the University."
+   },
+   {
+    "type": "h",
+    "level": 3,
+    "text": "Roles of IQAC in KLEF"
+   },
+   {
+    "type": "p",
+    "text": "1. Academic & Administrative Audits"
+   },
+   {
+    "type": "p",
+    "text": "The IQAC organizes an Academic and Administrative Audit to evaluate the efficacy and robustness of our quality management procedures and to review our efforts towards continued enhancement of quality education. The Audit provided for a strategic overview of the entirety of the teaching and learning activity. Conducts External Audit and Review with an external panel of academic professionals with sounded knowledge of Higher Education and experience. A report of the review was produced by the expert team is undoubtedly executing in the guidelines by preparing a suitable action plan to address areas of recommendations and concerns that were identified."
+   },
+   {
+    "type": "p",
+    "text": "2. Conducting Quality improvement programs like Workshops, Conferences, Trainings, Talks and Discussions etc."
+   },
+   {
+    "type": "p",
+    "text": "The IQAC conducts workshops, expert talks, training programs and awareness campaigns regularly. The deliberations on innovative teaching, learning, evaluation practices and administration discussed in those sessions were useful in enhancing quality the quality of higher education. It also creates a platform for educators to update themselves on the latest trends and developments in their areas of specialization."
+   },
+   {
+    "type": "p",
+    "text": "3. Ranking & Accreditation's"
+   },
+   {
+    "type": "p",
+    "text": "4. Open House Feedback mechanism for quality improvement"
+   },
+   {
+    "type": "p",
+    "text": "5. Green Audit / Gender Audit"
+   },
+   {
+    "type": "h",
+    "level": 3,
+    "text": "Advisory Committee"
+   },
+   {
+    "type": "table",
+    "rows": [
+     [
+      "Chairperson: Dr.G.P. Saradhi Varma",
+      "Vice Chancellor"
+     ],
+     [
+      "Co- Chairperson: Dr.N. Venkatram Dr. A.V.S.Prasad",
+      "Pro – Vice Chancellor"
+     ],
+     [
+      "Director – IQAC: Dr. K. Rama Krishna",
+      "Dean Quality"
+     ],
+     [
+      "Advisor – IQAC: Dr. K. Koteswara Rao",
+      "Professor"
+     ],
+     [
+      "Administrative Officers",
+      ""
+     ],
+     [
+      "Dr.Y.V.S.S.S.V. Prasada Rao",
+      "Registrar"
+     ],
+     [
+      "Dr.K.R.S. Prasad",
+      "Dean (Student Affairs)"
+     ],
+     [
+      "Dr.V. Srikanth",
+      "Dean (Faculty & Staff Affairs)"
+     ],
+     [
+      "Dr.V. Rajesh",
+      "Dean (Planning & Development)"
+     ],
+     [
+      "Dr.B.Jaya Kumar Singh",
+      "Dean (Research & Development)"
+     ],
+     [
+      "Dr.S. Venkateswarlu",
+      "Dean (Student Progression & Training)"
+     ],
+     [
+      "Dr.K. Sarat Kumar",
+      "Dean (Skill Development)"
+     ],
+     [
+      "Dr.M. Kishore Babu",
+      "Dean (Management, Humanities & Sciences)"
+     ],
+     [
+      "Management Member",
+      ""
+     ],
+     [
+      "Sri Koneru Raja Harin",
+      "Vice – President, KLEF"
+     ],
+     [
+      "External Experts",
+      ""
+     ],
+     [
+      "Dr. V. Venkaiah",
+      "Former Vice Chancellor - Krishna University"
+     ],
+     [
+      "Dr. P. Thrimurthy",
+      "Former Professor - Acharya Nagarjuna University"
+     ],
+     [
+      "Senior Professors",
+      ""
+     ],
+     [
+      "Dr. K. Subba Rao",
+      "Professor, EEE"
+     ],
+     [
+      "Dr. B. Sekhar Babu",
+      "Assoc. Professor, CSE"
+     ],
+     [
+      "Dr.Hayat Ahmad",
+      "Chief Librarian"
+     ]
+    ]
+   }
+  ]
+ },
+ "industrial-practice-school": {
+  "title": "Industrial Practice School",
+  "banner": "2026/03/Leadership_2-300x54-1.jpg",
+  "blocks": [
+   {
+    "type": "h",
+    "level": 3,
+    "text": "Industrial Practice School"
+   },
+   {
+    "type": "img",
+    "src": "2020/05/CLICK.png",
+    "alt": ""
+   },
+   {
+    "type": "p",
+    "text": "As part of the curriculum, K. L. E. F introduced an innovative concept of Practice School which forms an important component of education at K L E F. It is an attempt to bridge gaps between an academic institution and corporate world. Click for more information"
+   }
+  ]
+ },
+ "extension-activities": {
+  "title": "EXTENSION ACTIVITIES",
+  "banner": "2020/08/contact-min.jpg",
+  "blocks": [
+   {
+    "type": "h",
+    "level": 3,
+    "text": "EXTENSION ACTIVITIES"
+   },
+   {
+    "type": "h",
+    "level": 3,
+    "text": "ENTREPRENEURSHIP"
+   },
+   {
+    "type": "p",
+    "text": "CENTER FOR INNOVATION, INCUBATION AND ENTREPRENEURSHIP (CIIE) was started in 2013 to foster the spirit of Entrepreneurial Thinking, promote & sustain student innovations from ideation to start-up developing entrepreneurial ecosystem in the young minds and shaping next generation entrepreneurs."
+   },
+   {
+    "type": "h",
+    "level": 3,
+    "text": "VISION"
+   },
+   {
+    "type": "p",
+    "text": "Fostering the entrepreneurial culture amidst the students and creating entrepreneurs by continuous mentoring and training."
+   },
+   {
+    "type": "h",
+    "level": 3,
+    "text": "MISSION"
+   },
+   {
+    "type": "p",
+    "text": "To bring a paradigm change in shaping young minds to be job creators from job seekers and thus rejuvenating the economy."
+   },
+   {
+    "type": "h",
+    "level": 3,
+    "text": "KONERU LAKSHMAIAH TECHNOLOGY INCUBATORS FOUNDATION (KLTIF)"
+   },
+   {
+    "type": "p",
+    "text": "Koneru Lakshmaiah Technology Incubators Foundation (KLTIF) - the new and separate official entity working on external incubation and funding activities to take and allow the start-ups to apply Govt. of India schemes, other investment sources encouraging student ideations and start-ups."
+   },
+   {
+    "type": "p",
+    "text": "KLTIF is a recognized under Start-up India and DIPP, Ministry of Commerce & Industry, Government of India. The university has been approved to establish TBI with DST with a fund of INR 10.97 Crores. Additionally, funding under TIDE 2.0 with MeiTY is under process."
+   },
+   {
+    "type": "h",
+    "level": 3,
+    "text": "COLLABORATIONS"
+   },
+   {
+    "type": "list",
+    "items": [
+     {
+      "text": "Confederation of Indian Industry, New Delhi (CII)"
+     },
+     {
+      "text": "Association of Lady Entrepreneurs of Andhra Pradesh(ALEAP)"
+     },
+     {
+      "text": "National Entrepreneurship Network (NEN)"
+     },
+     {
+      "text": "The Indus Entrepreneurs (TiE, Andhra Pradesh)"
+     },
+     {
+      "text": "The Andhra Pradesh State Skill Development Corporation (APSSDC)"
+     },
+     {
+      "text": "AP Chambers of Commerce and Industry Federation (AP Chambers)"
+     },
+     {
+      "text": "Association for Innovation Development of Entrepreneurship in Agriculture a-IDEA NAARM, Hyderabad"
+     },
+     {
+      "text": "Indian Institute of Technology, Kharagpur – Entrepreneurship Cell"
+     }
+    ]
+   },
+   {
+    "type": "h",
+    "level": 3,
+    "text": "ACHIEVEMENTS"
+   },
+   {
+    "type": "list",
+    "items": [
+     {
+      "text": "Technology Business Incubator from Department of Science & Technology (DST-NIDHI) with 10.98 Cr"
+     },
+     {
+      "text": "Best International Award for NapLocks start-up by North Eastern University, USA worth US$1000"
+     },
+     {
+      "text": "Best Women Entrepreneur Award for BYB Start-up by Startup India AP Yatra worth INR 55,000"
+     },
+     {
+      "text": "Best Innovative Technology Award for GoOffer Hyper Solutions start-up by Start-up India AP Yatra worth INR 75,000"
+     },
+     {
+      "text": "Best Idea Award for Fopple Drones start-up by IB Hubs, Hyderabad worth INR 1,00,000"
+     },
+     {
+      "text": "Top three start-up venture SuBrains by APSSDC i2E worth INR 15,000"
+     },
+     {
+      "text": "Most promising and Innovative Entrepreneurship Center for KLEF by Praxis Media , New Delhi"
+     },
+     {
+      "text": "Campus Entrepreneurship Award to KLEF by Start AP Vizag, Andhra Pradesh"
+     },
+     {
+      "text": "Best start up idea under Technology Innovation to EE Modules start-up by Y-Square Business Incubator in Vijayawada, Andhra Pradesh."
+     }
+    ]
+   }
+  ]
+ },
+ "give-to-kl": {
+  "title": "Give to KL",
+  "banner": "2020/08/rules-min.jpg",
+  "blocks": [
+   {
+    "type": "h",
+    "level": 3,
+    "text": "GIVE TO KL"
+   },
+   {
+    "type": "p",
+    "text": "To serve better the country better and nurture the needy in time."
+   },
+   {
+    "type": "p",
+    "text": "Make a gift to a school, or the University or even choose a social cause or a deserving student."
+   },
+   {
+    "type": "p",
+    "text": "Every gift no matter how small they are makes a huge difference."
+   },
+   {
+    "type": "p",
+    "text": "For assistance, contact: KLEF Alumni Relations Cell Green Fields, Vaddeswaram Guntur District – 522 502, Andhra Pradesh, India +91.863.239.9999 X 1940 alumni@kluniversity.in"
+   }
+  ]
+ },
+ "programs-at-klh": {
+  "title": "Programs at KLH",
+  "banner": "2020/08/programs-min.jpg",
+  "blocks": [
+   {
+    "type": "img",
+    "src": "2026/04/aziz.png",
+    "alt": ""
+   },
+   {
+    "type": "img",
+    "src": "2026/04/bowra-1.png",
+    "alt": ""
+   },
+   {
+    "type": "img",
+    "src": "2026/04/klhgbs.png",
+    "alt": ""
+   }
+  ]
+ },
+ "entry-requirements": {
+  "title": "Entry Requirements",
+  "banner": "2023/06/Entry-Requirements_1.jpg",
+  "blocks": [
+   {
+    "type": "h",
+    "level": 3,
+    "text": "School of Engineering"
+   },
+   {
+    "type": "h",
+    "level": 4,
+    "text": "B.Tech-Eligibility Criteria"
+   },
+   {
+    "type": "p",
+    "text": "Admissions will be made for B.Tech Programme by the following criteria. Candidates have to be successful in KLEEE (KL Engineering Entrance Examination)/ JEE-Main/ JEE-Advanced / State Level Engineering Entrance Exams across India including EAMCET and Merit in Sports /Cultural Activities. K L Deemed to be University accepts Uni-GAUGE score for B.Tech admissions Eligibility: A Pass in 10+2 or equivalent examination with 60% and above in aggregate and 60% and above in Group subjects. Students with Physics, Chemistry and Mathematics (PCM) are eligible for all B.Tech programmes including Bio-Technology. Students with Physics, Chemistry and Biology (PCB) are eligible for B.Tech (Bio Technology) and B.Pharmacy."
+   },
+   {
+    "type": "img",
+    "src": "2020/06/IMG_0389-scaled-e1591719170534.jpg",
+    "alt": ""
+   },
+   {
+    "type": "h",
+    "level": 3,
+    "text": "School of Business"
+   },
+   {
+    "type": "p",
+    "text": "Eligibility Criteria for BBA Admission"
+   },
+   {
+    "type": "p",
+    "text": "Duration 3 Years(6 Semesters) Intermediate and its Equivalent: 50%"
+   },
+   {
+    "type": "p",
+    "text": "Eligibility Criteria for MBA Admission Duration 2 Years(4 Semesters). Bachelor Degree with 50% marks in any discipline under 10+2+3 pattern. Should have secured rank in K L Deemed to be University Business School Aptitude Test(KLBSAT)/ ICET / MAT / CAT / XAT & Personal Interview."
+   },
+   {
+    "type": "p",
+    "text": "Eligibility Criteria for Executive MBA in Data Sciences Admission Duration 2 Years(4 Semesters). UG and its equivalents 2 Years job experience."
+   },
+   {
+    "type": "img",
+    "src": "2020/05/s1.png",
+    "alt": ""
+   },
+   {
+    "type": "p",
+    "text": "Education loan facility is available for tuition fee from Nationalized Banks subject to Bank norms. KL Deemed to be University reserves the right to alter any of the above norms."
+   }
+  ]
+ },
+ "fee-structure": {
+  "title": "Fee Structure",
+  "banner": "2023/06/Fee-Structure_1.jpg",
+  "blocks": [
+   {
+    "type": "h",
+    "level": 3,
+    "text": "Fee Structure"
+   },
+   {
+    "type": "p",
+    "text": "Admissions act as a gateway for students to embrace their academic endeavors based on the possibilities our Institution provides. We at K L Deemed To Be University leverage students with diverse programs to choose their desired field of Interests. As an emerging Global university, we provide UG & PG ADMISSIONS, RESEARCH (Ph.D) , and M.Tech Leading to Ph.D & M.PhiL programs through Academic Screenings."
+   },
+   {
+    "type": "fees"
+   }
+  ]
+ },
+ "transfer-of-admission": {
+  "title": "Transfer-of-Admission",
+  "banner": "2023/06/Transfer-Of-Admission_2.jpg",
+  "blocks": [
+   {
+    "type": "h",
+    "level": 3,
+    "text": "Transfer of Admission from Other Institutions"
+   },
+   {
+    "type": "list",
+    "items": [
+     {
+      "text": "Students from Indian/Abroad Institutions are eligible to take the admission in KLEF, Vijayawada or Hyderabad campuses under credit transfer scheme. Credits earned by the student can be directly transferred irrespective of the subjects studied."
+     },
+     {
+      "text": "If there is a prerequisite course, or compulsory course the same has to be completed as per the academic policy of the KLEF"
+     },
+     {
+      "text": "The student must study for at least half of the duration of the minimum stipulated duration for the program at KLEF."
+     },
+     {
+      "text": "Change of Discipline may be permitted subjected to the completion of all essential courses to take the new discipline. For example, a Mechanical Engg., student can take ECE course once the essential courses are studied as bridge courses or any other acceptable mode. However, this is limited only if the transfer is in 2nd Year of B.Tech."
+     },
+     {
+      "text": "Student may be allowed to do some of the courses on MOOC platform with prior permission of Dean, Academics"
+     }
+    ]
+   },
+   {
+    "type": "img",
+    "src": "2020/05/bba123.jpg",
+    "alt": ""
+   }
+  ]
+ },
+ "admission-help-desk": {
+  "title": "Admission Help Desk",
+  "banner": "2023/06/Admission-Help-Desk_1.jpg",
+  "blocks": [
+   {
+    "type": "table",
+    "rows": [
+     [
+      "Help Desk for B.Tech Telangana"
+     ],
+     [
+      "S.No",
+      "Names",
+      "Designation",
+      "Location",
+      "Mobile Number"
+     ],
+     [
+      "1",
+      "Mr. K Rajesh",
+      "Regional Manager",
+      "Telangana",
+      "9550344777"
+     ],
+     [
+      "2",
+      "Mr. B.Naveen",
+      "Manager",
+      "Hyderabad",
+      "7997995708"
+     ],
+     [
+      "3",
+      "Mr.J.Kondaiah",
+      "Manager",
+      "Hyderabad",
+      "9133925000"
+     ],
+     [
+      "4",
+      "Mr.V.Naresh",
+      "Manager",
+      "Hyderabad",
+      "9154967918"
+     ],
+     [
+      "5",
+      "Mr . A Naresh",
+      "Manager",
+      "Hyderabad",
+      "7997998382"
+     ],
+     [
+      "6",
+      "Mrs.K.Rajyalaxmi",
+      "Regional Manager",
+      "Rest of Telangana",
+      "7997995718"
+     ],
+     [
+      "7",
+      "Mr. G.Goutham Reddy",
+      "Manager",
+      "Rest of Telangana",
+      "9010150111"
+     ],
+     [
+      "8",
+      "Mr. Gopi",
+      "Manager",
+      "Rest of Telangana",
+      "7997995716"
+     ],
+     [
+      "",
+      "",
+      "",
+      "",
+      ""
+     ],
+     [
+      "Help Desk for BBA & MBA"
+     ],
+     [
+      "1",
+      "Mr. K Rajesh",
+      "Regional Manager",
+      "Telangana",
+      "9550344777"
+     ],
+     [
+      "2",
+      "Mr.R.Dilip Kumar",
+      "Manager",
+      "Hyderabad",
+      "7997998380"
+     ],
+     [
+      "3",
+      "Mr G .Sinjith",
+      "Manager",
+      "Hyderabad",
+      "7997993254"
+     ],
+     [
+      "4",
+      "Mr. K Sunil",
+      "Manager",
+      "Hyderabad",
+      "8712012612"
+     ],
+     [
+      "5",
+      "Mr. G.Harish",
+      "Manager",
+      "Hyderabad",
+      "9133923000"
+     ]
+    ]
+   }
+  ]
+ },
+ "about-placement": {
+  "title": "About Placements",
+  "banner": "2021/07/acc.jpg",
+  "blocks": [
+   {
+    "type": "h",
+    "level": 2,
+    "text": "About Placements"
+   },
+   {
+    "type": "p",
+    "text": "KL Deemed to be University is one of the top educational institutions in the country that offers excellent placement opportunities to its students through campus recruitment drives. Our students bagged lucrative placement offers from top software companies such as Microsoft, Google, Amazon, Deloitte, Cisco, TCS, Wipro, Mentor Graphics, Infosys, Capgemini among others. Our dedicated placement cell provides mentoring to students focussing on personality development, mock interviews, industry specific technological skill enhancement training programs and communication and leadership skills. The university has been collaborating with various leading software development companies and cutting-edge technology industries to provide job offers to students. There is a huge demand for KL Deemed to be University graduates and the University believes in creating industry-ready talent and helping students fetch their dream jobs world-wide."
+   },
+   {
+    "type": "h",
+    "level": 2,
+    "text": "Objective of the Placement Program:"
+   },
+   {
+    "type": "p",
+    "text": "The main object of placement department is to bridge the gap between the industry and the academia by conducting necessary training sessions"
+   },
+   {
+    "type": "h",
+    "level": 2,
+    "text": "Pre-placement Activities"
+   },
+   {
+    "type": "p",
+    "text": "We helps students in exploring placement opportunities by inviting various companies for campus placements who are in their 3rd year of program and are likely to graduate."
+   },
+   {
+    "type": "p",
+    "text": "The final placements are the result of very systematic interactions with the industry and continuous career counselling for the students. Right from the beginning of the program students are continuously counselled with regard to their career aspirations and options which in turn is vigorously followed up with the potential companies for participating in the placement program. This not only helps the students in getting their Super Dream & Dream jobs but also assists the recruiters in identifying the right candidates. The Phase wise activities are"
+   },
+   {
+    "type": "h",
+    "level": 3,
+    "text": "PHASE-A"
+   },
+   {
+    "type": "list",
+    "items": [
+     {
+      "text": "Parameters of competency / competency segments."
+     },
+     {
+      "text": "Concept of Total personality development."
+     },
+     {
+      "text": "Bridging gaps between company industry and academia"
+     }
+    ]
+   },
+   {
+    "type": "h",
+    "level": 3,
+    "text": "PHASE-B"
+   },
+   {
+    "type": "list",
+    "items": [
+     {
+      "text": "Developing verbal & non-verbal communication skills."
+     },
+     {
+      "text": "Developing self-esteem & confidence building skills."
+     },
+     {
+      "text": "Developing aptitude, analytical, logical skills"
+     }
+    ]
+   },
+   {
+    "type": "list",
+    "items": [
+     {
+      "text": "Developing technical skills"
+     },
+     {
+      "text": "Developing emotional intelligence & interpersonal skills."
+     },
+     {
+      "text": "Managerial & leadership skills."
+     }
+    ]
+   },
+   {
+    "type": "h",
+    "level": 3,
+    "text": "PHASE-C"
+   },
+   {
+    "type": "list",
+    "items": [
+     {
+      "text": "Development of positive attitude."
+     },
+     {
+      "text": "Development of meaningful perceptions."
+     },
+     {
+      "text": "Value additions for self & the organizations. Invent your own superlatives."
+     },
+     {
+      "text": "Overcoming inferiority & superiority syndromes & hesitant approaches."
+     },
+     {
+      "text": "Tips for conducting well in-group interactive sessions."
+     },
+     {
+      "text": "Importance of Successful counseling & mentoring for professionals. Motivational & moral Boosting measures"
+     }
+    ]
+   },
+   {
+    "type": "h",
+    "level": 3,
+    "text": "PHASE-D"
+   },
+   {
+    "type": "list",
+    "items": [
+     {
+      "text": "Mock / simulated exercises"
+     },
+     {
+      "text": "Company specific training"
+     },
+     {
+      "text": "Online and Offline assessments"
+     }
+    ]
+   },
+   {
+    "type": "img",
+    "src": "2021/10/place.jpg",
+    "alt": ""
+   },
+   {
+    "type": "p",
+    "text": "Professionals from various industries visit the Institute and interact with students on regular basis and guide them in accordance with the industry norm and standards."
+   },
+   {
+    "type": "h",
+    "level": 2,
+    "text": "Industry Collaborations"
+   },
+   {
+    "type": "list",
+    "items": [
+     {
+      "text": "MOU with CISCO systems USA to Promote Training and Placements with Global Certification in Networking."
+     },
+     {
+      "text": "MOU with AMAZON to Promote Training and Placements with Global Certification in AI ,ML ,cloud and cloud security."
+     },
+     {
+      "text": "MOU with PALOALTO to Promote Training and Placements with Global Certification in cyber security."
+     },
+     {
+      "text": "MOU with CELONIS to Promote Training and Placements with Global Certification in data warehousing and mining."
+     },
+     {
+      "text": "MOU with blueprisim University to Promote Training and Placements with Global Certification in Robotics Automation."
+     },
+     {
+      "text": "MOU with MICROCHIP to Promote Training and Placements with Global Certification in PCB design."
+     },
+     {
+      "text": "Cognizant Digital Nurture Program and campus placements."
+     },
+     {
+      "text": "MOU with Being Zero for training in Coding."
+     },
+     {
+      "text": "MOU with VQR for training in Verbal, Quants and Reasoning."
+     },
+     {
+      "text": "MOU with Co-cubes for conducting online assessment and placements."
+     }
+    ]
+   },
+   {
+    "type": "img",
+    "src": "2021/10/pre-placement.jpg",
+    "alt": ""
+   },
+   {
+    "type": "img",
+    "src": "2021/09/com.jpg",
+    "alt": ""
+   },
+   {
+    "type": "img",
+    "src": "2021/10/photo_2021-10-06_12-27-37.jpg",
+    "alt": ""
+   }
+  ]
+ },
+ "students-placed": {
+  "title": "Students Placed",
+  "banner": "2021/07/acc.jpg",
+  "blocks": [
+   {
+    "type": "img",
+    "src": "2020/04/hp-1.png",
+    "alt": ""
+   },
+   {
+    "type": "img",
+    "src": "2020/04/intel.png",
+    "alt": ""
+   },
+   {
+    "type": "img",
+    "src": "2020/04/wipro-1.png",
+    "alt": ""
+   },
+   {
+    "type": "img",
+    "src": "2020/04/ibm-1.png",
+    "alt": ""
+   },
+   {
+    "type": "img",
+    "src": "2020/04/csc-1.png",
+    "alt": ""
+   },
+   {
+    "type": "img",
+    "src": "2020/04/valuelabs.png",
+    "alt": ""
+   },
+   {
+    "type": "img",
+    "src": "2021/06/deloitte-logo-370x69-1.jpg",
+    "alt": ""
+   },
+   {
+    "type": "img",
+    "src": "2020/04/cisco-1.png",
+    "alt": ""
+   },
+   {
+    "type": "img",
+    "src": "2021/05/men.png",
+    "alt": ""
+   },
+   {
+    "type": "img",
+    "src": "2020/04/amazon-2.png",
+    "alt": ""
+   },
+   {
+    "type": "img",
+    "src": "2021/06/Capgemin99-1.jpg",
+    "alt": ""
+   },
+   {
+    "type": "img",
+    "src": "2020/04/info.png",
+    "alt": ""
+   },
+   {
+    "type": "img",
+    "src": "2021/06/tcss.jpg",
+    "alt": ""
+   },
+   {
+    "type": "img",
+    "src": "2020/04/TA.png",
+    "alt": ""
+   },
+   {
+    "type": "img",
+    "src": "2021/06/ang.jpg",
+    "alt": ""
+   },
+   {
+    "type": "img",
+    "src": "2020/04/cts.png",
+    "alt": ""
+   },
+   {
+    "type": "img",
+    "src": "2024/05/Banner-2048x832.jpg",
+    "alt": ""
+   },
+   {
+    "type": "img",
+    "src": "2026/03/simons.jpg",
+    "alt": ""
+   },
+   {
+    "type": "img",
+    "src": "2026/03/cumins.jpg",
+    "alt": ""
+   },
+   {
+    "type": "img",
+    "src": "2026/02/student.jpg",
+    "alt": ""
+   },
+   {
+    "type": "img",
+    "src": "2026/02/infosys.jpg",
+    "alt": ""
+   },
+   {
+    "type": "img",
+    "src": "2025/11/photo_2025-11-15_10-24-59.jpg",
+    "alt": ""
+   },
+   {
+    "type": "img",
+    "src": "2025/11/photo_2025-11-01_14-27-12.jpg",
+    "alt": ""
+   },
+   {
+    "type": "p",
+    "text": "2022-23"
+   },
+   {
+    "type": "p",
+    "text": "2021-22"
+   },
+   {
+    "type": "table",
+    "rows": [
+     [
+      "S.No",
+      "Roll No.",
+      "Branch",
+      "Full Name as per records",
+      "Placed companies"
+     ],
+     [
+      "1",
+      "180030807",
+      "CSE",
+      "G.V.P.Varun",
+      "Mylearning Techmahindra"
+     ],
+     [
+      "2",
+      "190030027",
+      "CSE",
+      "Aepuru Satya Kamal",
+      "Vaikhari Digital Opentext"
+     ],
+     [
+      "3",
+      "190030995",
+      "CSE",
+      "Mamunoor Sai Sumanth",
+      "Corizo"
+     ],
+     [
+      "4",
+      "190031770",
+      "CSE",
+      "Vyakaranam likhithnaga venkatasai bharadwaj",
+      "Sigma Advanced systems / Verzeo / TuringMinds"
+     ],
+     [
+      "5",
+      "190330001",
+      "CSE",
+      "ARABANDI ARUN CHOWDARY",
+      "U Learn"
+     ],
+     [
+      "6",
+      "190330003",
+      "CSE",
+      "A JAYA BAVANA",
+      "Barclays"
+     ],
+     [
+      "7",
+      "190330006",
+      "CSE",
+      "ANDE VENKATA SAI SATHVIKA",
+      "TCS Ninja MuSigma KPIT"
+     ],
+     [
+      "8",
+      "190330007",
+      "CSE",
+      "ADDANKI SAI VAMSHI KRISHNA",
+      "AT & T Infosys"
+     ],
+     [
+      "9",
+      "190330011",
+      "CSE",
+      "AITHA RAVI CHANDRA",
+      "Opentext"
+     ],
+     [
+      "10",
+      "190330012",
+      "CSE",
+      "POLINENI AKHILA",
+      "TCS"
+     ],
+     [
+      "11",
+      "190330013",
+      "CSE",
+      "AKULA SAI SINDHU SIVA MYTHILI",
+      "Opentext"
+     ],
+     [
+      "12",
+      "190330014",
+      "CSE",
+      "V.ANIRUDH",
+      "Opentext Sterlite Technologies"
+     ],
+     [
+      "13",
+      "190330015",
+      "CSE",
+      "Anvesh Reddy Bemore",
+      "Opentext"
+     ],
+     [
+      "14",
+      "190330016",
+      "CSE",
+      "Dakshayene Arji",
+      "Bosch Musigma Accenture pega cts"
+     ],
+     [
+      "15",
+      "190330017",
+      "CSE",
+      "Asif Shaik",
+      "ITC InfoTech Srinsoft"
+     ],
+     [
+      "16",
+      "190330018",
+      "CSE",
+      "AVADHANAM SREE SHIVANI",
+      "Musigma"
+     ],
+     [
+      "17",
+      "190330019",
+      "CSE",
+      "AVIRENI CHANDAN",
+      "Opentext"
+     ],
+     [
+      "18",
+      "190330022",
+      "CSE",
+      "BANDARI SAI VIKAS",
+      "providence U Learn Growup"
+     ],
+     [
+      "19",
+      "190330023",
+      "CSE",
+      "santhosh belida",
+      "Turing Minds"
+     ],
+     [
+      "20",
+      "190330025",
+      "CSE",
+      "BARU VENKATA RAGHAVENDRA SRIHARSHA",
+      "Antino Labs"
+     ],
+     [
+      "21",
+      "190330027",
+      "CSE",
+      "BOMMA VIJAY",
+      "providence"
+     ],
+     [
+      "22",
+      "190330028",
+      "CSE",
+      "KEERTHANA BELIGINI",
+      "Bosch"
+     ],
+     [
+      "23",
+      "190330030",
+      "CSE",
+      "Basavaraju shishir",
+      "Brillio Mindtree"
+     ],
+     [
+      "24",
+      "190330031",
+      "CSE",
+      "Sravan Bathini",
+      "capace Verzeo Intellipaat"
+     ],
+     [
+      "25",
+      "190330032",
+      "CSE",
+      "Manaswini Bhaddirraju",
+      "Accenture"
+     ],
+     [
+      "26",
+      "190330033",
+      "CSE",
+      "BHAGI VENKATA SAI JAYANTH",
+      "Commscope"
+     ],
+     [
+      "27",
+      "190330034",
+      "CSE",
+      "Bhuvan M",
+      "Providence"
+     ],
+     [
+      "28",
+      "190330035",
+      "CSE",
+      "Bolla Anuraag",
+      "TCS"
+     ],
+     [
+      "29",
+      "190330037",
+      "CSE",
+      "BONDUGULA SHASHANK REDDY",
+      "Codeyoung"
+     ],
+     [
+      "30",
+      "190330038",
+      "CSE",
+      "K BRAMARESH",
+      "Nexturn"
+     ],
+     [
+      "31",
+      "190330039",
+      "CSE",
+      "Chennaboina Prudhvi Raj",
+      "TCS Digital"
+     ],
+     [
+      "32",
+      "190330040",
+      "CSE",
+      "CHEVULA AJAY REDDY",
+      "TCS Ninja"
+     ],
+     [
+      "33",
+      "190330041",
+      "CSE",
+      "CHERLA GNANA SUVARCHALA SAI ROOPA",
+      "Opentext TCS Ninja"
+     ],
+     [
+      "34",
+      "190330042",
+      "CSE",
+      "CHELAMKURI SRI VENKATA SAI HARANATH",
+      "HCL / Infosys"
+     ],
+     [
+      "35",
+      "190330043",
+      "CSE",
+      "CHETLAPALLY MANISH",
+      "U Learn"
+     ],
+     [
+      "36",
+      "190330045",
+      "CSE",
+      "Chandu Uma Mahesh",
+      "Reliance - JIO /Opentext/QT"
+     ],
+     [
+      "37",
+      "190330047",
+      "CSE",
+      "Chilukuri Sai Srujana",
+      "TCS Ninja Verizon DBS Tech India"
+     ],
+     [
+      "38",
+      "190330049",
+      "CSE",
+      "Dontukurti Divya Sai",
+      "Opentext TCS Ninja Brillio"
+     ],
+     [
+      "39",
+      "190330050",
+      "CSE",
+      "DUDEKULA HANEEF",
+      "Opentext Neustar"
+     ],
+     [
+      "40",
+      "190330051",
+      "CSE",
+      "duppatla maheswar",
+      "Opentext"
+     ],
+     [
+      "41",
+      "190330053",
+      "CSE",
+      "DUDEKULA SAMEER",
+      "TCS Musigma Enquero Mindtree Genpact"
+     ],
+     [
+      "42",
+      "190330054",
+      "CSE",
+      "Dodde santosh",
+      "DBS Tech"
+     ],
+     [
+      "43",
+      "190330055",
+      "CSE",
+      "Doma Shilpa Reddy",
+      "Bosch"
+     ],
+     [
+      "44",
+      "190330057",
+      "CSE",
+      "Himmalay Devulapalli",
+      "Sigma Advanced Ericsson"
+     ],
+     [
+      "45",
+      "190330061",
+      "CSE",
+      "Dyavadi Sujith Reddy",
+      "TCS"
+     ],
+     [
+      "46",
+      "190330063",
+      "CSE",
+      "Kowshik Sai",
+      "Verzeo"
+     ],
+     [
+      "47",
+      "190330065",
+      "CSE",
+      "EUNKONDA SHASHIKIRAN REDDY",
+      "AT & T"
+     ],
+     [
+      "48",
+      "190330066",
+      "CSE",
+      "GANDLA ANISH",
+      "Bosch"
+     ],
+     [
+      "49",
+      "190330067",
+      "CSE",
+      "Galipally dhanush reddy",
+      "Providence Global u Learn"
+     ],
+     [
+      "50",
+      "190330068",
+      "CSE",
+      "GAMPALA HEMANTH",
+      "Reliance - JIO, Opentext TCS"
+     ],
+     [
+      "51",
+      "190330073",
+      "CSE",
+      "Gangishetty Sai Kumar",
+      "TCS Pega Digital"
+     ],
+     [
+      "52",
+      "190330074",
+      "CSE",
+      "GOLIVI SAI PRABHAT",
+      "Reliance - JIO"
+     ],
+     [
+      "53",
+      "190330075",
+      "CSE",
+      "GANUGAPATI V S S TALPA SAI",
+      "Musigma Adaps Digitale Tech Mahindra"
+     ],
+     [
+      "54",
+      "190330077",
+      "CSE",
+      "GOLI HARIPRIYA",
+      "TCS Ninja/Opentext"
+     ],
+     [
+      "55",
+      "190330079",
+      "CSE",
+      "GANDHAM SAI VAMSI",
+      "BeingZero Amazon"
+     ],
+     [
+      "56",
+      "190330080",
+      "CSE",
+      "Gangireddy Vigneshwar Reddy",
+      "Opentext"
+     ],
+     [
+      "57",
+      "190330081",
+      "CSE",
+      "Gatla Sai Kiran Reddy",
+      "Opentext"
+     ],
+     [
+      "58",
+      "190330083",
+      "CSE",
+      "Gorthi Bhoomika",
+      "Opentext"
+     ],
+     [
+      "59",
+      "190330084",
+      "CSE",
+      "GOPINA SAI VENKAT AJITH",
+      "Bosch, Opentext"
+     ],
+     [
+      "60",
+      "190330086",
+      "CSE",
+      "GUTHA HARSHITHA REDDY",
+      "Opentext Optum TCS Ninja"
+     ],
+     [
+      "61",
+      "190330088",
+      "CSE",
+      "Harshit Kumar Sinha",
+      "Opentext TCS"
+     ],
+     [
+      "62",
+      "190330089",
+      "CSE",
+      "Dharmavarapu LN Hrishitaa",
+      "Opentext"
+     ],
+     [
+      "63",
+      "190330090",
+      "CSE",
+      "INGUVA ANURAG SAI",
+      "Opentext"
+     ],
+     [
+      "64",
+      "190330091",
+      "CSE",
+      "JARUGU ANUNAY SRI RAJ",
+      "TCS"
+     ],
+     [
+      "65",
+      "190330092",
+      "CSE",
+      "JETTI CHARAN TEJA NAGA SAI",
+      "Providence Global Growupp"
+     ],
+     [
+      "66",
+      "190330093",
+      "CSE",
+      "Keerthana Jakkanagari",
+      "Bosch , Opentext Mindtreee"
+     ],
+     [
+      "67",
+      "190330095",
+      "CSE",
+      "JAINA SRIRAM",
+      "Bosch"
+     ],
+     [
+      "68",
+      "190330096",
+      "CSE",
+      "J. Divya sri",
+      "Accenture Adape Digitale"
+     ],
+     [
+      "69",
+      "190330097",
+      "CSE",
+      "Barre Sujeeth Justin David",
+      "Copart India Pvt Ltd"
+     ],
+     [
+      "70",
+      "190330098",
+      "CSE",
+      "KAKARLA CHARAN SAI",
+      "crimson logistics"
+     ],
+     [
+      "71",
+      "190330099",
+      "CSE",
+      "KOYA KARUNA VIKAS",
+      "U Learn"
+     ],
+     [
+      "72",
+      "190330102",
+      "CSE",
+      "K.Rohith Reddy",
+      "Providence Global u Learn"
+     ],
+     [
+      "73",
+      "190330103",
+      "CSE",
+      "SAI MANOJ KUMAR KANKANALA",
+      "Cognizant Growupp"
+     ],
+     [
+      "74",
+      "190330104",
+      "CSE",
+      "KATAKAM SAI PRADEEP",
+      "Opentext Mind Tree"
+     ],
+     [
+      "75",
+      "190330105",
+      "CSE",
+      "KOSARAJU SAI SOHAN",
+      "Opentext"
+     ],
+     [
+      "76",
+      "190330107",
+      "CSE",
+      "SAKETH REDDY KONGARA",
+      "Providence Global U Learn"
+     ],
+     [
+      "77",
+      "190330108",
+      "CSE",
+      "K. SATHVIKA",
+      "Opentext"
+     ],
+     [
+      "78",
+      "190330109",
+      "CSE",
+      "KAZIPET SHIVANI",
+      "Accenture"
+     ],
+     [
+      "79",
+      "190330111",
+      "CSE",
+      "KARRA THARUN REDDY",
+      "Opentext"
+     ],
+     [
+      "80",
+      "190330112",
+      "CSE",
+      "K.Ujwala reddy",
+      "Verzeo"
+     ],
+     [
+      "81",
+      "190330115",
+      "CSE",
+      "K NIKHIL",
+      "GEP"
+     ],
+     [
+      "82",
+      "190330116",
+      "CSE",
+      "Kadarla Vikram",
+      "Motorola"
+     ],
+     [
+      "83",
+      "190330117",
+      "CSE",
+      "Kandi Anirudh Sai",
+      "TCS /Opentext"
+     ],
+     [
+      "84",
+      "190330119",
+      "CSE",
+      "KANICHETTI ANUDEEP",
+      "Opentext"
+     ],
+     [
+      "85",
+      "190330120",
+      "CSE",
+      "Karpuram Yeshaswini",
+      "TCS Verizon Mindtree Srinsoft"
+     ],
+     [
+      "86",
+      "190330121",
+      "CSE",
+      "k.shyam",
+      "Providence Global"
+     ],
+     [
+      "87",
+      "190330124",
+      "CSE",
+      "KONDURU PRANAV",
+      "Opentext TCS CTS"
+     ],
+     [
+      "88",
+      "190330125",
+      "CSE",
+      "KONGARA LIKHITH",
+      "Reliance - JIO Opentext"
+     ],
+     [
+      "89",
+      "190330126",
+      "CSE",
+      "KOPPARAPU AKASH",
+      "Opentext"
+     ],
+     [
+      "90",
+      "190330127",
+      "CSE",
+      "Koppolu Premkumar",
+      "Turing Minds"
+     ],
+     [
+      "91",
+      "190330128",
+      "CSE",
+      "Darshan raj kumar",
+      "Optum"
+     ],
+     [
+      "92",
+      "190330129",
+      "CSE",
+      "BODDAM KRANTHI TEJA",
+      "Intellipaat"
+     ],
+     [
+      "93",
+      "190330130",
+      "CSE",
+      "LAXMAREDDY GARI DEEKSHITHA REDDY",
+      "Reliance-JIO Sterlite"
+     ],
+     [
+      "94",
+      "190330131",
+      "CSE",
+      "M Akshaya",
+      "AT & T"
+     ],
+     [
+      "95",
+      "190330132",
+      "CSE",
+      "MANDAVA DHEERAJ",
+      "Opentext"
+     ],
+     [
+      "96",
+      "190330135",
+      "CSE",
+      "MADHAN MAHESHWARAM",
+      "My Learning Plus Growupp"
+     ],
+     [
+      "97",
+      "190330138",
+      "CSE",
+      "M S R N SUSRUTH",
+      "Opentext TCS"
+     ],
+     [
+      "98",
+      "190330139",
+      "CSE",
+      "M SADVIKHA",
+      "Bosch"
+     ],
+     [
+      "99",
+      "190330140",
+      "CSE",
+      "Mahashetty Sowmya",
+      "AT & T, Tiger Analytics, JP Morgan Chase&Co"
+     ],
+     [
+      "100",
+      "190330141",
+      "CSE",
+      "MURUGULA SUDHEENDRA",
+      "Opentext"
+     ],
+     [
+      "101",
+      "190330143",
+      "CSE",
+      "MALAKARAM VINAY KUMAR",
+      "Opentext"
+     ],
+     [
+      "102",
+      "190330144",
+      "CSE",
+      "Maddi Adithya Yadav",
+      "MuSigma GenC Elevate"
+     ],
+     [
+      "103",
+      "190330147",
+      "CSE",
+      "Madepalli Karthikeya Sai",
+      "Motorola , Bosch ,Infosys"
+     ],
+     [
+      "104",
+      "190330149",
+      "CSE",
+      "Mallikanti Rishi",
+      "Opentext"
+     ],
+     [
+      "105",
+      "190330150",
+      "CSE",
+      "MANCHIKANTI REVANTH",
+      "TCS Abhinbev Invesco"
+     ],
+     [
+      "106",
+      "190330151",
+      "CSE",
+      "Marathi Sowmika",
+      "CommScope/Bosch"
+     ],
+     [
+      "107",
+      "190330152",
+      "CSE",
+      "MD FAWAZ SABIL",
+      "TCS /Opentext/JP Morgan"
+     ],
+     [
+      "108",
+      "190330153",
+      "CSE",
+      "MUHAMMAD KHAJA AMEER ALI",
+      "U Learn"
+     ],
+     [
+      "109",
+      "190330154",
+      "CSE",
+      "Medchal Mouni",
+      "GenC Mindtree"
+     ],
+     [
+      "110",
+      "190330155",
+      "CSE",
+      "MOHAMMED RIZWAN",
+      "Providence Global u Learn"
+     ],
+     [
+      "111",
+      "190330157",
+      "CSE",
+      "NAGRAJU PAVAN RAJU",
+      "Srinsoft"
+     ],
+     [
+      "112",
+      "190330158",
+      "CSE",
+      "NALLAPATI PRANATHI",
+      "Schneider Electric Barclays CTS"
+     ],
+     [
+      "113",
+      "190330159",
+      "CSE",
+      "Nookala Sathvik Reddy",
+      "Opentext"
+     ],
+     [
+      "114",
+      "190330162",
+      "CSE",
+      "Nallani Monish Chandra",
+      "U Learn Growupp"
+     ],
+     [
+      "115",
+      "190330163",
+      "CSE",
+      "Nitture Phani Sree Datta Reddy",
+      "peopleTech Ericsson"
+     ],
+     [
+      "116",
+      "190330164",
+      "CSE",
+      "Namala Ram Kishore",
+      "Bosch/opentext"
+     ],
+     [
+      "117",
+      "190330165",
+      "CSE",
+      "N. Sandeep kumar Reddy",
+      "HCL"
+     ],
+     [
+      "118",
+      "190330166",
+      "CSE",
+      "NAGOLU MANASA REDDY",
+      "HCL CGI"
+     ],
+     [
+      "119",
+      "190330168",
+      "CSE",
+      "NEELA RAKESH",
+      "Brillio GenC"
+     ],
+     [
+      "120",
+      "190330169",
+      "CSE",
+      "Neeraj Kondaveeti",
+      "Reliance - JIO TCS"
+     ],
+     [
+      "121",
+      "190330170",
+      "CSE",
+      "NEMMOJU BHANU PRAKASH",
+      "TCS Pega Ninja Mindtree"
+     ],
+     [
+      "122",
+      "190330171",
+      "CSE",
+      "NIKHILA K",
+      "Accenture, AT & T, Ericsson , CGI"
+     ],
+     [
+      "123",
+      "190330172",
+      "CSE",
+      "Nori Sai Devi Vaishnavi",
+      "TCS ADP"
+     ],
+     [
+      "124",
+      "190330173",
+      "CSE",
+      "PARUPATI AISHWARYA REDDY",
+      "Growupp"
+     ],
+     [
+      "125",
+      "190330174",
+      "CSE",
+      "pillanagrovila chandana yadav",
+      "MuSigma TCS Ninja Pega GenC"
+     ],
+     [
+      "126",
+      "190330175",
+      "CSE",
+      "PEDDAMALLA GARI NAVEEN KUMAR",
+      "U Learn"
+     ],
+     [
+      "127",
+      "190330176",
+      "CSE",
+      "P. Sri Venkata Lakshmi Narasimha",
+      "U Learn"
+     ],
+     [
+      "128",
+      "190330177",
+      "CSE",
+      "Uttej padava",
+      "Providence Global U Learn Growupp"
+     ],
+     [
+      "129",
+      "190330178",
+      "CSE",
+      "Pamula Venkat Kushaal",
+      "Peopeltech"
+     ],
+     [
+      "130",
+      "190330179",
+      "CSE",
+      "PUTTA GUNASHEKAR",
+      "Invesco"
+     ],
+     [
+      "131",
+      "190330180",
+      "CSE",
+      "PILLI SRAVANI",
+      "U Learn"
+     ],
+     [
+      "132",
+      "190330181",
+      "CSE",
+      "P SRI SAI RAVI TEJA",
+      "Sigma Advanced"
+     ],
+     [
+      "133",
+      "190330182",
+      "CSE",
+      "Panyala Pranadeep Reddy",
+      "Opentext"
+     ],
+     [
+      "134",
+      "190330184",
+      "CSE",
+      "PATEL KARTHIK REDDY",
+      "Reliance - JIO"
+     ],
+     [
+      "135",
+      "190330185",
+      "CSE",
+      "Patel vinay reddy",
+      "Providence Global"
+     ],
+     [
+      "136",
+      "190330189",
+      "CSE",
+      "RAJPUT KUNAL SINGH",
+      "My Learning Plus"
+     ],
+     [
+      "137",
+      "190330190",
+      "CSE",
+      "Ragam Sai Prashanth Kartik",
+      "BeingZero, Opentext ,Amazon"
+     ],
+     [
+      "138",
+      "190330192",
+      "CSE",
+      "RUDRARAM RAM VAMSHI KRISHNA",
+      "TCS Pega Ninja"
+     ],
+     [
+      "139",
+      "190330194",
+      "CSE",
+      "Ragulapally Vikram Reddy",
+      "Cuber"
+     ],
+     [
+      "140",
+      "190330196",
+      "CSE",
+      "RAGHAVAPURAM LOVKIKA REDDY",
+      "Mindtree Verzeo Capgemini"
+     ],
+     [
+      "141",
+      "190330198",
+      "CSE",
+      "RAJAVAMSHI SANGARU",
+      "Bosch openText tcs EPAM Amazon"
+     ],
+     [
+      "142",
+      "190330202",
+      "CSE",
+      "KOMPALLI RAVITEJA",
+      "Cradle point Neustar"
+     ],
+     [
+      "143",
+      "190330204",
+      "CSE",
+      "Reddybathuni Yeshwanth Reddy",
+      "TCS"
+     ],
+     [
+      "144",
+      "190330208",
+      "CSE",
+      "SURAMPALLY ABHINAYA REDDY",
+      "Bosch/opentext"
+     ],
+     [
+      "145",
+      "190330211",
+      "CSE",
+      "Sahithi Bhimavarapu",
+      "Bosch TCS Pega"
+     ],
+     [
+      "146",
+      "190330212",
+      "CSE",
+      "sai lakshman sidhartha",
+      "U Learn"
+     ],
+     [
+      "147",
+      "190330214",
+      "CSE",
+      "SAKALABHAKTULA PRAMOD",
+      "Accenture"
+     ],
+     [
+      "148",
+      "190330215",
+      "CSE",
+      "Saketh Bhimavarapu",
+      "Turing Minds Providence"
+     ],
+     [
+      "149",
+      "190330217",
+      "CSE",
+      "Sankalamaddi Indu",
+      "TCS/Optum"
+     ],
+     [
+      "150",
+      "190330218",
+      "CSE",
+      "Sarvesh Joshi",
+      "Bosch / Opentext"
+     ],
+     [
+      "151",
+      "190330220",
+      "CSE",
+      "SHAIK SHAYOBA NAZ",
+      "Opentext"
+     ],
+     [
+      "152",
+      "190330221",
+      "CSE",
+      "Shashank Reddy Banala",
+      "Bosch/opentext"
+     ],
+     [
+      "153",
+      "190330223",
+      "CSE",
+      "Shiva sainath reddy sama",
+      "TCS"
+     ],
+     [
+      "154",
+      "190330224",
+      "CSE",
+      "Shreya Peddireddy",
+      "CGI Capgemini"
+     ],
+     [
+      "155",
+      "190330225",
+      "CSE",
+      "Shreya Reddy Patlolla",
+      "Opentext"
+     ],
+     [
+      "156",
+      "190330226",
+      "CSE",
+      "Kaushik Siriyala",
+      "Opentext"
+     ],
+     [
+      "157",
+      "190330228",
+      "CSE",
+      "Somayajula V S L Anand Kathyay",
+      "Siemens"
+     ],
+     [
+      "158",
+      "190330229",
+      "CSE",
+      "Surapuraju Naga Sai Sravani",
+      "CGI Capgemini"
+     ],
+     [
+      "159",
+      "190330230",
+      "CSE",
+      "Sreshta kosaraju",
+      "Amazon CGI"
+     ],
+     [
+      "160",
+      "190330231",
+      "CSE",
+      "Srilekha Nampelli",
+      "Vaikhari Digital Capnxt Amazon"
+     ],
+     [
+      "161",
+      "190330232",
+      "CSE",
+      "sriram Sanjeev tetali",
+      "ATOS"
+     ],
+     [
+      "162",
+      "190330234",
+      "CSE",
+      "Tatikonda HariHara Nandan",
+      "Sixpep"
+     ],
+     [
+      "163",
+      "190330235",
+      "CSE",
+      "T S H SAI",
+      "Bosch"
+     ],
+     [
+      "164",
+      "190330236",
+      "CSE",
+      "Sai Deepak Tumu",
+      "Brillio DBS Tech"
+     ],
+     [
+      "165",
+      "190330238",
+      "CSE",
+      "THAMMISETTI SANJANA",
+      "TCS"
+     ],
+     [
+      "166",
+      "190330241",
+      "CSE",
+      "Tanmayee Lavu",
+      "Optum/Musigma/GenC"
+     ],
+     [
+      "167",
+      "190330243",
+      "CSE",
+      "TIRUMANI VARUN ADITHYA",
+      "TCS Pega Ninja"
+     ],
+     [
+      "168",
+      "190330245",
+      "CSE",
+      "KURUVA UDAY KIRAN",
+      "ITC InfoTech Mindtree"
+     ],
+     [
+      "169",
+      "190330246",
+      "CSE",
+      "YARNAGULA UDAY SAI",
+      "Srinsoft"
+     ],
+     [
+      "170",
+      "190330248",
+      "CSE",
+      "Umesh sai cherukuru",
+      "My Learning Plus Providence"
+     ],
+     [
+      "171",
+      "190330249",
+      "CSE",
+      "V.Nitya Santhoshini",
+      "BeingZero TCS"
+     ],
+     [
+      "172",
+      "190330250",
+      "CSE",
+      "VANAMA PRABHU SHAKTHI",
+      "Opentext"
+     ],
+     [
+      "173",
+      "190330251",
+      "CSE",
+      "shiva sai prasad voggu",
+      "Sterlite Tech"
+     ],
+     [
+      "174",
+      "190330257",
+      "CSE",
+      "VANAM SAI MADHUKAR",
+      "Accenture"
+     ],
+     [
+      "175",
+      "190330259",
+      "CSE",
+      "Vattikoti Shiva",
+      "TCS Pega Ninja"
+     ],
+     [
+      "176",
+      "190330261",
+      "CSE",
+      "VEERAVAJHULA SAI MANOHAR",
+      "Juspay"
+     ],
+     [
+      "177",
+      "190330262",
+      "CSE",
+      "Velivela sai Hemanth",
+      "ITC InfoTech Comviva"
+     ],
+     [
+      "178",
+      "190330264",
+      "CSE",
+      "Y Aashritha Reddy",
+      "TCS Adape Digitale"
+     ],
+     [
+      "179",
+      "190330266",
+      "CSE",
+      "Yerrapragada sai venkata sathwik",
+      "nexgile Growupp"
+     ],
+     [
+      "180",
+      "190330268",
+      "CSE",
+      "Yeruva tharun teja",
+      "Opentext"
+     ],
+     [
+      "181",
+      "190330269",
+      "CSE",
+      "Yashveer Singh",
+      "Bosch, opentext"
+     ],
+     [
+      "182",
+      "190330270",
+      "CSE",
+      "YERUVA SIVA REDDY",
+      "ADP Srinsoft"
+     ],
+     [
+      "183",
+      "190330272",
+      "CSE",
+      "DASARI VAMSHI",
+      "Opentext"
+     ],
+     [
+      "184",
+      "190330274",
+      "CSE",
+      "GAJJELA PAVANKALYAN REDDY",
+      "Providence U Learn"
+     ],
+     [
+      "185",
+      "190330275",
+      "CSE",
+      "Katamsaibalajireddy",
+      "HCL"
+     ],
+     [
+      "186",
+      "190330276",
+      "CSE",
+      "bhogadi lokesh",
+      "Sigma Advanced/Turing"
+     ],
+     [
+      "187",
+      "190330278",
+      "CSE",
+      "MUNDRATHI TARUN",
+      "U Learn Neustar"
+     ],
+     [
+      "188",
+      "190330279",
+      "CSE",
+      "Nattuva Likhith",
+      "U Learn"
+     ],
+     [
+      "189",
+      "190330282",
+      "CSE",
+      "ARE ROHITH KUMAR",
+      "HCL"
+     ],
+     [
+      "190",
+      "190330283",
+      "CSE",
+      "BETHI SIDDHARTHA REDDY",
+      "AT & T"
+     ],
+     [
+      "191",
+      "190330288",
+      "CSE",
+      "Konda Venkat Ruthvik Sai",
+      "Sigma Advanced Runo"
+     ],
+     [
+      "192",
+      "190330289",
+      "CSE",
+      "Karthik Mamidishetti",
+      "EPAM"
+     ],
+     [
+      "193",
+      "190330290",
+      "CSE",
+      "KOTA SRI KRISHNA TEJA",
+      "Providence U Learn"
+     ],
+     [
+      "194",
+      "190330292",
+      "CSE",
+      "NAKKA HARSHA VARDHAN",
+      "Sigma Advanced Verzeo"
+     ],
+     [
+      "195",
+      "190330293",
+      "CSE",
+      "Pothulapally Nikhil Kumar",
+      "U Learn"
+     ],
+     [
+      "196",
+      "190330294",
+      "CSE",
+      "PARUCHURI TAPAN SAI",
+      "U Learn"
+     ],
+     [
+      "197",
+      "190330298",
+      "CSE",
+      "Kundarapu Snehan",
+      "U Learn"
+     ],
+     [
+      "198",
+      "190330300",
+      "CSE",
+      "YANAMADALA SAI CHINMAYEE",
+      "U Learn"
+     ],
+     [
+      "199",
+      "190330301",
+      "CSE",
+      "Kurrey Ravikanth Reddy",
+      "Providence Global"
+     ],
+     [
+      "200",
+      "190330302",
+      "CSE",
+      "kaithapuram raviteja",
+      "Sigma Advanced"
+     ],
+     [
+      "201",
+      "190330303",
+      "CSE",
+      "Shaik Faraz",
+      "Opentext TCS"
+     ],
+     [
+      "202",
+      "190330304",
+      "CSE",
+      "Padmini Kolliboina",
+      "U Learn Neustar"
+     ],
+     [
+      "203",
+      "190330309",
+      "CSE",
+      "Devulapally Jyothika",
+      "Opentext"
+     ],
+     [
+      "204",
+      "190330314",
+      "CSE",
+      "M nikhil",
+      "Providence"
+     ],
+     [
+      "205",
+      "190330315",
+      "CSE",
+      "TATIKONDA CHANAKYA",
+      "Neustar"
+     ],
+     [
+      "206",
+      "190339321",
+      "CSE",
+      "GANDU SRIHARI",
+      "HCL"
+     ],
+     [
+      "207",
+      "190339324",
+      "CSE",
+      "Revanth Kumar Janaswami",
+      "Neustar"
+     ],
+     [
+      "208",
+      "190340001",
+      "ECE",
+      "Achina Harshad",
+      "GenC"
+     ],
+     [
+      "209",
+      "190340002",
+      "ECE",
+      "ADIRALA LIKHITH REDDY",
+      "U Learn"
+     ],
+     [
+      "210",
+      "190340003",
+      "ECE",
+      "JAYA TEJA AKULA",
+      "Verzeo"
+     ],
+     [
+      "211",
+      "190340005",
+      "ECE",
+      "ANUKURI SATHVIK REDDY",
+      "GenC Stellantis"
+     ],
+     [
+      "212",
+      "190340006",
+      "ECE",
+      "Batiina shirdi sairam",
+      "Stellantis"
+     ],
+     [
+      "213",
+      "190340007",
+      "ECE",
+      "BALSU SATHYAK",
+      "U Learn Growupp"
+     ],
+     [
+      "214",
+      "190340008",
+      "ECE",
+      "Basireddy Swarupa",
+      "TCS Ninja"
+     ],
+     [
+      "215",
+      "190340009",
+      "ECE",
+      "B Uma Maheshwar",
+      "TCS Adape Digitale Vodafone"
+     ],
+     [
+      "216",
+      "190340010",
+      "ECE",
+      "BALABOMMU SUNEESH",
+      "Aiphant"
+     ],
+     [
+      "217",
+      "190340011",
+      "ECE",
+      "BALUSA VISHVESH",
+      "Sigma Advanced"
+     ],
+     [
+      "218",
+      "190340012",
+      "ECE",
+      "Bandaru Jagadish Sri Bhargav",
+      "Bosch"
+     ],
+     [
+      "219",
+      "190340013",
+      "ECE",
+      "P.V Bhuvaneshwari",
+      "ITC InfoTech Accenture"
+     ],
+     [
+      "220",
+      "190340014",
+      "ECE",
+      "Biradar Anurag Patil",
+      "Intellipaat Adape Digitale"
+     ],
+     [
+      "221",
+      "190340015",
+      "ECE",
+      "BODLA VENKATA RAMCHARAN",
+      "HCL Srinsoft"
+     ],
+     [
+      "222",
+      "190340016",
+      "ECE",
+      "BOJI SAI ABHINAV",
+      "GenC"
+     ],
+     [
+      "223",
+      "190340017",
+      "ECE",
+      "Boppana SaiTeja",
+      "Sigma Advanced Providene Growupp"
+     ],
+     [
+      "224",
+      "190340018",
+      "ECE",
+      "BRUNGI HARSHA VARDHAN",
+      "Sigma Advanced"
+     ],
+     [
+      "225",
+      "190340019",
+      "ECE",
+      "Buddula Karthik Reddy",
+      "Mindtree"
+     ],
+     [
+      "226",
+      "190340020",
+      "ECE",
+      "c anand raj",
+      "Reliance Jio TCS"
+     ],
+     [
+      "227",
+      "190340022",
+      "ECE",
+      "VIJAY KRISHNA C",
+      "Ericsson"
+     ],
+     [
+      "228",
+      "190340023",
+      "ECE",
+      "ch.charan sai",
+      "U Learn"
+     ],
+     [
+      "229",
+      "190340025",
+      "ECE",
+      "CHEGURI BHAVITH",
+      "Reliance - JIO"
+     ],
+     [
+      "230",
+      "190340026",
+      "ECE",
+      "Cherukru Roshan Sai",
+      "Providence U Learn ARC"
+     ],
+     [
+      "231",
+      "190340027",
+      "ECE",
+      "DINDU MANOJ",
+      "Bosch TCS"
+     ],
+     [
+      "232",
+      "190340028",
+      "ECE",
+      "Damineni Charan Sai",
+      "Bosch"
+     ],
+     [
+      "233",
+      "190340029",
+      "ECE",
+      "DEVARAPALLY KRANTHI KUMAR",
+      "TCS Ninja MindTree GenC"
+     ],
+     [
+      "234",
+      "190340030",
+      "ECE",
+      "Devineni Aakash",
+      "HCL"
+     ],
+     [
+      "235",
+      "190340031",
+      "ECE",
+      "DHESHABATTULA LOKESH",
+      "HCL"
+     ],
+     [
+      "236",
+      "190340032",
+      "ECE",
+      "Mohammad Fathima Nayeem",
+      "Opentext Srinsoft"
+     ],
+     [
+      "237",
+      "190340033",
+      "ECE",
+      "GANDIKOTA SHIVA KUMAR",
+      "Bosch"
+     ],
+     [
+      "238",
+      "190340034",
+      "ECE",
+      "GADUGU PRIYANKA",
+      "Sigma Advanced Providene"
+     ],
+     [
+      "239",
+      "190340035",
+      "ECE",
+      "G Sai Susruth",
+      "GenC"
+     ],
+     [
+      "240",
+      "190340036",
+      "ECE",
+      "Venkata Sai Deep Gaddipati",
+      "Sigma Advanced"
+     ],
+     [
+      "241",
+      "190340039",
+      "ECE",
+      "J.KARTHIK",
+      "Sigma Advanced"
+     ],
+     [
+      "242",
+      "190340040",
+      "ECE",
+      "JAMY CHANDRA SHEKAR",
+      "Opentext Techmahindra"
+     ],
+     [
+      "243",
+      "190340042",
+      "ECE",
+      "K SRIKANTH",
+      "Ericsson"
+     ],
+     [
+      "244",
+      "190340045",
+      "ECE",
+      "Kala Naga Venkata Sree Ram",
+      "Zerywealth Technologies"
+     ],
+     [
+      "245",
+      "190340046",
+      "ECE",
+      "Kuppireddy Rithvik Reddy",
+      "Opentext"
+     ],
+     [
+      "246",
+      "190340047",
+      "ECE",
+      "K Sai Ravalika",
+      "Opentext"
+     ],
+     [
+      "247",
+      "190340048",
+      "ECE",
+      "KALLEPALLI DEEPAK KUMAR",
+      "Bosch"
+     ],
+     [
+      "248",
+      "190340049",
+      "ECE",
+      "Konda Bhargav",
+      "TCS /Bosch/Amazon"
+     ],
+     [
+      "249",
+      "190340051",
+      "ECE",
+      "Kutikuppala Yashwanth sai",
+      "Zerywealth Technologies / ATOS/Tetrahedron"
+     ],
+     [
+      "250",
+      "190340052",
+      "ECE",
+      "LIMMADA SAGAR",
+      "Bosch Opentext Optum"
+     ],
+     [
+      "251",
+      "190340053",
+      "ECE",
+      "MUDUNURI DURGA JESWANTH SAI VARMA",
+      "My Learning Plus Intellipaat"
+     ],
+     [
+      "252",
+      "190340054",
+      "ECE",
+      "MADDUR JEEVAN KUMAR REDDY",
+      "Conduria"
+     ],
+     [
+      "253",
+      "190340055",
+      "ECE",
+      "M Sai Teja Kaashyap",
+      "Bosch"
+     ],
+     [
+      "254",
+      "190340056",
+      "ECE",
+      "Moturi Veda Vineetha",
+      "Bosch tcs Opentext"
+     ],
+     [
+      "255",
+      "190340057",
+      "ECE",
+      "Maddiboina Jaya Krishna",
+      "Bosch TCS Pega Ninja Oracle"
+     ],
+     [
+      "256",
+      "190340059",
+      "ECE",
+      "MAMIDALA ARUNSAI",
+      "Opentext HCL"
+     ],
+     [
+      "257",
+      "190340060",
+      "ECE",
+      "Mashetty chakrapani",
+      "Providence U Learn"
+     ],
+     [
+      "258",
+      "190340061",
+      "ECE",
+      "Nayini Sai Anurag",
+      "ITC Infotech"
+     ],
+     [
+      "259",
+      "190340063",
+      "ECE",
+      "Pabba Sai Kiran",
+      "Bosch"
+     ],
+     [
+      "260",
+      "190340064",
+      "ECE",
+      "Malve Payal",
+      "Opentext Accenture"
+     ],
+     [
+      "261",
+      "190340066",
+      "ECE",
+      "GAJULA PRAPURNA",
+      "ITC Infotech Accenture"
+     ],
+     [
+      "262",
+      "190340067",
+      "ECE",
+      "PUCHALA VARUN KUMAR REDDY",
+      "Cognizant"
+     ],
+     [
+      "263",
+      "190340068",
+      "ECE",
+      "Radha M Paurana",
+      "Analog Devices"
+     ],
+     [
+      "264",
+      "190340069",
+      "ECE",
+      "RAGHURAM DHARMENDRA REDDY",
+      "Providence U Learn"
+     ],
+     [
+      "265",
+      "190340071",
+      "ECE",
+      "Pavan",
+      "Mindtree"
+     ],
+     [
+      "266",
+      "190340072",
+      "ECE",
+      "ROSHAN RAJ A K",
+      "TCS Pega Ninja Hexaware Evoke Technologies"
+     ],
+     [
+      "267",
+      "190340073",
+      "ECE",
+      "SHERI PRAVALIKA",
+      "Opentext HCL"
+     ],
+     [
+      "268",
+      "190340074",
+      "ECE",
+      "SHAIK SHAKEER BASHA",
+      "TCS opentext Celigo"
+     ],
+     [
+      "269",
+      "190340076",
+      "ECE",
+      "Sai Bhavani Maanyatha Addala",
+      "Bosch"
+     ],
+     [
+      "270",
+      "190340077",
+      "ECE",
+      "SIRAMDAS BHARATH VAMSHI",
+      "TCS Ninja"
+     ],
+     [
+      "271",
+      "190340078",
+      "ECE",
+      "Sri satyamani murali kumar p",
+      "Musigma TCS Ninja pega"
+     ],
+     [
+      "272",
+      "190340079",
+      "ECE",
+      "Sri Vaibhav Mohan Dev Vanamoju",
+      "Bosch"
+     ],
+     [
+      "273",
+      "190340080",
+      "ECE",
+      "Sriya Reddy karegoud",
+      "TCS Ninja Pega Accenture Pega GenC Srinsoft"
+     ],
+     [
+      "274",
+      "190340082",
+      "ECE",
+      "Suhaas Devalapally",
+      "opentext / IBM AT&T"
+     ],
+     [
+      "275",
+      "190340084",
+      "ECE",
+      "Thalari Madhav",
+      "Providence Global Nexgile U Learn Metrix labs"
+     ],
+     [
+      "276",
+      "190340086",
+      "ECE",
+      "TAVVA SURYA PRAKASH REDDY",
+      "Vaikhari Digital"
+     ],
+     [
+      "277",
+      "190340087",
+      "ECE",
+      "THOKALA VENU",
+      "TCS Ninja Pega HCL"
+     ],
+     [
+      "278",
+      "190340089",
+      "ECE",
+      "VELTURI MEGHANA",
+      "Bosch"
+     ],
+     [
+      "279",
+      "190340091",
+      "ECE",
+      "VANTERU ARUN KUMAR",
+      "GenC"
+     ],
+     [
+      "280",
+      "190340092",
+      "ECE",
+      "Varanasi Sri Praneeth",
+      "Growupp"
+     ],
+     [
+      "281",
+      "190340093",
+      "ECE",
+      "Varudu Saranya",
+      "Providence"
+     ],
+     [
+      "282",
+      "190340094",
+      "ECE",
+      "Yendapally Mukesh Kumar Reddy",
+      "TCS Digital Opentext TCS PEGA Ninja Accenture pega Evoke Tech"
+     ],
+     [
+      "283",
+      "190340095",
+      "ECE",
+      "YAMSANI BHUVANESH",
+      "Mindtree"
+     ],
+     [
+      "284",
+      "190340096",
+      "ECE",
+      "Chittigidda Anusha",
+      "TCS Ninja"
+     ],
+     [
+      "285",
+      "190340097",
+      "ECE",
+      "Munipalle Chinmayee",
+      "TCS /Bosch"
+     ],
+     [
+      "286",
+      "190340098",
+      "ECE",
+      "Momula Harshith Reddy",
+      "Opentext TCS Ninja Pega Crimson"
+     ],
+     [
+      "287",
+      "190340099",
+      "ECE",
+      "DAHAGAM SAI KRISHNA",
+      "ValueLabs"
+     ],
+     [
+      "288",
+      "190340101",
+      "ECE",
+      "Sunku arun kumar",
+      "Providence U Learn"
+     ],
+     [
+      "289",
+      "190340102",
+      "ECE",
+      "Ravada jayakrishna",
+      "TCS Opentext Accenture Pega"
+     ],
+     [
+      "290",
+      "190340103",
+      "ECE",
+      "Gadda stevan raj",
+      "Growupp"
+     ],
+     [
+      "291",
+      "190340104",
+      "ECE",
+      "Eramoni Pavan kalyan",
+      "HCL"
+     ],
+     [
+      "292",
+      "190340105",
+      "ECE",
+      "u vasu chary",
+      "Providence Global"
+     ],
+     [
+      "293",
+      "190340106",
+      "ECE",
+      "DHARAVATH ASHWITH NAYAK",
+      "Growupp"
+     ],
+     [
+      "294",
+      "190349108",
+      "ECE",
+      "Gadapa vishwa teja",
+      "Tetrahedron"
+     ],
+     [
+      "295",
+      "190349110",
+      "ECE",
+      "ABOTHULA DHANA LAKSHMI",
+      "TCS"
+     ],
+     [
+      "296",
+      "190349112",
+      "ECE",
+      "MANUSALA SHIRISHA",
+      "Bosch TCS Ninja Pega"
+     ],
+     [
+      "297",
+      "190349113",
+      "ECE",
+      "T Durga jagadish",
+      "Sigma / Verzeo"
+     ],
+     [
+      "298",
+      "190349114",
+      "ECE",
+      "Kodali Madhu Sree",
+      "Srinsoft / Adape Digital"
+     ],
+     [
+      "299",
+      "190340085",
+      "ECE",
+      "Tallapragada Shanmukha Sreevatsa",
+      "IIIT Hyd"
+     ]
+    ]
+   },
+   {
+    "type": "h",
+    "level": 3,
+    "text": "Students Placed in Various Companies & August-2021 Schedule"
+   },
+   {
+    "type": "p",
+    "text": "K L H Deemed to be University has meticulously planned to make all the eligible and interested students employed. The University had installed the infrastructure, employed well experienced faculty, designed and delivered programs that help enhancing the communication and soft skills which are required for making the students employable. An excellent system is in place that considers all the issues that make a student employable. The University has been successful for the last 12 years, in employing all the students who have registered and eligible for placement through its offices located across the country. About 50 trained personnel work extensively to make the students ready for recruitment by the Industry."
+   },
+   {
+    "type": "img",
+    "src": "2021/06/Students-placed-Y17.jpg",
+    "alt": ""
+   },
+   {
+    "type": "img",
+    "src": "2021/06/students-placed-banner-1.jpg",
+    "alt": ""
+   },
+   {
+    "type": "img",
+    "src": "2024/05/pri-e1681807543269.jpg",
+    "alt": ""
+   },
+   {
+    "type": "h",
+    "level": 4,
+    "text": "For any Quires: Contact Dr A RamaKrishna"
+   },
+   {
+    "type": "h",
+    "level": 5,
+    "text": "Associate Dean KLH & Director Placements, KL Hyderabad Email: ramakrishna.a@kluniversity.in Phone: 8985249328"
+   },
+   {
+    "type": "img",
+    "src": "2021/09/com.jpg",
+    "alt": ""
+   }
+  ]
+ },
+ "contact-2": {
+  "title": "Contact",
+  "banner": "2021/07/acc.jpg",
+  "blocks": [
+   {
+    "type": "img",
+    "src": "2020/04/hp-1.png",
+    "alt": ""
+   },
+   {
+    "type": "img",
+    "src": "2020/04/intel.png",
+    "alt": ""
+   },
+   {
+    "type": "img",
+    "src": "2020/04/wipro-1.png",
+    "alt": ""
+   },
+   {
+    "type": "img",
+    "src": "2020/04/ibm-1.png",
+    "alt": ""
+   },
+   {
+    "type": "img",
+    "src": "2020/04/csc-1.png",
+    "alt": ""
+   },
+   {
+    "type": "img",
+    "src": "2020/04/valuelabs.png",
+    "alt": ""
+   },
+   {
+    "type": "img",
+    "src": "2021/06/deloitte-logo-370x69-1.jpg",
+    "alt": ""
+   },
+   {
+    "type": "img",
+    "src": "2020/04/cisco-1.png",
+    "alt": ""
+   },
+   {
+    "type": "img",
+    "src": "2021/05/men.png",
+    "alt": ""
+   },
+   {
+    "type": "img",
+    "src": "2020/04/amazon-2.png",
+    "alt": ""
+   },
+   {
+    "type": "img",
+    "src": "2021/06/Capgemin99-1.jpg",
+    "alt": ""
+   },
+   {
+    "type": "img",
+    "src": "2020/04/info.png",
+    "alt": ""
+   },
+   {
+    "type": "img",
+    "src": "2021/06/tcss.jpg",
+    "alt": ""
+   },
+   {
+    "type": "img",
+    "src": "2020/04/TA.png",
+    "alt": ""
+   },
+   {
+    "type": "img",
+    "src": "2021/06/ang.jpg",
+    "alt": ""
+   },
+   {
+    "type": "img",
+    "src": "2020/04/cts.png",
+    "alt": ""
+   },
+   {
+    "type": "img",
+    "src": "2024/05/pri-e1681807543269.jpg",
+    "alt": ""
+   },
+   {
+    "type": "h",
+    "level": 3,
+    "text": "For any Queries: Dr. A. RamaKrishna"
+   },
+   {
+    "type": "p",
+    "text": "Associate Dean, KLH & Director - PlacementsKLH Hyderabad (Aziz Nagar Campus)"
+   },
+   {
+    "type": "p",
+    "text": "Email: ramakrishna.a@kluniversity.inPhone: +91 8985249328"
+   },
+   {
+    "type": "img",
+    "src": "2026/07/6294113447049892906.jpg",
+    "alt": ""
+   },
+   {
+    "type": "h",
+    "level": 3,
+    "text": "For any Queries: Dr. Kolli Srinivas"
+   },
+   {
+    "type": "p",
+    "text": "Director - Training & PlacementsKLH Hyderabad (Bachupally Campus)"
+   },
+   {
+    "type": "p",
+    "text": "Email: placementoffice.bmp@klh.edu.in"
+   }
+  ]
+ },
+ "collaborations": {
+  "title": "Collaborations",
+  "banner": "2020/08/academic-collaborations-banner.jpg",
+  "blocks": [
+   {
+    "type": "img",
+    "src": "2020/06/ghj.jpg",
+    "alt": ""
+   },
+   {
+    "type": "h",
+    "level": 3,
+    "text": "Government Collaboration"
+   },
+   {
+    "type": "p",
+    "text": "Our commitment to promote international standards in education, research, innovation and entrepreneurship helped us to become one of the leading premier educational institutions in India. KL (Deemed to be University) greatly acknowledges the support and encouragement of the state government over the years."
+   },
+   {
+    "type": "img",
+    "src": "2015/11/slider-3.jpg",
+    "alt": ""
+   },
+   {
+    "type": "h",
+    "level": 3,
+    "text": "Industry Collaboration"
+   },
+   {
+    "type": "p",
+    "text": "The IBM Center of Excellence caters to advanced training, practicing and conducting the certificate programs in various technologies of IBM, including novel tools like Lotus, WebSphere and Tivoli along with conventional tools of Database DB2, Application Developer RAD and Testing tool RFT."
+   },
+   {
+    "type": "img",
+    "src": "2020/06/IMG_0388-1-scaled.jpg",
+    "alt": ""
+   },
+   {
+    "type": "h",
+    "level": 3,
+    "text": "Academic Collaboration"
+   },
+   {
+    "type": "p",
+    "text": "KL University built strong partnerships and collaborating with the top global universities and institutes in Europe, USA, Asia, Australia, Canada, Asia-Pacific, Middle East, Africa, and South America for joint educational initiatives, research and internship programs to expose students to the best global curriculum and make the students globally competitive. Our collaborations support our mission of creating a bright future for our students by providing international exposure."
+   }
+  ]
+ },
+ "facilities": {
+  "title": "Facilities",
+  "banner": "2020/08/contact-min.jpg",
+  "blocks": [
+   {
+    "type": "h",
+    "level": 3,
+    "text": "Facilities"
+   },
+   {
+    "type": "p",
+    "text": "Aesthetically all-pervasive greenery with all modern amenities do reflect high definitions. State-of-the-art laboratories and infrastructure for and ensure a perfect environment in overall development of a student."
+   },
+   {
+    "type": "h",
+    "level": 3,
+    "text": "Campus Entrance"
+   },
+   {
+    "type": "img",
+    "src": "2020/09/COLL-min.jpeg",
+    "alt": ""
+   },
+   {
+    "type": "h",
+    "level": 3,
+    "text": "CENTRAL LIBRARY"
+   },
+   {
+    "type": "img",
+    "src": "2020/10/libss-min.png",
+    "alt": ""
+   },
+   {
+    "type": "h",
+    "level": 3,
+    "text": "Data Center"
+   },
+   {
+    "type": "img",
+    "src": "2020/09/CSELABS-min-1-e1599725137254.jpg",
+    "alt": ""
+   },
+   {
+    "type": "img",
+    "src": "2020/08/LIB1.jpg",
+    "alt": ""
+   },
+   {
+    "type": "h",
+    "level": 4,
+    "text": "Library"
+   },
+   {
+    "type": "p",
+    "text": "The Library system is a Multi-Level AC Central Library where copious books await students for their respective explorations."
+   },
+   {
+    "type": "img",
+    "src": "2020/08/LIB2.jpg",
+    "alt": ""
+   },
+   {
+    "type": "p",
+    "text": "Library has an extensive collection of books, scientific and technical journals & e-materials for satisfying the academic & research needs of the students & faculty."
+   },
+   {
+    "type": "img",
+    "src": "2020/08/LIB3-e1596342093728.jpg",
+    "alt": ""
+   },
+   {
+    "type": "p",
+    "text": "Library is the soul of the institution and it acquires, processes, preserves & disseminates information to the user community with the motto of empowering knowledge."
+   },
+   {
+    "type": "img",
+    "src": "2020/04/sports.jpg",
+    "alt": ""
+   },
+   {
+    "type": "h",
+    "level": 4,
+    "text": "Sports"
+   },
+   {
+    "type": "p",
+    "text": "K L E F encourages students to explore their latent talents by providing World Class GAMES and SPORTS facilities. More Click-here"
+   },
+   {
+    "type": "img",
+    "src": "2020/04/labs.jpg",
+    "alt": ""
+   },
+   {
+    "type": "h",
+    "level": 4,
+    "text": "Labs"
+   },
+   {
+    "type": "p",
+    "text": "We create a perpetual state of show and tell by combining classroom teaching with laboratory experiments."
+   },
+   {
+    "type": "img",
+    "src": "2020/04/digital-classroom-300x184.jpg",
+    "alt": ""
+   },
+   {
+    "type": "h",
+    "level": 4,
+    "text": "Digital Classrooms"
+   },
+   {
+    "type": "p",
+    "text": "Classrooms are key aspects of Institution where Digitization plays an effective role in Bringing world of information under one roof."
+   },
+   {
+    "type": "h",
+    "level": 3,
+    "text": "Bus Routes"
+   },
+   {
+    "type": "img",
+    "src": "2021/04/des.jpg",
+    "alt": ""
+   },
+   {
+    "type": "img",
+    "src": "2021/04/giphy-300x92.gif",
+    "alt": ""
+   },
+   {
+    "type": "h",
+    "level": 4,
+    "text": "Route Details. Click here...."
+   },
+   {
+    "type": "img",
+    "src": "2021/04/sdf.jpg",
+    "alt": ""
+   },
+   {
+    "type": "p",
+    "text": "The institution runs adequate buses connecting all the important centers in city of Hyderabad."
+   }
+  ]
+ },
+ "research": {
+  "title": "Research",
+  "banner": "2020/08/rules-min.jpg",
+  "blocks": [
+   {
+    "type": "h",
+    "level": 3,
+    "text": "Research"
+   },
+   {
+    "type": "p",
+    "text": "Research is the place where minds work insightfully exerting all their Acquired Knowledge and Skills to attain a Desired Goal in their corresponding fields of study. Hence, a great emphasis is laid down on Research and Development (R & D) in K L E F."
+   },
+   {
+    "type": "img",
+    "src": "2026/03/GSoC-Vertical.png",
+    "alt": ""
+   },
+   {
+    "type": "h",
+    "level": 3,
+    "text": "Academic Research"
+   },
+   {
+    "type": "p",
+    "text": "In lifting up the spirits of students with an urge to promote their studies, our focus is primarily on academic research programs in all the departments that lead to the award of Ph.D degree both for part time and full time scholars. Quality research output is ensured through regular monitoring of the works done by the researchers."
+   },
+   {
+    "type": "p",
+    "text": "R&D Policies Faculty Publications Faculty Research Areas Sponsored Projects"
+   },
+   {
+    "type": "img",
+    "src": "2020/06/research.png",
+    "alt": ""
+   },
+   {
+    "type": "img",
+    "src": "2020/06/rr12.png",
+    "alt": ""
+   },
+   {
+    "type": "h",
+    "level": 3,
+    "text": "Industry Research"
+   },
+   {
+    "type": "p",
+    "text": "Smart projects are one of the most advent initiatives of K L Deemed To Be University to foster its students explore the real-time scenarios and come up with Resolutions that benefit society. SMART objectives are Specific, Measurable, Achievable, Relevant, and Time-related. It means that you students have to prepare themselves for in-depth research about the issue they want to precisely address."
+   },
+   {
+    "type": "h",
+    "level": 3,
+    "text": "Research Funding"
+   },
+   {
+    "type": "p",
+    "text": "Funding in K L E F for Research is ahead of its competitors in allocating necessary funds worth 30 Crore + worth for Research Projects. Adding to this,1,80,000 Sq. feet of laboratory space in various Departments along with 96 Highend Labs and Research centres are leveraged to encourage students in R&D."
+   },
+   {
+    "type": "img",
+    "src": "2020/06/res.png",
+    "alt": ""
+   }
+  ]
+ },
+ "contact-us": {
+  "title": ".",
+  "banner": "2023/06/Admission-Help-Desk_1.jpg",
+  "blocks": [
+   {
+    "type": "table",
+    "rows": [
+     [
+      "S.No",
+      "Name",
+      "Designation",
+      "Mobile.No"
+     ],
+     [
+      "1",
+      "Dr A .Ramakrishna",
+      "Principal",
+      "8985249328"
+     ],
+     [
+      "2",
+      "M P Mallesh",
+      "Associate Dean",
+      "9291518420"
+     ],
+     [
+      "4",
+      "Sri G.Papa Rao",
+      "Administrative Officer",
+      "7660891999"
+     ],
+     [
+      "5",
+      "T.Ravi Kumar",
+      "P.A. to Principal",
+      "7660872999 Mail-id: principalofficeengg@klh.edu.in"
+     ]
+    ]
+   }
+  ]
+ },
+ "newsletters": {
+  "title": "Media & Newsletters",
+  "banner": null,
+  "blocks": [
+   {
+    "type": "p",
+    "text": "KLH newsletters share news from the campuses: events, achievements, research and student life. Open an issue to read it."
+   },
+   {
+    "type": "downloads",
+    "items": [
+     {
+      "title": "Cosmos",
+      "meta": "November 2023 · 16 pages · PDF, 2.8 MB",
+      "href": "/files/klh.edu.in/wp-content/uploads/2023/11/Cosmos-newsletter1-1.pdf"
+     },
+     {
+      "title": "Young Times · May issue",
+      "meta": "May 2022 · 10 pages · PDF, 6.2 MB",
+      "href": "/files/klh.edu.in/wp-content/uploads/2022/07/KLH-Newsletter-Young-Times-May_issue.pdf"
+     }
+    ]
+   },
+   {
+    "type": "p",
+    "text": "For the latest news and announcements, see Highlights on the home page."
+   },
+   {
+    "type": "link",
+    "text": "Latest news and highlights",
+    "href": "/#highlights"
+   }
+  ]
+ }
+}

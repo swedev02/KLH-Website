@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0a1a33" />
+    <meta name="description" content="KL University Hyderabad (KLH), Koneru Lakshmaiah Education Foundation: a UGC Category I deemed university with campuses at Aziz Nagar and Bachupally." />
+    <title>KL University Hyderabad (KLH) | Koneru Lakshmaiah Education Foundation</title>
+    <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="/favicon-192x192.png" sizes="192x192" />
+    <link rel="apple-touch-icon" href="/favicon-180x180.png" />
+    <!-- Home page: start fetching the first banner (the largest thing on screen) before the app's JavaScript runs.
+         Same file and sizes as the AVIF <source> Img renders for it; keep in sync with HOME_SLIDES[0] in src/data.js. -->
+    <script>
+      if (location.pathname === '/') {
+        var l = document.createElement('link'), f = '/2026/04/bann1er3-1.avif'
+        l.rel = 'preload'; l.as = 'image'; l.type = 'image/avif'; l.fetchPriority = 'high'
+        l.setAttribute('imagesrcset', '/img/640' + f + ' 640w, /img/1280' + f + ' 1280w, /img/1920' + f + ' 1920w')
+        l.setAttribute('imagesizes', '100vw')
+        document.head.appendChild(l)
+      }
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

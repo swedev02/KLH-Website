@@ -1,0 +1,198 @@
+@import "tailwindcss";
+@import "@fontsource-variable/inter";
+@import "@fontsource/poppins/500.css";
+@import "@fontsource/poppins/600.css";
+@import "@fontsource-variable/jetbrains-mono";
+
+/* KLH design system.
+   Brand red, blue and yellow are sampled from the official logo (#A80000 "KL", #186CA8 and #F0A824 in the "H").
+   Navy carries a few strong surfaces; red marks primary actions; yellow is reserved for highlights. */
+@theme {
+  --font-sans: "Inter Variable", system-ui, sans-serif;
+  --font-display: "Poppins", "Inter Variable", system-ui, sans-serif;
+  --font-mono: "JetBrains Mono Variable", ui-monospace, monospace;
+
+  --color-navy: #0a1a33;
+  --color-navy-2: #12284a;
+  --color-navy-3: #1d3a63;
+  --color-brand: #a8101a;
+  --color-brand-dark: #870b13;
+  --color-blue: #1a6aa8;
+  --color-blue-soft: #e8f1f9;
+  --color-sun: #f0a824;       /* KLH yellow, sampled from the logo’s “H” — highlights only, never body text on white */
+  --color-sun-soft: #fdf1d6;
+  --color-ink: #0e1726;
+  --color-ink-2: #3a4556;
+  --color-muted: #667085;
+  --color-line: #e3e8ef;
+  --color-line-dark: rgb(255 255 255 / 0.12);
+  --color-surface: #f5f7fa;
+  --container-site: 1280px;
+
+  --ease-out-soft: cubic-bezier(.2, .7, .2, 1);
+}
+
+html { scroll-behavior: smooth; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+body { @apply bg-white font-sans text-ink antialiased; }
+[id] { scroll-margin-top: 64px; }
+@media (max-width: 767px) { [id] { scroll-margin-top: 112px; } }
+:focus-visible { outline: 2px solid var(--color-blue); outline-offset: 2px; }
+::selection { background: var(--color-blue); color: #fff; }
+.no-scrollbar::-webkit-scrollbar { display: none; }
+.no-scrollbar { scrollbar-width: none; }
+
+/* Reveal on scroll (see components/motion.jsx). Content stays visible without JS or with reduced motion. */
+.reveal { opacity: 0; transform: translateY(18px); transition: opacity .7s var(--ease-out-soft), transform .7s var(--ease-out-soft); }
+.reveal.is-in { opacity: 1; transform: none; }
+@media (prefers-reduced-motion: reduce) { .reveal { opacity: 1; transform: none; transition: none; } }
+
+/* Hero photograph: a slow push-in while a slide is active */
+@keyframes push-in { from { transform: scale(1.0); } to { transform: scale(1.06); } }
+.push-in { animation: push-in 9s linear forwards; }
+@keyframes progress { from { transform: scaleX(0); } to { transform: scaleX(1); } }
+@media (prefers-reduced-motion: reduce) { .push-in { animation: none; } }
+
+/* ── Image loading states (components/ui.jsx → Img). The frame shows a placeholder layer over the image until it loads:
+   the image's own four corner colours (src/assets/klh/manifest.json), then a reveal that suits where the image sits. */
+.img-frame { --ph-a: var(--color-surface); --ph-b: var(--color-surface); --ph-c: var(--color-surface); --ph-d: var(--color-surface);
+  position: relative; display: block; overflow: hidden; isolation: isolate; }
+.img-ph { position: absolute; inset: 0; z-index: 1; pointer-events: none; display: grid; place-items: center; overflow: hidden;
+  background: linear-gradient(to right, var(--ph-a), var(--ph-b));
+  transition: opacity .5s var(--ease-out-soft); }
+/* bottom row of colours, blended into the top row: a soft four-corner gradient, like a heavily blurred thumbnail */
+.img-ph::before { content: ""; position: absolute; inset: 0; background: linear-gradient(to right, var(--ph-c), var(--ph-d));
+  -webkit-mask-image: linear-gradient(to bottom, transparent, #000); mask-image: linear-gradient(to bottom, transparent, #000); }
+/* light sweep, shown only if loading takes longer than a beat so quick loads never flash it */
+.img-ph::after { content: ""; position: absolute; inset: 0; transform: translateX(-100%);
+  background: linear-gradient(100deg, transparent 25%, rgb(255 255 255 / .38) 50%, transparent 75%); }
+[data-state="loading"]:is([data-loader="card"], [data-loader="content"]) > .img-ph::after { animation: img-shimmer 1.6s ease-in-out .35s infinite both; }
+[data-state="loading"][data-loader="banner"] > .img-ph::after { animation: img-shimmer 2.6s ease-in-out .35s infinite both; }
+@keyframes img-shimmer { from { transform: translateX(-100%); } to { transform: translateX(100%); } }
+
+/* loaded: the placeholder fades away; cached: gone at once */
+:is([data-state="loaded"], [data-state="cached"]) > .img-ph { opacity: 0; }
+[data-state="cached"] > .img-ph { transition: none; }
+
+/* hero — above the fold: the photo appears blurred inside its own colours, then sharpens */
+[data-loader="hero"] > .img-ph { -webkit-backdrop-filter: blur(22px) saturate(1.1); backdrop-filter: blur(22px) saturate(1.1); }
+[data-loader="hero"][data-state="loaded"] > .img-ph { transition: opacity .9s var(--ease-out-soft) .05s; }
+[data-loader="hero"][data-state="loaded"] .img-el { animation: img-sharpen 1.1s var(--ease-out-soft) both; }
+@keyframes img-sharpen { from { transform: scale(1.035); } to { transform: none; } }
+
+/* card — photos in cards and grids: settle into place as the wash lifts */
+[data-loader="card"][data-state="loaded"] .img-el { animation: img-settle .8s var(--ease-out-soft) both; }
+@keyframes img-settle { from { transform: scale(1.06); opacity: .4; } to { transform: none; opacity: 1; } }
+
+/* banner — wide slides and artwork with text: a slower, calmer cross-fade */
+[data-loader="banner"][data-state="loaded"] > .img-ph { transition-duration: .8s; }
+
+/* content — images in page text: rise gently into the reserved box */
+[data-loader="content"][data-state="loaded"] .img-el { animation: img-rise .7s var(--ease-out-soft) both; }
+@keyframes img-rise { from { transform: translateY(10px); opacity: 0; } to { transform: none; opacity: 1; } }
+
+/* logo — logos and posters on white: a quiet pulse instead of colour, then fade in */
+[data-loader="logo"] > .img-ph { background: var(--color-surface); }
+[data-loader="logo"] > .img-ph::before { display: none; }
+[data-loader="logo"][data-state="loading"] > .img-ph { animation: img-pulse 1.4s ease-in-out .2s infinite; }
+[data-loader="logo"][data-state="loaded"] > .img-ph { transition-duration: .3s; }
+@keyframes img-pulse { 0%, 100% { opacity: 1; } 50% { opacity: .45; } }
+
+/* icon — small artwork: no placeholder, just a quick fade */
+[data-loader="icon"] > .img-ph { display: none; }
+[data-loader="icon"][data-state="loading"] .img-el { opacity: 0; }
+[data-loader="icon"][data-state="loaded"] .img-el { animation: fadeIn .3s ease both; }
+
+/* error — the file failed or is missing: keep a calm placeholder with an icon */
+[data-state="error"] > .img-ph { opacity: 1; background: var(--color-surface); }
+[data-state="error"] > .img-ph::before { display: none; }
+.img-ph-icon { position: relative; color: var(--color-muted); opacity: .6; }
+
+@media (prefers-reduced-motion: reduce) {
+  .img-ph, .img-ph::after, .img-el { animation: none !important; }
+  .img-ph { transition-duration: .15s !important; transition-delay: 0s !important; }
+}
+
+
+@utility wrap { @apply mx-auto w-full max-w-site px-4 sm:px-6 lg:px-10; }
+
+/* Type scale */
+@utility display-1 { @apply font-display text-[34px] leading-[1.08] font-semibold tracking-[-0.02em] sm:text-[44px] lg:text-[58px]; }
+@utility display-2 { @apply font-display text-[28px] leading-[1.15] font-semibold tracking-[-0.015em] md:text-[36px] lg:text-[42px]; }
+@utility display-3 { @apply font-display text-[20px] leading-snug font-semibold tracking-[-0.01em] md:text-[22px]; }
+@utility lead { @apply text-[17px] leading-relaxed text-ink-2 md:text-lg; }
+/* Metadata / labels: monospace, uppercase, letter-spaced */
+@utility meta { @apply font-mono text-[11.5px] font-medium uppercase tracking-[.14em]; }
+
+/* Buttons */
+@utility btn { @apply inline-flex h-12 items-center justify-center gap-2 rounded-[6px] px-5 text-[14px] font-semibold whitespace-nowrap transition-[background-color,color,border-color,box-shadow] duration-300 cursor-pointer disabled:cursor-wait disabled:opacity-70; }
+@utility btn-primary { @apply btn bg-brand text-white hover:bg-brand-dark; }
+@utility btn-navy { @apply btn bg-navy text-white hover:bg-navy-2; }
+@utility btn-outline { @apply btn border border-ink/15 bg-white text-ink hover:border-navy hover:text-navy; }
+@utility btn-ghost { @apply btn border border-white/25 text-white hover:border-white hover:bg-white/10; }
+@utility btn-sm { @apply h-10 px-4 text-[13px]; }
+
+@utility link-arrow { @apply inline-flex items-center gap-1.5 text-[14px] font-semibold text-blue hover:text-navy; }
+@utility field { @apply h-12 w-full rounded-[6px] border border-line bg-white px-3.5 text-[15px] text-ink outline-none transition-colors placeholder:text-muted/70 focus:border-blue focus:ring-4 focus:ring-blue/10; }
+@utility field-dark { @apply h-12 w-full rounded-[6px] border border-white/15 bg-white/5 px-3.5 text-[15px] text-white outline-none transition-colors placeholder:text-white/40 focus:border-white/60; }
+@utility card { @apply rounded-[10px] border border-line bg-white; }
+@utility tag { @apply inline-flex h-6 items-center rounded-full border border-line px-2.5 font-mono text-[11px] font-medium text-ink-2; }
+
+@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+
+/* Light premium surfaces: soft off-white with a faint wash of the logo's blue and red. */
+.surface-glow {
+  background:
+    radial-gradient(900px 480px at 0% 0%, rgb(26 106 168 / .09), transparent 65%),
+    radial-gradient(700px 420px at 100% 0%, rgb(168 16 26 / .05), transparent 60%),
+    linear-gradient(180deg, #fbfcfe 0%, #f1f4f8 100%);
+}
+.surface-soft { background: linear-gradient(180deg, #ffffff 0%, #f5f7fa 100%); }
+
+/* Animated underline for text links */
+.u-link { background-image: linear-gradient(currentColor, currentColor); background-size: 0% 1px; background-position: 0 100%; background-repeat: no-repeat; transition: background-size .35s var(--ease-out-soft), color .2s; }
+.u-link:hover, .u-link:focus-visible { background-size: 100% 1px; }
+
+
+/* Section-heading rule draws in when its heading is revealed */
+.rule { width: 2rem; }
+.reveal .rule { width: 0; transition: width .8s var(--ease-out-soft) .2s; }
+.reveal.is-in .rule { width: 2rem; }
+@media (prefers-reduced-motion: reduce) { .reveal .rule { width: 2rem; transition: none; } }
+
+/* Clean navy surface: solid navy with one faint blue glow (no pattern). */
+.surface-navy {
+  background:
+    radial-gradient(900px 520px at 8% -10%, rgb(26 106 168 / .32), transparent 62%),
+    radial-gradient(600px 360px at 100% 110%, rgb(240 168 36 / .07), transparent 60%),
+    var(--color-navy);
+}
+
+/* Yellow highlighter under a key word in a heading; it sweeps in when the heading is revealed. */
+.hl {
+  background-image: linear-gradient(transparent 60%, rgb(240 168 36 / .5) 60%, rgb(240 168 36 / .5) 90%, transparent 90%);
+  background-repeat: no-repeat; background-size: 100% 100%; padding: 0 .06em; margin: 0 -.06em;
+  -webkit-box-decoration-break: clone; box-decoration-break: clone;
+}
+.reveal .hl { background-size: 0% 100%; transition: background-size .9s var(--ease-out-soft) .35s; }
+.reveal.is-in .hl { background-size: 100% 100%; }
+@media (prefers-reduced-motion: reduce) { .reveal .hl { background-size: 100% 100%; transition: none; } }
+
+/* On navy, the highlighted word turns yellow and a thin yellow line draws under it (a marker would turn muddy). */
+.surface-navy .hl { color: var(--color-sun); background-image: linear-gradient(var(--color-sun), var(--color-sun)); background-position: 0 94%; background-size: 100% 2px; }
+.surface-navy .reveal .hl { background-size: 0% 2px; }
+.surface-navy .reveal.is-in .hl { background-size: 100% 2px; }
+
+/* Continuous photo strip: the list is rendered twice and slides by exactly one copy, so the loop is seamless. */
+@keyframes marquee { to { transform: translateX(calc(-50% - 10px)); } }
+.marquee { animation: marquee 70s linear infinite; }
+.marquee-wrap:hover .marquee, .marquee-wrap:focus-within .marquee, .marquee.is-paused { animation-play-state: paused; }
+@media (prefers-reduced-motion: reduce) { .marquee { animation: none; } .marquee-wrap { overflow-x: auto; } }
+
+/* Soft cross-fade with a small lift, used when a testimonial changes */
+@keyframes fadeUp { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
+.fade-up { animation: fadeUp .7s var(--ease-out-soft) both; }
+@media (prefers-reduced-motion: reduce) { .fade-up { animation: none; } }
+
+/* Phones: inline link chips and arrows get a full-size tap area. */
+@media (max-width: 767px) { a.tag, a.link-arrow { min-height: 40px; display: inline-flex; align-items: center; } }
